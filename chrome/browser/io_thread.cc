@@ -364,6 +364,7 @@ IOThread::IOThread(
       nullptr,
       nullptr,
       nullptr,
+      nullptr,
       local_state);
 
   local_state->SetDefaultPrefValue(prefs::kBuiltInDnsClientEnabled,
