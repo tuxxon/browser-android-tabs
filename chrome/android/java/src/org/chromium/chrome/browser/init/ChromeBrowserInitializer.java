@@ -467,6 +467,11 @@ public class ChromeBrowserInitializer {
         });
 
         MemoryPressureUma.initializeForBrowser();
+
+        ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
+        if (null != app) {
+            app.initShieldsConfig();
+        }
     }
 
     private ActivityStateListener createActivityStateListener() {
