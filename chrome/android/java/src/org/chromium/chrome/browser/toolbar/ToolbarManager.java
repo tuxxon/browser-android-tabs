@@ -662,6 +662,7 @@ public class ToolbarManager implements ToolbarTabController, UrlFocusChangeListe
             FindToolbarManager findToolbarManager, OverviewModeBehavior overviewModeBehavior,
             LayoutManager layoutManager, OnClickListener tabSwitcherClickHandler,
             OnClickListener newTabClickHandler, OnClickListener bookmarkClickHandler,
+            OnClickListener braveShieldsClickHandler,
             OnClickListener customTabsBackClickHandler) {
         assert !mInitializedWithNative;
         mTabModelSelector = tabModelSelector;
@@ -672,6 +673,7 @@ public class ToolbarManager implements ToolbarTabController, UrlFocusChangeListe
         mToolbar.setOnTabSwitcherClickHandler(tabSwitcherClickHandler);
         mToolbar.setOnNewTabClickHandler(newTabClickHandler);
         mToolbar.setBookmarkClickHandler(bookmarkClickHandler);
+        mToolbar.setBraveShieldsClickHandler(braveShieldsClickHandler);
         mToolbar.setCustomTabCloseClickHandler(customTabsBackClickHandler);
         mToolbar.setLayoutUpdateHost(layoutManager);
 
