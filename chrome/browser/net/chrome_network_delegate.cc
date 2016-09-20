@@ -336,14 +336,25 @@ int ChromeNetworkDelegate::OnBeforeURLRequest(
         }
       }
   }
+  bool isValidUrl = request->url().is_valid();
+  if (request) {
+      std::string scheme = request->url().scheme();
+      if (scheme.length()) {
+          std::transform(scheme.begin(), scheme.end(), scheme.begin(), ::tolower);
+          if ("http" != scheme && "https" != scheme) {
+              isValidUrl = false;
+          }
+      }
+  }
   bool isTPEnabled = true;
 	bool block = false;
   if (enable_tracking_protection_ && !shieldsSetExplicitly) {
     isTPEnabled = enable_tracking_protection_->GetValue();
   }
-  int adsAndTrakersBlocked = 0;
+  int adsAndTrackersBlocked = 0;
   int httpsUpgrades = 0;
 	if (request
+      && isValidUrl
       && isGlobalBlockEnabled
       && blockAdsAndTracking
       && isTPEnabled
@@ -352,7 +363,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest(
 					request->url().host())
 				) {
 		block = true;
-    adsAndTrakersBlocked++;
+    adsAndTrackersBlocked++;
 	}
   bool isAdBlockEnabled = true;
   if (enable_ad_block_ && !shieldsSetExplicitly) {
@@ -360,6 +371,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest(
   }
 	const ResourceRequestInfo* info = ResourceRequestInfo::ForRequest(request);
 	if (!block
+      && isValidUrl
       && isGlobalBlockEnabled
       && blockAdsAndTracking
       && isAdBlockEnabled
@@ -370,7 +382,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest(
 					request->url().spec(),
 					(unsigned int)info->GetResourceType())) {
 		block = true;
-    adsAndTrakersBlocked++;
+    adsAndTrackersBlocked++;
 	}
   bool check_httpse_redirect = true;
   if (block && content::RESOURCE_TYPE_IMAGE == info->GetResourceType()) {
@@ -381,6 +393,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest(
 
   // HTTPSE work
   if (!block
+      && isValidUrl
       && isGlobalBlockEnabled
       && isHTTPSEEnabled
       && check_httpse_redirect
@@ -394,8 +407,8 @@ int ChromeNetworkDelegate::OnBeforeURLRequest(
     }
   }
   //
-  if (nullptr != shieldsConfig && (0 != adsAndTrakersBlocked || 0 != httpsUpgrades)) {
-    shieldsConfig->setBlockedCountInfo(last_first_party_url_.spec(), adsAndTrakersBlocked, httpsUpgrades, 0);
+  if (nullptr != shieldsConfig && (0 != adsAndTrackersBlocked || 0 != httpsUpgrades)) {
+    shieldsConfig->setBlockedCountInfo(last_first_party_url_.spec(), adsAndTrackersBlocked, httpsUpgrades, 0);
   }
 
   if (block && content::RESOURCE_TYPE_IMAGE != info->GetResourceType()) {
