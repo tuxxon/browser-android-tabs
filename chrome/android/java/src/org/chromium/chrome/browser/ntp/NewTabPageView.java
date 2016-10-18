@@ -77,7 +77,7 @@ public class NewTabPageView
     private NewTabPageRecyclerView mRecyclerView;
 
     private NewTabPageLayout mNewTabPageLayout;
-    private LogoView mSearchProviderLogoView;
+    //private LogoView mSearchProviderLogoView;
     private View mSearchBoxView;
     private ImageView mVoiceSearchButton;
     private SiteSectionViewHolder mSiteSectionViewHolder;
@@ -261,9 +261,9 @@ public class NewTabPageView
                 SiteSection.createViewHolder(mNewTabPageLayout.getSiteSectionView(), mUiConfig);
         mSiteSectionViewHolder.bindDataSource(mTileGroup, tileRenderer);
 
-        mSearchProviderLogoView = mNewTabPageLayout.findViewById(R.id.search_provider_logo);
+        /*mSearchProviderLogoView = mNewTabPageLayout.findViewById(R.id.search_provider_logo);
         mLogoDelegate = new LogoDelegateImpl(
-                mManager.getNavigationDelegate(), mSearchProviderLogoView, profile);
+                mManager.getNavigationDelegate(), mSearchProviderLogoView, profile);*/
 
         mSearchBoxView = mNewTabPageLayout.findViewById(R.id.search_box);
         if (SuggestionsConfig.useModernLayout()) {
@@ -631,10 +631,9 @@ public class NewTabPageView
             @Override
             public void onLogoAvailable(Logo logo, boolean fromCache) {
                 if (logo == null && fromCache) return;
-
-                mSearchProviderLogoView.setDelegate(mLogoDelegate);
-                mSearchProviderLogoView.updateLogo(logo);
-                mSnapshotTileGridChanged = true;
+                //mSearchProviderLogoView.setDelegate(mLogoDelegate);
+                //mSearchProviderLogoView.updateLogo(logo);
+                mSnapshotMostVisitedChanged = true;
             }
         });
     }
@@ -781,7 +780,7 @@ public class NewTabPageView
      * @param alpha opacity (alpha) value to use.
      */
     public void setSearchProviderLogoAlpha(float alpha) {
-        mSearchProviderLogoView.setAlpha(alpha);
+        //mSearchProviderLogoView.setAlpha(alpha);
     }
 
     /**
@@ -898,7 +897,7 @@ public class NewTabPageView
      *         InvalidationAwareThumbnailProvider#captureThumbnail(Canvas)
      */
     void captureThumbnail(Canvas canvas) {
-        mSearchProviderLogoView.endFadeAnimation();
+        //mSearchProviderLogoView.endFadeAnimation();
         ViewUtils.captureBitmap(this, canvas);
         mSnapshotWidth = getWidth();
         mSnapshotHeight = getHeight();
