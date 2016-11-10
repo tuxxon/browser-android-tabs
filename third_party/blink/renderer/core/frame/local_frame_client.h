@@ -273,6 +273,8 @@ class CORE_EXPORT LocalFrameClient : public FrameClient {
 
   virtual void DidChangeScrollOffset() {}
   virtual void DidUpdateCurrentHistoryItem() {}
+
+  virtual bool AllowFingerprinting() { return true; }
   // This callback notifies the client that script was blocked
   virtual void DeniedScript() { }
 
@@ -281,6 +283,9 @@ class CORE_EXPORT LocalFrameClient : public FrameClient {
   virtual bool AllowContentInitiatedDataUrlNavigations(const KURL&) {
     return false;
   }
+
+  // This callback notifies the client that fingerprinting was blocked
+  virtual void DeniedFingerprinting() { }
 
   virtual WebCookieJar* CookieJar() const = 0;
 
