@@ -3434,6 +3434,17 @@ Optional<Vector<String>> WebGLRenderingContextBase::getSupportedExtensions() {
   if (isContextLost())
     return WTF::nullopt;
 
+  LocalFrame* frame = canvas()->document().frame();
+  bool allowed = true;
+  if (frame) {
+      allowed = frame->loader().client()->allowFingerprinting();
+      if (!allowed && !canvas()->wasBlockedByFingerprinting()) {
+          frame->loader().client()->deniedFingerprinting();
+      }
+  }
+  if (!allowed)
+      return nullptr;
+
   Vector<String> result;
 
   for (size_t i = 0; i < extensions_.size(); ++i) {
