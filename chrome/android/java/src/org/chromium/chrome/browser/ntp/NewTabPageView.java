@@ -99,7 +99,7 @@ public class NewTabPageView
 
     private NewTabPageLayout mNewTabPageLayout;
     //private LogoView mSearchProviderLogoView;
-    private View mSearchBoxView;
+    private ViewGroup mSearchBoxView;
     private ImageView mVoiceSearchButton;
     private SiteSectionViewHolder mSiteSectionViewHolder;
     private View mTileGridPlaceholder;
