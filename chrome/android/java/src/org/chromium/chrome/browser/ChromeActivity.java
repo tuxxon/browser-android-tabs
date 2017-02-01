@@ -2102,6 +2102,8 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
                 builder.setView(DistilledPagePrefsView.create(this));
                 builder.show();
             }
+        } else if (id == R.id.exit_id) {
+            ApplicationLifetime.terminate(false);
         } else {
             return false;
         }
