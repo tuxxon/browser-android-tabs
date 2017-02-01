@@ -2211,6 +2211,8 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
             RecordUserAction.record("MobileMenuRequestDesktopSite");
         } else if (id == R.id.reader_mode_prefs_id) {
             DomDistillerUIUtils.openSettings(currentTab.getWebContents());
+        } else if (id == R.id.exit_id) {
+            ApplicationLifetime.terminate(false);
         } else {
             return false;
         }
