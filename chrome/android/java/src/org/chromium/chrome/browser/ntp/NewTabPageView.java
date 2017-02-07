@@ -299,6 +299,7 @@ public class NewTabPageView
                 background.setCornerRadius(mSearchBoxView.getLayoutParams().height / 2.f);
             }
         }
+
         mNoSearchLogoSpacer = mNewTabPageLayout.findViewById(R.id.no_search_logo_spacer);
 
         mSnapScrollRunnable = new SnapScrollRunnable();
