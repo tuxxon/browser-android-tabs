@@ -276,6 +276,7 @@ public class NewTabPageView
                         R.dimen.ntp_search_box_bounds_vertical_inset_modern);
             }
         }
+
         mNoSearchLogoSpacer = mNewTabPageLayout.findViewById(R.id.no_search_logo_spacer);
 
         mSnapScrollRunnable = new SnapScrollRunnable();
