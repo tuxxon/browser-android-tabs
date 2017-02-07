@@ -1590,6 +1590,7 @@ public class ChromeTabbedActivity
             public void onPageLoadStarted(Tab tab, String url) {
                 // Discard startup navigation measurements when the user interfered and started the
                 // 2nd navigation (in activity lifetime) in parallel.
+                Log.i("TAG", "!!!here1");
                 if (!mIsFirstPageLoadStart) {
                     UmaUtils.setRunningApplicationStart(false);
                 } else {
@@ -1600,7 +1601,6 @@ public class ChromeTabbedActivity
                 if ((null != app) && (null != app.getShieldsConfig())) {
                     app.getShieldsConfig().setTabModelSelectorTabObserver(mTabModelSelectorTabObserver);
                 }
-
                 if (getActivityTab() == tab) {
                     try {
                         URL urlCheck = new URL(url);
@@ -1614,6 +1614,7 @@ public class ChromeTabbedActivity
 
             @Override
             public void onPageLoadFinished(Tab tab) {
+              Log.i("TAG", "!!!here11");
                 String url = tab.getUrl();
                 if (getActivityTab() == tab) {
                     try {
@@ -1809,7 +1810,7 @@ public class ChromeTabbedActivity
         });
     }
 
-    private void setBraveShieldsColor(String url) {
+    protected void setBraveShieldsColor(String url) {
         ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
         if (null != app) {
             if (app.getShieldsConfig().isTopShieldsEnabled(url)) {
