@@ -39,7 +39,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
     static final String ALL_SITES_KEY = "all_sites";
     static final String ADS_KEY = "ads";
     static final String AUTOPLAY_KEY = "autoplay";
-    static final String BACKGROUND_SYNC_KEY = "background_sync";
+    //static final String BACKGROUND_SYNC_KEY = "background_sync";
     static final String CAMERA_KEY = "camera";
     static final String CLIPBOARD_KEY = "clipboard";
     static final String COOKIES_KEY = "cookies";
@@ -52,7 +52,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
     static final String PROTECTED_CONTENT_KEY = "protected_content";
     static final String SOUND_KEY = "sound";
     static final String STORAGE_KEY = "use_storage";
-    static final String TRANSLATE_KEY = "translate";
+    //static final String TRANSLATE_KEY = "translate";
     static final String USB_KEY = "usb";
 
     // Whether the Protected Content menu is available for display.
@@ -87,8 +87,8 @@ public class SiteSettingsPreferences extends PreferenceFragment
             return ContentSettingsType.CONTENT_SETTINGS_TYPE_ADS;
         } else if (AUTOPLAY_KEY.equals(key)) {
             return ContentSettingsType.CONTENT_SETTINGS_TYPE_AUTOPLAY;
-        } else if (BACKGROUND_SYNC_KEY.equals(key)) {
-            return ContentSettingsType.CONTENT_SETTINGS_TYPE_BACKGROUND_SYNC;
+        /*} else if (BACKGROUND_SYNC_KEY.equals(key)) {
+            return ContentSettingsType.CONTENT_SETTINGS_TYPE_BACKGROUND_SYNC;*/
         } else if (CAMERA_KEY.equals(key)) {
             return ContentSettingsType.CONTENT_SETTINGS_TYPE_MEDIASTREAM_CAMERA;
         } else if (CLIPBOARD_KEY.equals(key)) {
@@ -127,7 +127,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
             // menus.
             getPreferenceScreen().removePreference(findPreference(ALL_SITES_KEY));
             getPreferenceScreen().removePreference(findPreference(ADS_KEY));
-            getPreferenceScreen().removePreference(findPreference(BACKGROUND_SYNC_KEY));
+            //getPreferenceScreen().removePreference(findPreference(BACKGROUND_SYNC_KEY));
             getPreferenceScreen().removePreference(findPreference(CAMERA_KEY));
             getPreferenceScreen().removePreference(findPreference(CLIPBOARD_KEY));
             getPreferenceScreen().removePreference(findPreference(COOKIES_KEY));
@@ -139,7 +139,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
             getPreferenceScreen().removePreference(findPreference(POPUPS_KEY));
             getPreferenceScreen().removePreference(findPreference(SOUND_KEY));
             getPreferenceScreen().removePreference(findPreference(STORAGE_KEY));
-            getPreferenceScreen().removePreference(findPreference(TRANSLATE_KEY));
+            //getPreferenceScreen().removePreference(findPreference(TRANSLATE_KEY));
             getPreferenceScreen().removePreference(findPreference(USB_KEY));
         } else {
             // If both Autoplay and Protected Content menus are available, they'll be tucked under
@@ -175,10 +175,10 @@ public class SiteSettingsPreferences extends PreferenceFragment
         PrefServiceBridge prefServiceBridge = PrefServiceBridge.getInstance();
 
         // Translate preference.
-        Preference translatePref = findPreference(TRANSLATE_KEY);
+        /*Preference translatePref = findPreference(TRANSLATE_KEY);
         if (translatePref != null) {
             setTranslateStateSummary(translatePref);
-        }
+        }*/
 
         // Preferences that navigate to Website Settings.
         List<String> websitePrefs = new ArrayList<String>();
@@ -192,7 +192,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
             // When showing the main menu, if Protected Content is not available, only Autoplay
             // will be visible.
             if (!mProtectedContentMenuAvailable) websitePrefs.add(AUTOPLAY_KEY);
-            websitePrefs.add(BACKGROUND_SYNC_KEY);
+            //websitePrefs.add(BACKGROUND_SYNC_KEY);
             websitePrefs.add(CAMERA_KEY);
             if (ChromeFeatureList.isEnabled(ChromeFeatureList.CLIPBOARD_CONTENT_SETTING)) {
                 websitePrefs.add(CLIPBOARD_KEY);
@@ -218,8 +218,8 @@ public class SiteSettingsPreferences extends PreferenceFragment
                 checked = PrefServiceBridge.getInstance().adsEnabled();
             } else if (AUTOPLAY_KEY.equals(prefName)) {
                 checked = PrefServiceBridge.getInstance().isAutoplayEnabled();
-            } else if (BACKGROUND_SYNC_KEY.equals(prefName)) {
-                checked = PrefServiceBridge.getInstance().isBackgroundSyncAllowed();
+            /*} else if (BACKGROUND_SYNC_KEY.equals(prefName)) {
+                checked = PrefServiceBridge.getInstance().isBackgroundSyncAllowed();*/
             } else if (CAMERA_KEY.equals(prefName)) {
                 checked = PrefServiceBridge.getInstance().isCameraEnabled();
             } else if (CLIPBOARD_KEY.equals(prefName)) {
