@@ -1448,6 +1448,12 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
                             .inflate();
             mBottomSheetContentController.init(mBottomSheet, mTabModelSelector, this);
         }
+
+        // Starting Brave Sync
+        /*ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
+        if (null != app) {
+            app.mBraveSyncWorker = new BraveSyncWorker(this);
+        }*/
     }
 
     /**
