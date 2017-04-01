@@ -1526,6 +1526,12 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
             mContextualSuggestionsCoordinator = new ContextualSuggestionsCoordinator(
                     this, mBottomSheetController, getTabModelSelector());
         }
+
+        // Starting Brave Sync
+        /*ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
+        if (null != app) {
+            app.mBraveSyncWorker = new BraveSyncWorker(this);
+        }*/
     }
 
     /**
