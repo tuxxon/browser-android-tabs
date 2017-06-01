@@ -433,6 +433,7 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
         ((BottomContainer) findViewById(R.id.bottom_container)).initialize(mFullscreenManager);
 
         mModalDialogManager = createModalDialogManager();
+
         // Comment sync temporary
         /*ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
         if (null != app) {
@@ -1408,10 +1409,10 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
         super.finishNativeInitialization();
 
         // Starting Brave Sync
-        /*ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
+        ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
         if (null != app) {
             app.mBraveSyncWorker = new BraveSyncWorker(this);
-        }*/
+        }
     }
 
     /**
