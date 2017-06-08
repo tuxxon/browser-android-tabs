@@ -77,7 +77,7 @@ public class NewTabPageView
 
     private static final int SHADOW_COLOR = 0x11000000;
 
-    private NewTabPageRecyclerView mRecyclerView;
+    //private NewTabPageRecyclerView mRecyclerView;
     private NewTabPageScrollView mScrollView;
 
     private NewTabPageLayout mNewTabPageLayout;
@@ -263,8 +263,14 @@ public class NewTabPageView
         mScrollView.setBackgroundColor(
                     ApiCompatibilityUtils.getColor(getResources(), R.color.ntp_bg));
         mScrollView.enableBottomShadow(SHADOW_COLOR);
+        TouchEnabledDelegate touchEnabledDelegate = new TouchEnabledDelegate() {
+            @Override
+            public void setTouchEnabled(boolean enabled) {
+                mScrollView.setTouchEnabled(enabled);
+            }
+        };
         mContextMenuManager =
-                new ContextMenuManager(mActivity, mManager.getNavigationDelegate(), mScrollView);
+                new ContextMenuManager(mActivity, mManager.getNavigationDelegate(), touchEnabledDelegate);
         mNewTabPageLayout = (NewTabPageLayout) findViewById(R.id.ntp_content);
 
         mActivity.getWindowAndroid().addContextMenuCloseListener(mContextMenuManager);
@@ -656,7 +662,7 @@ public class NewTabPageView
      * scroll.
      */
     private void setupScrollHandling() {
-        TraceEvent.begin(TAG + ".setupScrollHandling()");
+        /*TraceEvent.begin(TAG + ".setupScrollHandling()");
         mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
@@ -681,14 +687,14 @@ public class NewTabPageView
                 return false;
             }
         });
-        TraceEvent.end(TAG + ".setupScrollHandling()");
+        TraceEvent.end(TAG + ".setupScrollHandling()");*/
     }
 
     private void handleScroll() {
-        if (mPendingSnapScroll) {
+        /*if (mPendingSnapScroll) {
             mRecyclerView.removeCallbacks(mSnapScrollRunnable);
             mRecyclerView.postDelayed(mSnapScrollRunnable, SNAP_SCROLL_DELAY_MS);
-        }
+        }*/
         updateSearchBoxOnScroll();
     }
 
@@ -775,7 +781,7 @@ public class NewTabPageView
         }
 
         // Update snap scrolling for the fakebox.
-        mRecyclerView.setContainsLocationBar(mManager.isLocationBarShownInNTP());
+        //mRecyclerView.setContainsLocationBar(mManager.isLocationBarShownInNTP());
 
         updateTileGridPlaceholderVisibility();
 
@@ -1173,7 +1179,7 @@ public class NewTabPageView
             assert mPendingSnapScroll;
             mPendingSnapScroll = false;
 
-            mRecyclerView.snapScroll(mSearchBoxView, getHeight());
+            //mRecyclerView.snapScroll(mSearchBoxView, getHeight());
         }
     }
 
