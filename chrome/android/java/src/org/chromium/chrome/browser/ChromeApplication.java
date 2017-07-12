@@ -46,6 +46,8 @@ import org.chromium.chrome.browser.vr_shell.OnExitVrRequestListener;
 import org.chromium.chrome.browser.vr_shell.VrIntentUtils;
 import org.chromium.chrome.browser.vr_shell.VrShellDelegate;
 
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
+
 /**
  * Basic application functionality that should be shared among all browser applications that use
  * chrome layer.
@@ -62,6 +64,8 @@ public class ChromeApplication extends Application {
     public BraveSyncWorker mBraveSyncWorker = null;
     // Stats updater
     public StatsUpdaterWorker mStatsUpdaterWorker = null;
+    // Mixpanel global object
+    public MixpanelAPI mMixpanelInstance = null;
 
     // Called by the framework for ALL processes. Runs before ContentProviders are created.
     // Quirk: context.getApplicationContext() returns null during this method.
