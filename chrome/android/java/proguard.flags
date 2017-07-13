@@ -44,3 +44,6 @@
 -keepnames class org.chromium.content.browser.input.* {
   *;
 }
+
+-dontwarn com.mixpanel.android.R**
+
