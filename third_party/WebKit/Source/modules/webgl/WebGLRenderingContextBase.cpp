@@ -3404,7 +3404,7 @@ Nullable<Vector<String>> WebGLRenderingContextBase::getSupportedExtensions() {
     if (frame) {
         allowed = frame->Loader().Client()->AllowFingerprinting();
         if (!allowed && !canvas()->wasBlockedByFingerprinting()) {
-            frame->Loader().Client()->DeniedFingerprinting();;
+            frame->Loader().Client()->DeniedFingerprinting();
         }
     }
     if (!allowed)
