@@ -38,6 +38,7 @@ class WorkerContentSettingsClient : public blink::WebContentSettingsClient {
                                    const blink::WebSecurityOrigin& context,
                                    const blink::WebURL& url) override;
 
+  bool AllowFingerprinting() override;
  private:
   explicit WorkerContentSettingsClient(
       const WorkerContentSettingsClient& other);
