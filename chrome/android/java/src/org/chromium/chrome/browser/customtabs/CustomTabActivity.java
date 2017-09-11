@@ -356,8 +356,7 @@ public class CustomTabActivity extends ChromeActivity {
         getToolbarManager().setCloseButtonDrawable(mIntentDataProvider.getCloseButtonDrawable());
         getToolbarManager().setShowTitle(mIntentDataProvider.getTitleVisibilityState()
                 == CustomTabsIntent.SHOW_PAGE_TITLE);
-        if (CustomTabsConnection.getInstance(getApplication())
-                .shouldHideDomainForSession(mSession)) {
+        if (mConnection.shouldHideDomainForSession(mSession)) {
             getToolbarManager().setUrlBarHidden(true);
         }
         int toolbarColor = mIntentDataProvider.getToolbarColor();
@@ -436,7 +435,7 @@ public class CustomTabActivity extends ChromeActivity {
                     int scriptsBlocked, int fingerprintsBlocked) {
                 braveShieldsCountUpdate(url, adsAndTrackers, httpsUpgrades, scriptsBlocked, fingerprintsBlocked);
             }
-        }
+        };
 
         return  tabModelSelectorImpl;
     }
