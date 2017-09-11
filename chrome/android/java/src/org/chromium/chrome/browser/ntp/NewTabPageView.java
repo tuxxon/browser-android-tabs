@@ -331,7 +331,7 @@ public class NewTabPageView
 
         mNewTabPageLayout.addOnLayoutChangeListener(this);
         setSearchProviderInfo(searchProviderHasLogo, searchProviderIsGoogle);
-        mSearchProviderLogoView.showSearchProviderInitialView();
+        //mSearchProviderLogoView.showSearchProviderInitialView();
 
         mTileGroup.startObserving(getMaxTileRows(searchProviderHasLogo) * getMaxTileColumns());
 
