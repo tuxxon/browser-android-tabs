@@ -269,7 +269,7 @@ bool ContentSettingsObserver::AllowFingerprinting() {
   bool result = true;
   Send(new ChromeViewHostMsg_AllowFingerprinting(
       routing_id(),
-      GURL(frame->Top()->GetDocument().Url()).host(),
+      GURL(frame->Top()->ToWebLocalFrame()->GetDocument().Url()).host(),
       &result));
 
   return result;
@@ -553,7 +553,7 @@ void ContentSettingsObserver::DeniedScript() {
   }
 
   Send(new ChromeViewHostMsg_DeniedScript(routing_id(),
-          GURL(frame->Top()->GetDocument().Url()).spec()));
+          GURL(frame->Top()->ToWebLocalFrame()->GetDocument().Url()).spec()));
 }
 
 void ContentSettingsObserver::DeniedFingerprinting() {
@@ -563,7 +563,7 @@ void ContentSettingsObserver::DeniedFingerprinting() {
   }
 
   Send(new ChromeViewHostMsg_DeniedFingerprinting(routing_id(),
-          GURL(frame->Top()->GetDocument().Url()).spec()));
+          GURL(frame->Top()->ToWebLocalFrame()->GetDocument().Url()).spec()));
 }
 
 void ContentSettingsObserver::OnLoadBlockedPlugins(
