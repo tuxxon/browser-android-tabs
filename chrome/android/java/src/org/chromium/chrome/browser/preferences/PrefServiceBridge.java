@@ -359,6 +359,22 @@ public class PrefServiceBridge {
     }
 
     /**
+     * @return true if Desktop View is enabled.
+     * The default is false.
+     */
+    public boolean desktopViewEnabled() {
+        return nativeGetDesktopViewEnabled();
+    }
+
+    /**
+     * @return Whether Desktop View is managed by policy.
+     */
+    public boolean desktopViewManaged() {
+        return isContentSettingManaged(ContentSettingsType.CONTENT_SETTINGS_TYPE_DESKTOP_VIEW);
+    }
+
+
+    /**
      * @return true if background sync is managed by policy.
      */
     public boolean isBackgroundSyncManaged() {
@@ -419,6 +435,13 @@ public class PrefServiceBridge {
      */
     public void setJavaScriptEnabled(boolean enabled) {
         setContentSettingEnabled(ContentSettingsType.CONTENT_SETTINGS_TYPE_JAVASCRIPT, enabled);
+    }
+
+    /**
+     * Enable or disable Desktop View .
+     */
+    public void setDesktopViewEnabled(boolean enabled) {
+        nativeSetDesktopViewEnabled(enabled);
     }
 
     /**
@@ -1154,6 +1177,7 @@ public class PrefServiceBridge {
     private native boolean nativeGetAcceptCookiesManagedByCustodian();
     private native boolean nativeGetAutoplayEnabled();
     private native boolean nativeGetBackgroundSyncEnabled();
+    private native boolean nativeGetDesktopViewEnabled();
     private native boolean nativeGetBlockThirdPartyCookiesEnabled();
     private native boolean nativeGetBlockThirdPartyCookiesManaged();
     private native boolean nativeGetRememberPasswordsEnabled();
@@ -1200,6 +1224,7 @@ public class PrefServiceBridge {
     private native void nativeSetAutoplayEnabled(boolean allow);
     private native void nativeSetAllowCookiesEnabled(boolean allow);
     private native void nativeSetBackgroundSyncEnabled(boolean allow);
+    private native void nativeSetDesktopViewEnabled(boolean enabled);
     private native void nativeSetBlockThirdPartyCookiesEnabled(boolean enabled);
     private native void nativeSetClipboardEnabled(boolean allow);
     private native void nativeSetDoNotTrackEnabled(boolean enabled);

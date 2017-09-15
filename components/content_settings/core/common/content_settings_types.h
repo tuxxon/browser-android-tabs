@@ -107,6 +107,9 @@ enum ContentSettingsType {
   // Used to store whether to allow a website to install a payment handler.
   CONTENT_SETTINGS_TYPE_PAYMENT_HANDLER,
 
+  // This content setting type is for displaying desktop version of the website
+  CONTENT_SETTINGS_TYPE_DESKTOP_VIEW,
+
   CONTENT_SETTINGS_NUM_TYPES,
 };
 
