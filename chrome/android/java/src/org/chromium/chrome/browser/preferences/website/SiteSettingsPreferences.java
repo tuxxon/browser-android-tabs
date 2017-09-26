@@ -55,7 +55,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
     static final String STORAGE_KEY = "use_storage";
     //static final String TRANSLATE_KEY = "translate";
     static final String USB_KEY = "usb";
-    static final String DESKTOP_VIEW_SETTINGS_KEY = "desktop_view";
+    //static final String DESKTOP_VIEW_SETTINGS_KEY = "desktop_view";
 
     // Whether the Protected Content menu is available for display.
     boolean mProtectedContentMenuAvailable;
@@ -99,8 +99,8 @@ public class SiteSettingsPreferences extends PreferenceFragment
             return ContentSettingsType.CONTENT_SETTINGS_TYPE_COOKIES;
         } else if (JAVASCRIPT_KEY.equals(key)) {
             return ContentSettingsType.CONTENT_SETTINGS_TYPE_JAVASCRIPT;
-        } else if (DESKTOP_VIEW_SETTINGS_KEY.equals(key)) {
-            return ContentSettingsType.CONTENT_SETTINGS_TYPE_DESKTOP_VIEW;
+        /*} else if (DESKTOP_VIEW_SETTINGS_KEY.equals(key)) {
+            return ContentSettingsType.CONTENT_SETTINGS_TYPE_DESKTOP_VIEW;*/
         } else if (LOCATION_KEY.equals(key)) {
             return ContentSettingsType.CONTENT_SETTINGS_TYPE_GEOLOCATION;
         } else if (MICROPHONE_KEY.equals(key)) {
@@ -145,7 +145,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
             getPreferenceScreen().removePreference(findPreference(STORAGE_KEY));
             //getPreferenceScreen().removePreference(findPreference(TRANSLATE_KEY));
             getPreferenceScreen().removePreference(findPreference(USB_KEY));
-            getPreferenceScreen().removePreference(findPreference(DESKTOP_VIEW_SETTINGS_KEY));
+            //getPreferenceScreen().removePreference(findPreference(DESKTOP_VIEW_SETTINGS_KEY));
         } else {
             // If both Autoplay and Protected Content menus are available, they'll be tucked under
             // the Media key. Otherwise, we can remove the Media menu entry.
@@ -208,7 +208,7 @@ public class SiteSettingsPreferences extends PreferenceFragment
             websitePrefs.add(MICROPHONE_KEY);
             websitePrefs.add(NOTIFICATIONS_KEY);
             websitePrefs.add(POPUPS_KEY);
-            websitePrefs.add(DESKTOP_VIEW_SETTINGS_KEY);
+            //websitePrefs.add(DESKTOP_VIEW_SETTINGS_KEY);
             if (ChromeFeatureList.isEnabled(ChromeFeatureList.SOUND_CONTENT_SETTING)) {
                 websitePrefs.add(SOUND_KEY);
             }
@@ -234,8 +234,8 @@ public class SiteSettingsPreferences extends PreferenceFragment
                 checked = PrefServiceBridge.getInstance().isAcceptCookiesEnabled();
             } else if (JAVASCRIPT_KEY.equals(prefName)) {
                 checked = PrefServiceBridge.getInstance().javaScriptEnabled();
-            } else if (DESKTOP_VIEW_SETTINGS_KEY.equals(prefName)) {
-                checked = PrefServiceBridge.getInstance().desktopViewEnabled();
+            /*} else if (DESKTOP_VIEW_SETTINGS_KEY.equals(prefName)) {
+                checked = PrefServiceBridge.getInstance().desktopViewEnabled();*/
             } else if (LOCATION_KEY.equals(prefName)) {
                 checked = LocationSettings.getInstance().areAllLocationSettingsEnabled();
             } else if (MICROPHONE_KEY.equals(prefName)) {
@@ -273,9 +273,9 @@ public class SiteSettingsPreferences extends PreferenceFragment
                 p.setSummary(ContentSettingsResources.getAdsBlockedListSummary());
             } else if (SOUND_KEY.equals(prefName) && !checked) {
                 p.setSummary(ContentSettingsResources.getSoundBlockedListSummary());
-            } else if (DESKTOP_VIEW_SETTINGS_KEY.equals(prefName)) {
+            }/* else if (DESKTOP_VIEW_SETTINGS_KEY.equals(prefName)) {
                 p.setSummary( checked ? ContentSettingsResources.getDesktopViewEnabledSummary() : ContentSettingsResources.getDesktopViewDisabledSummary());
-            } else {
+            }*/ else {
                 p.setSummary(ContentSettingsResources.getCategorySummary(contentType, checked));
             }
 
