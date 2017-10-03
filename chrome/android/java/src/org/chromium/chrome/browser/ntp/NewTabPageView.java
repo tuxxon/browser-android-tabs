@@ -386,6 +386,7 @@ public class NewTabPageView
         });*/
         initializeSearchBoxScrollHandling();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         VrShellDelegate.registerVrModeObserver(this);
         if (VrShellDelegate.isInVr()) onEnterVr();
@@ -397,7 +398,6 @@ public class NewTabPageView
             }
         });
 
-        initializeBraveStats();
         mInitialized = true;
 
         TraceEvent.end(TAG + ".initialize()");
@@ -542,8 +542,8 @@ public class NewTabPageView
     /**
      * Sets up Brave stats.
      */
-    private void initializeBraveStats() {
-        TraceEvent.begin(TAG + ".initializeBraveStats()");
+    private void updateBraveStats() {
+        TraceEvent.begin(TAG + ".updateBraveStats()");
         long trackersBlockedCount = mSharedPreferences.getLong(PREF_TRACKERS_BLOCKED_COUNT, 0);
         long adsBlockedCount = mSharedPreferences.getLong(PREF_ADS_BLOCKED_COUNT, 0);
         long httpsUpgradesCount = mSharedPreferences.getLong(PREF_HTTPS_UPGRADES_COUNT, 0);
@@ -556,7 +556,7 @@ public class NewTabPageView
         adsBlockedCountTextView.setText(getBraveStatsStringFormNumber(adsBlockedCount));
         httpsUpgradesCountTextView.setText(getBraveStatsStringFormNumber(httpsUpgradesCount));
         estTimeSavedTextView.setText(getBraveStatsStringFromTime(estimatedMillisecondsSaved / 1000));
-        TraceEvent.end(TAG + ".initializeBraveStats()");
+        TraceEvent.end(TAG + ".updateBraveStats()");
     }
 
     /*
@@ -1079,6 +1079,8 @@ public class NewTabPageView
         // starts the FRE in one orientation, changes an orientation and then leaves the FRE the
         // UiConfig will have the wrong orientation. https://crbug.com/683886.
         mUiConfig.updateDisplayStyle();
+
+        updateBraveStats();
 
         if (visibility == VISIBLE) {
             updateVoiceSearchButtonVisibility();
