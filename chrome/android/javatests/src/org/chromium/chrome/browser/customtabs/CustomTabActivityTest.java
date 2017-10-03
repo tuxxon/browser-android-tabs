@@ -65,6 +65,7 @@ import org.chromium.base.metrics.RecordHistogram;
 import org.chromium.base.test.util.CallbackHelper;
 import org.chromium.base.test.util.CommandLineFlags;
 import org.chromium.base.test.util.DisabledTest;
+import org.chromium.base.test.util.Feature;
 import org.chromium.base.test.util.Restriction;
 import org.chromium.base.test.util.RetryOnFailure;
 import org.chromium.chrome.R;
@@ -1273,6 +1274,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     public void testToolbarTitleOnlyStateWithProperTitlePrerendered()
             throws Exception, InterruptedException {
         final String url = mWebServer.setResponse("/test.html", ONLOAD_TITLE_CHANGE, null);
@@ -1578,6 +1580,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @RetryOnFailure
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     public void testPostMessageThroughPrerenderWithRequestBeforeMayLaunchUrl()
@@ -1591,6 +1594,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @RetryOnFailure
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     public void testPostMessageThroughPrerenderWithRequestBeforeIntent()
@@ -1604,6 +1608,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @RetryOnFailure
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     public void testPostMessageThroughPrerenderWithRequestAfterIntent()
@@ -1623,6 +1628,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @RetryOnFailure
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -1637,6 +1643,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @RetryOnFailure
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -1651,6 +1658,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @RetryOnFailure
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -1875,6 +1883,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     public void testPrerenderingAndChangingFragmentIgnoreFragments() throws Exception {
@@ -1884,6 +1893,7 @@ public class CustomTabActivityTest {
     /** Same as above, but the prerender matching should not ignore the fragment. */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     public void testPrerenderingAndChangingFragmentDontIgnoreFragments() throws Exception {
@@ -1935,6 +1945,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -1945,6 +1956,7 @@ public class CustomTabActivityTest {
     /** Same as above, but the hidden tab matching should not ignore the fragment. */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -2048,6 +2060,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     public void testPrerenderingCorrectUrl() throws Exception {
@@ -2060,6 +2073,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -2073,6 +2087,7 @@ public class CustomTabActivityTest {
      **/
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     @CommandLineFlags.Add({ChromeSwitches.DISABLE_FIRST_RUN_EXPERIENCE,
@@ -2286,6 +2301,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     public void testPrerenderingWithReferrer() throws Exception {
@@ -2298,6 +2314,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -2327,6 +2344,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     public void testPrerenderingWithMismatchedReferrers() throws Exception {
@@ -2339,6 +2357,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @RetryOnFailure
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
@@ -2602,6 +2621,7 @@ public class CustomTabActivityTest {
      */
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     public void testHistoryAfterPrerenderHit() throws Exception {
         verifyHistoryAfterSpeculation(CustomTabsConnection.SpeculationParams.PRERENDER, true);
@@ -2609,6 +2629,7 @@ public class CustomTabActivityTest {
 
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     public void testHistoryAfterPrerenderMiss() throws Exception {
         verifyHistoryAfterSpeculation(CustomTabsConnection.SpeculationParams.PRERENDER, false);
@@ -2616,6 +2637,7 @@ public class CustomTabActivityTest {
 
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
     public void testHistoryAfterHiddenTabHit() throws Exception {
@@ -2624,6 +2646,7 @@ public class CustomTabActivityTest {
 
     @Test
     @SmallTest
+    @Feature({"ApplyLater"})
     @Restriction(RESTRICTION_TYPE_NON_LOW_END_DEVICE)
     @CommandLineFlags.Add("enable-features=" + ChromeFeatureList.CCT_BACKGROUND_TAB)
     public void testHistoryAfterHiddenTabMiss() throws Exception {
