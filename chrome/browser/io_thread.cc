@@ -34,6 +34,7 @@
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/data_usage/tab_id_annotator.h"
 #include "chrome/browser/data_use_measurement/chrome_data_use_ascriber.h"
+#include "chrome/browser/net/blockers/blockers_worker.h"
 #include "chrome/browser/net/chrome_network_delegate.h"
 #include "chrome/browser/net/dns_probe_service.h"
 #include "chrome/browser/net/proxy_service_factory.h"
@@ -498,6 +499,7 @@ void IOThread::Init() {
           BrowserThread::GetTaskRunnerForThread(BrowserThread::UI));
 #endif  // defined(OS_ANDROID)
 
+  globals_->blockers_worker_.reset(new net::blockers::BlockersWorker());
   globals_->dns_probe_service =
       std::make_unique<chrome_browser_net::DnsProbeService>();
 
@@ -705,6 +707,7 @@ void IOThread::ConstructSystemRequestContext() {
   if (!base::FeatureList::IsEnabled(network::features::kNetworkService)) {
     auto chrome_network_delegate = std::make_unique<ChromeNetworkDelegate>(
         extension_event_router_forwarder(), &system_enable_referrers_);
+    chrome_network_delegate->set_blockers_worker(globals_->blockers_worker_);
     // By default, data usage is considered off the record.
     chrome_network_delegate->set_data_use_aggregator(
         globals_->data_use_aggregator.get(),
