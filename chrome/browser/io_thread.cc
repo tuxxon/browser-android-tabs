@@ -786,6 +786,7 @@ void IOThread::ConstructSystemRequestContext() {
 
   auto chrome_network_delegate = std::make_unique<ChromeNetworkDelegate>(
       extension_event_router_forwarder(), &system_enable_referrers_);
+  chrome_network_delegate->set_incognito(false);
   chrome_network_delegate->set_blockers_worker(globals_->blockers_worker_);
   // By default, data usage is considered off the record.
   chrome_network_delegate->set_data_use_aggregator(
