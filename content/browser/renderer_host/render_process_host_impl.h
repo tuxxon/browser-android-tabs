@@ -575,6 +575,8 @@ class CONTENT_EXPORT RenderProcessHostImpl
   base::SequencedTaskRunner& GetAecDumpFileTaskRunner();
   void OnAec3Enabled();
 
+  bool NeedPlayVideoInBackground() const;
+
   static void OnMojoError(int render_process_id, const std::string& error);
 
   template <typename InterfaceType>
