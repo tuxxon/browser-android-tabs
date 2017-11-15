@@ -344,6 +344,7 @@ void ContentSettingsRegistry::Init() {
            WebsiteSettingsRegistry::DESKTOP |
                WebsiteSettingsRegistry::PLATFORM_ANDROID,
            ContentSettingsInfo::INHERIT_IF_LESS_PERMISSIVE);
+<<<<<<< HEAD
 
   Register(CONTENT_SETTINGS_TYPE_PAYMENT_HANDLER, "payment-handler",
            CONTENT_SETTING_ASK, WebsiteSettingsInfo::UNSYNCABLE,
@@ -355,14 +356,22 @@ void ContentSettingsRegistry::Init() {
                WebsiteSettingsRegistry::PLATFORM_ANDROID,
            ContentSettingsInfo::INHERIT_IF_LESS_PERMISSIVE);
 
-  Register(CONTENT_SETTINGS_TYPE_DESKTOP_VIEW, "desktop-view",
-           CONTENT_SETTING_BLOCK, //default is a mobile view for pages
-           WebsiteSettingsInfo::UNSYNCABLE,
-           WhitelistedSchemes(),
-           ValidSettings(CONTENT_SETTING_BLOCK, CONTENT_SETTING_ALLOW),
-           WebsiteSettingsInfo::REQUESTING_ORIGIN_AND_TOP_LEVEL_ORIGIN_SCOPE,
-           WebsiteSettingsRegistry::PLATFORM_ANDROID,
-           ContentSettingsInfo::INHERIT_IF_LESS_PERMISSIVE);
+   Register(CONTENT_SETTINGS_TYPE_DESKTOP_VIEW, "desktop-view",
+            CONTENT_SETTING_BLOCK, //default is a mobile view for pages
+            WebsiteSettingsInfo::UNSYNCABLE,
+            WhitelistedSchemes(),
+            ValidSettings(CONTENT_SETTING_BLOCK, CONTENT_SETTING_ALLOW),
+            WebsiteSettingsInfo::REQUESTING_ORIGIN_AND_TOP_LEVEL_ORIGIN_SCOPE,
+            WebsiteSettingsRegistry::PLATFORM_ANDROID,
+            ContentSettingsInfo::INHERIT_IF_LESS_PERMISSIVE);
+
+    Register(CONTENT_SETTINGS_TYPE_PLAY_VIDEO_IN_BACKGROUND, "play-video-in-background",
+             CONTENT_SETTING_BLOCK, //default is not to allow to play video in background
+             WebsiteSettingsInfo::UNSYNCABLE, WhitelistedSchemes(),
+             ValidSettings(CONTENT_SETTING_ALLOW, CONTENT_SETTING_BLOCK),
+             WebsiteSettingsInfo::REQUESTING_ORIGIN_ONLY_SCOPE,
+             WebsiteSettingsRegistry::PLATFORM_ANDROID,
+             ContentSettingsInfo::INHERIT_IF_LESS_PERMISSIVE);
 }
 
 void ContentSettingsRegistry::Register(
