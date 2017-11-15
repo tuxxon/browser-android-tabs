@@ -1016,6 +1016,8 @@ class CONTENT_EXPORT RenderFrameHostImpl
   // Called when the frame has consumed the StreamHandle and it can be released.
   void OnStreamHandleConsumed(const GURL& stream_url);
 
+  bool NeedPlayVideoInBackground() const;
+
   // TODO(ekaramad): One major purpose behind the API is to traverse the frame
   // tree top-down to visit the  RenderWidgetHostViews of interest in the most
   // efficient way. We might want to revisit this API, remove it from RFHImpl,
