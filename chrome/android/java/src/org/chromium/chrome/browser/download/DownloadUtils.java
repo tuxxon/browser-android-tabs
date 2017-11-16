@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.net.Uri;
+import android.os.FileUriExposedException;
 import android.os.StrictMode;
 import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
@@ -607,6 +608,8 @@ public class DownloadUtils {
             Log.d(TAG, "Activity not found for " + intent.getType() + " over "
                     + intent.getData().getScheme(), ex);
         } catch (SecurityException ex) {
+            Log.d(TAG, "cannot open intent: " + intent, ex);
+        } catch (FileUriExposedException ex) {
             Log.d(TAG, "cannot open intent: " + intent, ex);
         }
 
