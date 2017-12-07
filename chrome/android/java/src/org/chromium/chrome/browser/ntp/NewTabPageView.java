@@ -270,7 +270,7 @@ public class NewTabPageView
                 mRecyclerView.removeCallbacks(mUpdateSearchBoxOnScrollRunnable);
                 mRecyclerView.post(mUpdateSearchBoxOnScrollRunnable);
             }
-        });
+        });*/
 
         // Don't store a direct reference to the activity, because it might change later if the tab
         // is reparented.
@@ -278,8 +278,7 @@ public class NewTabPageView
             mTab.getActivity().closeContextMenu();
         };
         mContextMenuManager = new ContextMenuManager(mManager.getNavigationDelegate(),
-                mRecyclerView::setTouchEnabled, closeContextMenuCallback);
-        mTab.getWindowAndroid().addContextMenuCloseListener(mContextMenuManager);*/
+                mScrollView::setTouchEnabled, closeContextMenuCallback);
 
         ViewStub stub = (ViewStub) findViewById(R.id.new_tab_page_layout_stub);
         stub.setLayoutResource(R.layout.new_tab_page_scroll_view);
@@ -287,17 +286,9 @@ public class NewTabPageView
         mScrollView.setBackgroundColor(
                     ApiCompatibilityUtils.getColor(getResources(), R.color.ntp_bg));
         mScrollView.enableBottomShadow(SHADOW_COLOR);
-        TouchEnabledDelegate touchEnabledDelegate = new TouchEnabledDelegate() {
-            @Override
-            public void setTouchEnabled(boolean enabled) {
-                mScrollView.setTouchEnabled(enabled);
-            }
-        };
-        mContextMenuManager =
-                new ContextMenuManager(mActivity, mManager.getNavigationDelegate(), touchEnabledDelegate);
-        mNewTabPageLayout = (NewTabPageLayout) findViewById(R.id.ntp_content);
 
-        mActivity.getWindowAndroid().addContextMenuCloseListener(mContextMenuManager);
+        mTab.getWindowAndroid().addContextMenuCloseListener(mContextMenuManager);
+        mNewTabPageLayout = (NewTabPageLayout) findViewById(R.id.ntp_content);
 
         Profile profile = Profile.getLastUsedProfile();
         OfflinePageBridge offlinePageBridge =
