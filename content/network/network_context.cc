@@ -234,7 +234,7 @@ URLRequestContextOwner NetworkContext::MakeURLRequestContext(
     builder.set_host_resolver(std::move(remapped_host_resolver));
   }
   builder.set_accept_language("en-us,en");
-  builder.set_user_agent(GetContentClient()->GetUserAgent());
+  builder.set_user_agent(GetContentClient()->GetUserAgent(""));
 
   // The cookie configuration is in this method, which is only used by the
   // network process, and not ApplyContextParamsToBuilder which is used by the
