@@ -12,9 +12,8 @@
     <color name="white_alpha_70">#B3FFFFFF</color>
     <color name="google_blue_300" tools:ignore="UnusedResources">#7BAAF7</color>
     <color name="google_blue_500" tools:ignore="UnusedResources">#4285F4</color>
-    <color name="google_blue_700">#3367D6</color>
+    <color name="google_blue_700">#5CACF2</color>
 
     <color name="dropdown_divider_color">#E5E5E5</color>
     <color name="dropdown_dark_divider_color">#C0C0C0</color>
 </resources>
-
