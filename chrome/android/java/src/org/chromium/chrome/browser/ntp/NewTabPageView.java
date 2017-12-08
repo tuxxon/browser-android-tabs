@@ -274,11 +274,6 @@ public class NewTabPageView
 
         // Don't store a direct reference to the activity, because it might change later if the tab
         // is reparented.
-        Runnable closeContextMenuCallback = () -> {
-            mTab.getActivity().closeContextMenu();
-        };
-        mContextMenuManager = new ContextMenuManager(mManager.getNavigationDelegate(),
-                mScrollView::setTouchEnabled, closeContextMenuCallback);
 
         ViewStub stub = (ViewStub) findViewById(R.id.new_tab_page_layout_stub);
         stub.setLayoutResource(R.layout.new_tab_page_scroll_view);
@@ -286,7 +281,11 @@ public class NewTabPageView
         mScrollView.setBackgroundColor(
                     ApiCompatibilityUtils.getColor(getResources(), R.color.ntp_bg));
         mScrollView.enableBottomShadow(SHADOW_COLOR);
-
+        Runnable closeContextMenuCallback = () -> {
+            mTab.getActivity().closeContextMenu();
+        };
+        mContextMenuManager = new ContextMenuManager(mManager.getNavigationDelegate(),
+                mScrollView::setTouchEnabled, closeContextMenuCallback);
         mTab.getWindowAndroid().addContextMenuCloseListener(mContextMenuManager);
         mNewTabPageLayout = (NewTabPageLayout) findViewById(R.id.ntp_content);
 
