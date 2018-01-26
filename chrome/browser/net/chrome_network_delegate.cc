@@ -493,7 +493,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_TpBlockPreFileWork(
 }
 
 void ChromeNetworkDelegate::OnBeforeURLRequest_TpBlockFileWork() {
-  base::ThreadRestrictions::AssertIOAllowed();
+  base::AssertBlockingAllowed();
   DCHECK_CURRENTLY_ON(content::BrowserThread::FILE);
   blockers_worker_->InitTP();
 }
@@ -570,7 +570,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_AdBlockPreFileWork(
 }
 
 void ChromeNetworkDelegate::OnBeforeURLRequest_AdBlockFileWork(std::shared_ptr<OnBeforeURLRequestContext> ctx) {
-  base::ThreadRestrictions::AssertIOAllowed();
+  base::AssertBlockingAllowed();
   DCHECK_CURRENTLY_ON(content::BrowserThread::FILE);
   blockers_worker_->InitAdBlock();
 
@@ -654,7 +654,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_HttpsePreFileWork(
 
 void ChromeNetworkDelegate::OnBeforeURLRequest_HttpseFileWork(net::URLRequest* request, std::shared_ptr<OnBeforeURLRequestContext> ctx)
 {
-  base::ThreadRestrictions::AssertIOAllowed();
+  base::AssertBlockingAllowed();
   DCHECK_CURRENTLY_ON(content::BrowserThread::FILE);
   DCHECK(ctx->request_identifier != 0);
   ctx->newURL = blockers_worker_->getHTTPSURL(&ctx->UrlCopy, ctx->request_identifier);
