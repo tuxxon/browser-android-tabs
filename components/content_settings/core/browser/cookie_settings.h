@@ -72,7 +72,7 @@ class CookieSettings : public RefcountedKeyedService {
   bool ShouldDeleteCookieOnExit(
       const ContentSettingsForOneType& cookie_settings,
       const std::string& domain,
-      bool is_https) const;
+      bool is_https);
 
   // Returns all patterns with a non-default cookie setting, mapped to their
   // actual settings, in the precedence order of the setting rules. |settings|
