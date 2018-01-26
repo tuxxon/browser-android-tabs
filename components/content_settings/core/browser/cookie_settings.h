@@ -67,7 +67,7 @@ class CookieSettings : public RefcountedKeyedService {
   // affecting cookies from https sites that are not marked as "Secure".
   //
   // This may be called on any thread.
-  bool ShouldDeleteCookieOnExit(const GURL& url) const;
+  bool ShouldDeleteCookieOnExit(const GURL& url);
 
   // Returns all patterns with a non-default cookie setting, mapped to their
   // actual settings, in the precedence order of the setting rules. |settings|
