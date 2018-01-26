@@ -78,7 +78,7 @@ bool CookieSettings::IsCookieSessionOnly(const GURL& origin) {
 bool CookieSettings::ShouldDeleteCookieOnExit(
     const ContentSettingsForOneType& cookie_settings,
     const std::string& domain,
-    bool is_https) const {
+    bool is_https) {
   GURL origin = net::cookie_util::CookieOriginToURL(domain, is_https);
   ContentSetting setting;
   GetCookieSetting(origin, origin, nullptr, &setting);
