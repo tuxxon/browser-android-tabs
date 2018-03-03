@@ -1917,6 +1917,7 @@ public class BraveSyncWorker {
                   BookmarkId bookmarkId = mNewBookmarkModel.getMobileFolderId();
 
                   mDefaultFolder = bookmarkId;
+                  Log.i(TAG, "mDefaultFolder is " + mDefaultFolder);
                 }
             });
         }
