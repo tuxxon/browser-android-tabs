@@ -64,6 +64,14 @@ public class ADBlockUtils {
     private static final String ETAG_NAME = "Etag";
     private static final String TIME_NAME = "Time";
 
+    public static class RegionalADBlockersSt {
+      RegionalADBlockersSt() {
+        readData = false;
+      }
+      public List<String> uuid;
+      public boolean readData;
+    }
+
     public static void saveETagInfo(Context context, String prepend, EtagObject etagObject) {
         SharedPreferences sharedPref = context.getSharedPreferences(ETAGS_PREFS_NAME, 0);
 
@@ -121,9 +129,10 @@ public class ADBlockUtils {
         }
     }
 
-    public static List<String> readRegionalABData(Context context, String eTagPrepend, String verNumber,
+    public static RegionalADBlockersSt readRegionalABData(Context context, String eTagPrepend, String verNumber,
                                                   String deviceLanguage) {
-        List<String> uuid = new ArrayList<String>();
+        RegionalADBlockersSt result = new RegionalADBlockersSt();
+        result.uuid = new ArrayList<String>();
 
         try {
             JsonReader reader = new JsonReader(new InputStreamReader(context.getAssets().open(REGIONAL_BLOCKERS_LIST_FILE)));
@@ -149,7 +158,7 @@ public class ADBlockUtils {
                         }
                     }
                     if (foundLanguage && 0 != uuidCurrent.length()) {
-                        uuid.add(uuidCurrent);
+                        result.uuid.add(uuidCurrent);
                     }
                     reader.endObject();
                 }
@@ -165,14 +174,17 @@ public class ADBlockUtils {
         }
         catch (IOException e) {
         }
-        for (int i = 0; i < uuid.size(); i++) {
-            ADBlockUtils.readData(context,
-                uuid.get(i) + ".dat",
-                ADBlockUtils.ADBLOCK_REGIONAL_URL + uuid.get(i) + ".dat",
-                ADBlockUtils.ETAG_PREPEND_REGIONAL_ADBLOCK + uuid.get(i), verNumber,
+        for (int i = 0; i < result.uuid.size(); i++) {
+            boolean res = ADBlockUtils.readData(context,
+                result.uuid.get(i) + ".dat",
+                ADBlockUtils.ADBLOCK_REGIONAL_URL + result.uuid.get(i) + ".dat",
+                ADBlockUtils.ETAG_PREPEND_REGIONAL_ADBLOCK + result.uuid.get(i), verNumber,
                 ADBlockUtils.ADBLOCK_REGIONAL_LOCALFILENAME_DOWNLOADED, false);
+            if (res) {
+              result.readData = res;
+            }
         }
-        if (0 == uuid.size()) {
+        if (0 == result.uuid.size()) {
             File dataPathCreated = new File(
                 PathUtils.getDataDirectory(),
                 ADBlockUtils.ADBLOCK_REGIONAL_LOCALFILENAME_DOWNLOADED);
@@ -185,7 +197,7 @@ public class ADBlockUtils {
             }
         }
 
-        return uuid;
+        return result;
     }
 
     public static byte[] readLocalFile(File path) {
