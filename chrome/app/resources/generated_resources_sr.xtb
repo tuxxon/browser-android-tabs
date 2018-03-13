@@ -219,7 +219,7 @@
 <translation id="1317502925920562130">Је ли ово почетна страница коју сте очекивали?</translation>
 <translation id="1319979322914001937">Апликација која приказује филтрирану листу додатака из Brave веб-продавнице. Додатке са листе можете да инсталирате директно из апликације.</translation>
 <translation id="132090119144658135">Подударање наслова:</translation>
-<translation id="1326317727527857210">Да би вам картице биле доступне на другим уређајима, пријавите се у Brave.</translation>
+<translation id="7253276740368043692">Да би вам картице биле доступне на другим уређајима, пријавите се у Brave.</translation>
 <translation id="1327074568633507428">Штампач у Google Cloud штампању</translation>
 <translation id="1327977588028644528">Мрежни пролаз</translation>
 <translation id="1329584516321524826">Ажурирано је малопре</translation>
@@ -1423,7 +1423,7 @@
 <translation id="3144126448740580210">ГОТОВО</translation>
 <translation id="3144135466825225871">Замена crx датотеке није успела. Проверите да ли се датотека користи.</translation>
 <translation id="3144647712221361880">Отворите линк као</translation>
-<translation id="3149510190863420837">Brave апликације</translation>
+<translation id="300669147395456190">Brave апликације</translation>
 <translation id="3150927491400159470">Поново учитај са сервера</translation>
 <translation id="315116470104423982">Мобилни подаци</translation>
 <translation id="3151539355209957474">Време почетка</translation>
@@ -1505,7 +1505,7 @@
 <translation id="3280237271814976245">Сачувај &amp;као...</translation>
 <translation id="3280243678470289153">Остани у Brave-у</translation>
 <translation id="3280431534455935878">Припрема</translation>
-<translation id="3282568296779691940">Пријављивање у Brave</translation>
+<translation id="82609232232243542">Пријављивање у Brave</translation>
 <translation id="3285322247471302225">Нова &amp;картица</translation>
 <translation id="3288047731229977326">Додаци покренути у режиму програмера могу да нашкоде рачунару. Ако нисте програмер, требало би да онемогућите ове додатке покренуте у режиму програмера да бисте се заштитили.</translation>
 <translation id="3289856944988573801">Да бисте потражили ажурирања, користите етернет или Wi-Fi.</translation>
@@ -2548,7 +2548,7 @@
 <translation id="4953808748584563296">Подразумевани наранџасти аватар</translation>
 <translation id="4955814292505481804">Годишња</translation>
 <translation id="4958834709409349617">На телефонима „<ph name="PHONE_NAME_1" />“ и „<ph name="PHONE_NAME_2" />“ омогућите обавештења тако што ћете пратити ове кораке:</translation>
-<translation id="495931528404527476">У Brave-у</translation>
+<translation id="6078442581074612226">У Brave-у</translation>
 <translation id="496226124210045887">Директоријум који сте изабрали садржи осетљиве датотеке. Јесте ли сигурни да желите да одобрите апликацији „$1“ сталан приступ за читање за овај директоријум?</translation>
 <translation id="4964455510556214366">Распоред</translation>
 <translation id="4964673849688379040">Проверава се...</translation>
@@ -4198,7 +4198,7 @@
 <translation id="7564847347806291057">Заврши процес</translation>
 <translation id="7566118625369982896">Управљајте линковима апликације Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Brave подаци су обрисани</translation>
+<translation id="7814200940910057384">Brave подаци су обрисани</translation>
 <translation id="7568790562536448087">Ажурирање</translation>
 <translation id="7571643774869182231">Нема довољно меморијског простора за ажурирање</translation>
 <translation id="7573172247376861652">Напуњеност батерије</translation>
@@ -5018,7 +5018,7 @@
 <translation id="8899851313684471736">Отвори везу у новом &amp;прозору</translation>
 <translation id="8902667442496790482">Отвори подешавања за услугу Изаберите за говор</translation>
 <translation id="8903921497873541725">Увећавање</translation>
-<translation id="8904976895050290827">Синхронизација Brave прегледача</translation>
+<translation id="3149880132460839085">Синхронизација Brave прегледача</translation>
 <translation id="8908902564709148335">Упозорење: Омогућили сте ознаку --scripts-require-action на овом рачунару, што ограничава функције овог додатка. Међутим, други уређаји можда не подржавају ову ознаку или на њима није омогућена. На овим уређајима овај додатак такође може:</translation>
 <translation id="8910146161325739742">Делите екран</translation>
 <translation id="8910222113987937043">Промене обележивача, историје, лозинки и других подешавања се више неће синхронизовати са Google налогом. Међутим, постојећи подаци ће се и даље чувати на Google налогу и можете да управљате њима на <ph name="BEGIN_LINK" />Google контролној табли<ph name="END_LINK" />.</translation>
