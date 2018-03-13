@@ -421,7 +421,7 @@ public class NewTabPageView
      *                        has focus.
      */
     public void setFakeboxDelegate(FakeboxDelegate fakeboxDelegate) {
-        mRecyclerView.setFakeboxDelegate(fakeboxDelegate);
+        //mRecyclerView.setFakeboxDelegate(fakeboxDelegate);
     }
 
     /**
