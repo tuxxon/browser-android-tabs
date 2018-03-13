@@ -400,7 +400,7 @@ public class NewTabPageView extends FrameLayout implements TileGroup.Observer, O
      *                        has focus.
      */
     public void setFakeboxDelegate(FakeboxDelegate fakeboxDelegate) {
-        mRecyclerView.setFakeboxDelegate(fakeboxDelegate);
+        //mRecyclerView.setFakeboxDelegate(fakeboxDelegate);
     }
 
     /**
