@@ -225,6 +225,8 @@ class IOThread : public content::BrowserThreadDelegate {
   network::mojom::NetworkService* GetNetworkServiceOnUIThread();
 
   certificate_transparency::TreeStateTracker* ct_tree_tracker() const;
+  
+  std::shared_ptr<net::blockers::BlockersWorker> ResetBlockersWorker();
 
  private:
   // BrowserThreadDelegate implementation, runs on the IO thread.
