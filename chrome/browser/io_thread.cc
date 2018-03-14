@@ -530,6 +530,12 @@ void IOThread::Init() {
 
 }
 
+std::shared_ptr<net::blockers::BlockersWorker> IOThread::ResetBlockersWorker() {
+  globals_->blockers_worker_.reset(new net::blockers::BlockersWorker());
+
+  return globals_->blockers_worker_;
+}
+
 void IOThread::CleanUp() {
   base::debug::LeakTracker<SafeBrowsingURLRequestContext>::CheckForLeaks();
 
