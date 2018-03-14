@@ -228,6 +228,8 @@ class IOThread : public content::BrowserThreadDelegate {
   // NetworkService is not enabld, this is a Mojo interface to the IOThread's
   // in-process NetworkService that lives on the IO thread.
   content::mojom::NetworkService* GetNetworkServiceOnUIThread();
+  
+  std::shared_ptr<net::blockers::BlockersWorker> ResetBlockersWorker();
 
  private:
   // BrowserThreadDelegate implementation, runs on the IO thread.
