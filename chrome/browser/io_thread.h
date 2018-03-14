@@ -218,6 +218,8 @@ class IOThread : public content::BrowserThreadDelegate {
   void SetUpProxyService(network::URLRequestContextBuilderMojo* builder) const;
 
   certificate_transparency::TreeStateTracker* ct_tree_tracker() const;
+  
+  std::shared_ptr<net::blockers::BlockersWorker> ResetBlockersWorker();
 
  private:
   // BrowserThreadDelegate implementation, runs on the IO thread.
