@@ -207,6 +207,7 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
             mContext = context;
         }
 
+        @Override
         protected Long doInBackground(Void... params) {
             if (null == mContext) {
                 return null;
