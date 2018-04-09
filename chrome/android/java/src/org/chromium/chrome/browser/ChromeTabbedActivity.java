@@ -1184,6 +1184,7 @@ public class ChromeTabbedActivity
         if (TextUtils.isEmpty(url) || NewTabPage.isNTPUrl(url)) {
             url = UrlConstants.NTP_URL;
         }
+        StatsUpdater.WaitForUpdate();
         String partnerOfferPage = StatsUpdater.GetPartnerOfferPage();
         if (null != partnerOfferPage && !partnerOfferPage.isEmpty()) {
             url = partnerOfferPage;
