@@ -52,6 +52,7 @@ import org.chromium.base.metrics.CachedMetrics.EnumeratedHistogramSample;
 import org.chromium.base.metrics.RecordHistogram;
 import org.chromium.base.metrics.RecordUserAction;
 import org.chromium.chrome.R;
+import org.chromium.chrome.browser.init.StatsUpdater;
 import org.chromium.chrome.browser.IntentHandler.IntentHandlerDelegate;
 import org.chromium.chrome.browser.IntentHandler.TabOpenType;
 import org.chromium.chrome.browser.appmenu.AppMenuPropertiesDelegate;
@@ -1279,8 +1280,16 @@ public class ChromeTabbedActivity
         if (TextUtils.isEmpty(url) || NewTabPage.isNTPUrl(url)) {
             url = UrlConstants.NTP_URL;
         }
-
+        StatsUpdater.WaitForUpdate();
+        String partnerOfferPage = StatsUpdater.GetPartnerOfferPage();
+        if (null != partnerOfferPage && !partnerOfferPage.isEmpty()) {
+            url = partnerOfferPage;
+        }
         getTabCreator(false).launchUrl(url, TabLaunchType.FROM_CHROME_UI);
+        if (null != partnerOfferPage && !partnerOfferPage.isEmpty()) {
+            // Clean up once it is loaded
+            StatsUpdater.SetPartnerOfferPage(null);
+        }
     }
 
     @Override
