@@ -47,8 +47,9 @@ import org.json.JSONObject;
 
 import java.lang.IllegalArgumentException;
 import java.lang.Runnable;
-import java.util.Calendar;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.HashSet;
@@ -92,11 +93,13 @@ public class BraveSyncWorker {
 
     private static final String ANDROID_SYNC_JS = "android_sync.js";
     private static final String BUNDLE_JS = "bundle.js";
-    private static final String NICEWARE_JS = "niceware.js";
+    private static final String CRYPTO_JS = "crypto.js";
     private static final String ANDROID_SYNC_WORDS_JS = "android_sync_words.js";
 
     private static final String ORIGINAL_SEED_KEY = "originalSeed";
     private static final String DEVICES_NAMES = "devicesNames";
+    public static final int NICEWARE_WORD_COUNT = 16;
+    public static final int BIP39_WORD_COUNT = 24;
 
     private SyncThread mSyncThread = null;
 
@@ -815,11 +818,11 @@ public class BraveSyncWorker {
     }
 
     private synchronized void FetchSyncRecords(String lastRecordFetchTime) {
-        Log.i(TAG, "!!!Sync is not ready");
         if (!mSyncIsReady.IsReady()) {
+            Log.i(TAG, "!!!Sync is not ready");
             return;
         }
-        Log.i(TAG, "!!!in FetchSyncRecords lastRecordFetchTime == " + lastRecordFetchTime);
+        //Log.i(TAG, "!!!in FetchSyncRecords lastRecordFetchTime == " + lastRecordFetchTime);
         if (0 == mTimeLastFetch && 0 == mTimeLastFetchExecuted) {
             // It is the very first time of the sync start
             // Set device name
@@ -2018,7 +2021,6 @@ public class BraveSyncWorker {
         boolean prefSyncDefault = false;
         boolean prefSync = mSharedPreferences.getBoolean(
                 PREF_SYNC_SWITCH, prefSyncDefault);
-        Log.i(TAG, "IsSyncEnabled: " + prefSync);
         return prefSync;
     }
 
@@ -2030,7 +2032,6 @@ public class BraveSyncWorker {
         boolean prefSyncBookmarksDefault = true;
         boolean prefSyncBookmarks = mSharedPreferences.getBoolean(
                 PREF_SYNC_BOOKMARKS, prefSyncBookmarksDefault);
-        Log.i(TAG, "IsSyncBookmarksEnabled: " + prefSyncBookmarks);
         return prefSyncBookmarks;
     }
 
@@ -2039,6 +2040,7 @@ public class BraveSyncWorker {
     }
 
     class SyncThread extends Thread {
+        @Override
         public void run() {
           SharedPreferences sharedPref = mContext.getSharedPreferences(PREF_NAME, 0);
           mTimeLastFetch = sharedPref.getLong(PREF_LAST_FETCH_NAME, 0);
@@ -2060,7 +2062,6 @@ public class BraveSyncWorker {
                   for (int i = 0; i < BraveSyncWorker.SYNC_SLEEP_ATTEMPTS_COUNT; i++) {
                       Thread.sleep(BraveSyncWorker.INTERVAL_TO_FETCH_RECORDS / BraveSyncWorker.SYNC_SLEEP_ATTEMPTS_COUNT);
                       if (mInterruptSyncSleep) {
-                          Log.w(TAG, "SyncThread Interrupted");
                           break;
                       }
                   }
@@ -2098,6 +2099,7 @@ public class BraveSyncWorker {
             mSyncScreensObserver.onResetSync();
         }
         new Thread() {
+            @Override
             public void run() {
               nativeResetSync(ORIGINAL_SEED_KEY);
               nativeResetSync(SyncRecordType.BOOKMARKS + CREATE_RECORD);
@@ -2201,10 +2203,10 @@ public class BraveSyncWorker {
 
     class JsObjectWordsToBytes {
         @JavascriptInterface
-        public void nicewareOutput(String result) {
+        public void cryptoOutput(String result) {
             if (null == result || 0 == result.length()) {
                 if (null != mSyncScreensObserver) {
-                    mSyncScreensObserver.onSyncError("Incorrect niceware output");
+                    mSyncScreensObserver.onSyncError("Incorrect crypto output");
                 }
                 return;
             }
@@ -2212,50 +2214,20 @@ public class BraveSyncWorker {
             JsonReader reader = null;
             String seed = "";
             try {
-                reader = new JsonReader(new InputStreamReader(new ByteArrayInputStream(result.getBytes()), "UTF-8"));
-                reader.beginObject();
-                while (reader.hasNext()) {
-                    String name = reader.nextName();
-                    if (name.equals("data")) {
-                        reader.beginArray();
-                        while (reader.hasNext()) {
-                            if (0 != seed.length()) {
-                                seed += ", ";
-                            }
-                            seed += String.valueOf(reader.nextInt());
-                        }
-                        reader.endArray();
-                    } else {
-                        reader.skipValue();
+                JSONObject data = new JSONObject(result);
+                Iterator<?> keys = data.keys();
+                while(keys.hasNext()) {
+                    String key = (String)keys.next();
+                    String value = data.getString(key);
+                    if (0 != seed.length()) {
+                        seed += ",";
                     }
-               }
-               reader.endObject();
-            } catch (UnsupportedEncodingException e) {
-                Log.e(TAG, "nicewareOutput UnsupportedEncodingException error " + e);
-                if (null != mSyncScreensObserver) {
-                    mSyncScreensObserver.onSyncError("nicewareOutput UnsupportedEncodingException error " + e);
+                    seed += value;
                 }
-            } catch (IOException e) {
-                Log.e(TAG, "nicewareOutput IOException error " + e);
+            } catch (JSONException e) {
+                Log.e(TAG, "cryptoOutput JSONException error " + e);
                 if (null != mSyncScreensObserver) {
-                    mSyncScreensObserver.onSyncError("nicewareOutput IOException error " + e);
-                }
-            } catch (IllegalStateException e) {
-                Log.e(TAG, "nicewareOutput IllegalStateException error " + e);
-                if (null != mSyncScreensObserver) {
-                    mSyncScreensObserver.onSyncError("nicewareOutput IllegalStateException error " + e);
-                }
-            } catch (IllegalArgumentException exc) {
-                Log.e(TAG, "nicewareOutput generation exception " + exc);
-                if (null != mSyncScreensObserver) {
-                    mSyncScreensObserver.onSyncError("nicewareOutput generation exception " + exc);
-                }
-            } finally {
-                if (null != reader) {
-                    try {
-                        reader.close();
-                    } catch (IOException e) {
-                    }
+                    mSyncScreensObserver.onSyncError("cryptoOutput JSONException error " + e);
                 }
             }
             //Log.i(TAG, "!!!seed == " + seed);
@@ -2266,17 +2238,17 @@ public class BraveSyncWorker {
         }
 
         @JavascriptInterface
-        public void nicewareOutputCodeWords(String result) {
+        public void cryptoOutputCodeWords(String result) {
             if (null == result || 0 == result.length()) {
                 if (null != mSyncScreensObserver) {
-                    mSyncScreensObserver.onSyncError("Incorrect niceware output for code words");
+                    mSyncScreensObserver.onSyncError("Incorrect crypto output for code words");
                 }
                 return;
             }
 
-            String[] codeWords = result.replace('\"', ' ').replace('[', ' ').replace(']', ' ').split(",");
+            String[] codeWords = result.replace('\"', ' ').trim().split(" ");
 
-            if (16 != codeWords.length) {
+            if (NICEWARE_WORD_COUNT != codeWords.length && BIP39_WORD_COUNT != codeWords.length) {
                 Log.e(TAG, "Incorrect number of code words");
                 if (null != mSyncScreensObserver) {
                     mSyncScreensObserver.onSyncError("Incorrect number of code words");
@@ -2286,6 +2258,13 @@ public class BraveSyncWorker {
 
             if (null != mSyncScreensObserver) {
                 mSyncScreensObserver.onCodeWordsReceived(codeWords);
+            }
+        }
+
+        @JavascriptInterface
+        public void cryptoOutputError(String error) {
+            if (null != mSyncScreensObserver) {
+                mSyncScreensObserver.onSyncError(error);
             }
         }
     }
@@ -2309,7 +2288,7 @@ public class BraveSyncWorker {
 
                         String toLoad = "<script type='text/javascript'>";
                         try {
-                            String script = convertStreamToString(mContext.getAssets().open(NICEWARE_JS));
+                            String script = convertStreamToString(mContext.getAssets().open(CRYPTO_JS));
                             toLoad += script.replace("%", "%25").replace("\n", "%0A") + "</script><script type='text/javascript'>";
                             script = convertStreamToString(mContext.getAssets().open(ANDROID_SYNC_WORDS_JS));
                             toLoad += script.replace("%", "%25").replace("\n", "%0A") + "</script>";
@@ -2340,13 +2319,13 @@ public class BraveSyncWorker {
         String wordsJSArray = "";
         for (int i = 0; i < words.length; i++) {
             if (0 == i) {
-                wordsJSArray = "[";
+                wordsJSArray = "'";
             } else {
-                wordsJSArray += ", ";
+                wordsJSArray += " ";
             }
-            wordsJSArray += "'" + words[i] + "'";
+            wordsJSArray += words[i];
             if (words.length - 1 == i) {
-                wordsJSArray += "]";
+                wordsJSArray += "'";
             }
         }
         //Log.i(TAG, "!!!words == " + wordsJSArray);
