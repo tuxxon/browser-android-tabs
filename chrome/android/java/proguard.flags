@@ -45,5 +45,4 @@
   *;
 }
 
--dontwarn com.mixpanel.android.R**
-
+#-dontwarn com.mixpanel.android.R**
