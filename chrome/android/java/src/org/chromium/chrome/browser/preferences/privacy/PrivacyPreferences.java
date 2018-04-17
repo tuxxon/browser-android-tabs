@@ -54,6 +54,7 @@ public class PrivacyPreferences extends PreferenceFragment
     //private static final String PREF_DO_NOT_TRACK = "do_not_track";
     //private static final String PREF_USAGE_AND_CRASH_REPORTING = "usage_and_crash_reports";
     //private static final String PREF_PHYSICAL_WEB = "physical_web";
+    private static final String PREF_CLOSE_TABS_ON_EXIT = "close_tabs_on_exit";
 
     private ManagedPreferenceDelegate mManagedPreferenceDelegate;
 
@@ -149,6 +150,11 @@ public class PrivacyPreferences extends PreferenceFragment
         sendMetricsPref.setOnPreferenceChangeListener(this);
         sendMetricsPref.setManagedPreferenceDelegate(mManagedPreferenceDelegate);*/
 
+        ChromeBaseCheckBoxPreference closeTabsOnExitPref =
+                (ChromeBaseCheckBoxPreference) findPreference(PREF_CLOSE_TABS_ON_EXIT);
+        closeTabsOnExitPref.setOnPreferenceChangeListener(this);
+        closeTabsOnExitPref.setManagedPreferenceDelegate(mManagedPreferenceDelegate);
+
         updateSummaries();
     }
 
@@ -191,6 +197,11 @@ public class PrivacyPreferences extends PreferenceFragment
             sharedPreferencesEditor.putBoolean(PREF_SEND_METRICS, (boolean)newValue);
             sharedPreferencesEditor.apply();
         }*/
+        else if (PREF_CLOSE_TABS_ON_EXIT.equals(key)) {
+            SharedPreferences.Editor sharedPreferencesEditor = ContextUtils.getAppSharedPreferences().edit();
+            sharedPreferencesEditor.putBoolean(PREF_CLOSE_TABS_ON_EXIT, (boolean)newValue);
+            sharedPreferencesEditor.apply();
+        }
 
         return true;
     }
