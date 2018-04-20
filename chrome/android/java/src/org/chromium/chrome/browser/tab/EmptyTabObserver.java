@@ -128,9 +128,6 @@ public class EmptyTabObserver implements TabObserver {
     public void onNavigationEntriesDeleted(Tab tab) {}
 
     @Override
-    public void onBraveShieldsCountUpdate(String url, int adsAndTrackers, int httpsUpgrades) { }
-
-    @Override
     public void onBraveShieldsCountUpdate(String url, int adsAndTrackers, int httpsUpgrades,
             int scriptsBlocked, int fingerprintsBlocked) { }
 }

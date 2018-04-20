@@ -397,8 +397,6 @@ public class NewTabPageView
             }
         });*/
         initializeSearchBoxScrollHandling();
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         VrShellDelegate.registerVrModeObserver(this);
         if (VrShellDelegate.isInVr()) onEnterVr();
