@@ -217,7 +217,7 @@
 <translation id="1316136264406804862">검색 중...</translation>
 <translation id="1319979322914001937">Brave 웹 스토어의 필터링된 확장 프로그램 목록을 보여주는 앱입니다. 앱에서 직접 이 목록에 있는 확장 프로그램을 설치할 수 있습니다.</translation>
 <translation id="132090119144658135">주제 일치:</translation>
-<translation id="1326317727527857210">다른 기기에서 탭을 가져오려면 Brave에 로그인하세요.</translation>
+<translation id="7253276740368043692">다른 기기에서 탭을 가져오려면 Brave에 로그인하세요.</translation>
 <translation id="1327074568633507428">Google 클라우드 프린트의 프린터</translation>
 <translation id="1327977588028644528">게이트웨이</translation>
 <translation id="1329584516321524826">조금 전 업데이트됨</translation>
@@ -1428,7 +1428,7 @@
 <translation id="3141917231319778873">기기(<ph name="DEVICE_NAME" />)에서 지원하지 않는 요청입니다.</translation>
 <translation id="3144126448740580210">완료</translation>
 <translation id="3144647712221361880">다음으로 링크 열기</translation>
-<translation id="3149510190863420837">Brave 앱</translation>
+<translation id="300669147395456190">Brave 앱</translation>
 <translation id="3150927491400159470">강력 새로고침</translation>
 <translation id="315116470104423982">모바일 데이터</translation>
 <translation id="3151539355209957474">시작 시간</translation>
@@ -1510,7 +1510,7 @@
 <translation id="3280237271814976245">다른 이름으로 저장(&amp;A)...</translation>
 <translation id="3280243678470289153">Brave 사용 계속하기</translation>
 <translation id="3280431534455935878">준비 중</translation>
-<translation id="3282568296779691940">Brave에 로그인</translation>
+<translation id="82609232232243542">Brave에 로그인</translation>
 <translation id="3285322247471302225">새 탭(&amp;T)</translation>
 <translation id="3288047731229977326">개발자 모드로 실행 중인 확장 프로그램은 컴퓨터에 해를 줄 수 있습니다. 개발자가 아닌 경우 컴퓨터를 안전하게 사용하려면 개발자 모드로 실행 중인 확장 프로그램을 사용 중지해야 합니다.</translation>
 <translation id="3289856944988573801">업데이트를 확인하려면 이더넷 또는 Wi-Fi를 사용하세요.</translation>
@@ -2549,7 +2549,7 @@
 <translation id="4953689047182316270">접근성 이벤트에 응답</translation>
 <translation id="4953808748584563296">기본 주황색 아바타</translation>
 <translation id="4955814292505481804">연간</translation>
-<translation id="495931528404527476">Brave</translation>
+<translation id="6078442581074612226">Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> - <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">선택한 폴더에 민감한 파일이 포함되어 있습니다. 이 폴더에 '$1' 영구 읽기 액세스를 승인하시겠습니까?</translation>
 <translation id="4964455510556214366">배열</translation>
@@ -4209,7 +4209,7 @@
 <translation id="7564847347806291057">프로세스 종료</translation>
 <translation id="7566118625369982896">Play 앱 링크 관리</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Brave 데이터 삭제됨</translation>
+<translation id="7814200940910057384">Brave 데이터 삭제됨</translation>
 <translation id="7568790562536448087">업데이트</translation>
 <translation id="7571643774869182231">저장용량이 부족하여 업데이트할 수 없음</translation>
 <translation id="7573172247376861652">배터리 충전</translation>
@@ -5036,7 +5036,7 @@
 <translation id="8899851313684471736">새 창에서 링크 열기(&amp;W)</translation>
 <translation id="8902667442496790482">텍스트 읽어주기 설정 열기</translation>
 <translation id="8903921497873541725">확대</translation>
-<translation id="8904976895050290827">크롬 동기화</translation>
+<translation id="3149880132460839085">크롬 동기화</translation>
 <translation id="8908902564709148335">경고: 이 컴퓨터에 확장 프로그램 기능을 제한하는 --scripts-require-action 플래그를 사용하도록 설정했습니다. 하지만 다른 기기에서 이 플래그를 지원하지 않거나 사용하도록 설정하지 않았을 수도 있습니다. 이러한 기기에서 이 확장 프로그램이 수행할 수 있는 작업은 다음과 같습니다.</translation>
 <translation id="8909233240676134608">컴퓨터가 도메인에 가입하지 못했습니다. 서버가 지정된 Kerberos 암호화 유형을 지원하지 않습니다. '옵션 더보기'에서 암호화 설정을 확인하세요.</translation>
 <translation id="8910146161325739742">화면 공유하기</translation>

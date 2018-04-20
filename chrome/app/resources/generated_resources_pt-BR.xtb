@@ -217,7 +217,7 @@
 <translation id="1316136264406804862">Pesquisando...</translation>
 <translation id="1319979322914001937">Um aplicativo que mostra uma lista filtrada de extensões da Brave Web Store. As extensões que estão na lista podem ser instaladas diretamente a partir do app.</translation>
 <translation id="132090119144658135">Correspondência de assunto:</translation>
-<translation id="1326317727527857210">Para ver as guias dos seus outros dispositivos, faça login no Brave.</translation>
+<translation id="7253276740368043692">Para ver as guias dos seus outros dispositivos, faça login no Brave.</translation>
 <translation id="1327074568633507428">Impressora no Google Cloud Print</translation>
 <translation id="1327977588028644528">Gateway</translation>
 <translation id="1329584516321524826">Atualizada agora</translation>
@@ -1427,7 +1427,7 @@ Para ver mais informações, visite nossa <ph name="BEGIN_LINK" />Central de Aju
 <translation id="3141917231319778873">Essa solicitação não é compatível com "<ph name="DEVICE_NAME" />".</translation>
 <translation id="3144126448740580210">CONCLUÍDO</translation>
 <translation id="3144647712221361880">Abrir link como</translation>
-<translation id="3149510190863420837">Aplicativos do Brave</translation>
+<translation id="300669147395456190">Aplicativos do Brave</translation>
 <translation id="3150927491400159470">Recarregamento forçado</translation>
 <translation id="315116470104423982">Dados do celular</translation>
 <translation id="3151539355209957474">Horário de início</translation>
@@ -1509,7 +1509,7 @@ Para ver mais informações, visite nossa <ph name="BEGIN_LINK" />Central de Aju
 <translation id="3280237271814976245">Salvar &amp;como...</translation>
 <translation id="3280243678470289153">Ficar no Brave</translation>
 <translation id="3280431534455935878">Preparando</translation>
-<translation id="3282568296779691940">Fazer login no Brave</translation>
+<translation id="82609232232243542">Fazer login no Brave</translation>
 <translation id="3285322247471302225">Nova &amp;guia</translation>
 <translation id="3288047731229977326">Extensões executadas no modo de desenvolvedor podem prejudicar o computador. Se você não for desenvolvedor, para sua segurança, desative essas extensões que estão sendo executadas no modo de desenvolvedor.</translation>
 <translation id="3289856944988573801">Para verificar se há atualizações, utilize Ethernet ou Wi-Fi.</translation>
@@ -2549,7 +2549,7 @@ Para ver mais informações, visite nossa <ph name="BEGIN_LINK" />Central de Aju
 <translation id="4953689047182316270">Responder a eventos de acessibilidade</translation>
 <translation id="4953808748584563296">Avatar laranja padrão</translation>
 <translation id="4955814292505481804">Anual</translation>
-<translation id="495931528404527476">No Brave</translation>
+<translation id="6078442581074612226">No Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" />: <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">A pasta selecionada contém arquivos confidenciais. Tem certeza que quer conceder a "$1" acesso permanente de leitura a esta pasta?</translation>
 <translation id="4964455510556214366">Organização</translation>
@@ -4212,7 +4212,7 @@ A instalação do <ph name="APP_NAME" /> faz o download de <ph name="DOWNLOAD_SI
 <translation id="7564847347806291057">Encerrar processo</translation>
 <translation id="7566118625369982896">Gerenciar links do app do Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Dados do Brave apagados</translation>
+<translation id="7814200940910057384">Dados do Brave apagados</translation>
 <translation id="7568790562536448087">Atualização</translation>
 <translation id="7571643774869182231">Armazenamento insuficiente para a atualização</translation>
 <translation id="7573172247376861652">Carga da bateria</translation>
@@ -5040,7 +5040,7 @@ Pessoas com conexões mais lentas talvez não vejam seu conteúdo.</translation>
 <translation id="8899851313684471736">Abrir link em uma nova &amp;janela</translation>
 <translation id="8902667442496790482">Abrir configurações de Selecionar para ouvir</translation>
 <translation id="8903921497873541725">Aumentar zoom</translation>
-<translation id="8904976895050290827">Sincronização do Brave</translation>
+<translation id="3149880132460839085">Sincronização do Brave</translation>
 <translation id="8908902564709148335">Atenção: você ativou a sinalização scripts-exigem-ação neste computador, o que limita as capacidades desta extensão. No entanto, outros dispositivos podem não suportar essa sinalização ou a ativação dela. Nesses dispositivos, esta extensão também pode:</translation>
 <translation id="8909233240676134608">Não é possível vincular a máquina ao domínio. O servidor não é compatível com os tipos de criptografia do Kerberos especificados. Para ver as configurações de criptografia, acesse "Mais opções".</translation>
 <translation id="8910146161325739742">Compartilhar sua tela</translation>

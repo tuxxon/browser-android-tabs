@@ -217,7 +217,7 @@
 <translation id="1316136264406804862">શોધી રહ્યું છે ...</translation>
 <translation id="1319979322914001937">એક ઍપ્લિકેશન કે જે Brave વેબ દુકાનથી ફિલ્ટર કરેલ એક્સ્ટેન્શન્સની સૂચિ દર્શાવે છે. સૂચિમાંના એક્સ્ટેન્શન્સ સીધા જ ઍપ્લિકેશનથી ઇન્સ્ટોલ કરી શકાય છે.</translation>
 <translation id="132090119144658135">વિષય મેળ:</translation>
-<translation id="1326317727527857210">તમારા અન્ય ઉપકરણો પરથી તમારા ટૅબ્સ મેળવવા માટે, Brave માં સાઇન ઇન કરો.</translation>
+<translation id="7253276740368043692">તમારા અન્ય ઉપકરણો પરથી તમારા ટૅબ્સ મેળવવા માટે, Brave માં સાઇન ઇન કરો.</translation>
 <translation id="1327074568633507428">Google મેઘ મુદ્રણ પર પ્રિન્ટર</translation>
 <translation id="1327977588028644528">ગેટવે</translation>
 <translation id="1329584516321524826">હમણા જ અપડેટ કર્યું</translation>
@@ -1423,7 +1423,7 @@
 <translation id="3141917231319778873">આપેલ વિનંતી આના પર સમર્થિત નથી: "<ph name="DEVICE_NAME" />".</translation>
 <translation id="3144126448740580210">થઈ ગયું</translation>
 <translation id="3144647712221361880">આ રીતે લિંક ખોલો</translation>
-<translation id="3149510190863420837">Brave ઍપ્લિકેશનો</translation>
+<translation id="300669147395456190">Brave ઍપ્લિકેશનો</translation>
 <translation id="3150927491400159470">સખત રીતે ફરીથી લોડ કરો</translation>
 <translation id="315116470104423982">મોબાઇલ ડેટા</translation>
 <translation id="3151539355209957474">પ્રારંભ સમય</translation>
@@ -1505,7 +1505,7 @@
 <translation id="3280237271814976245">આ &amp;રૂપમાં સાચવો...</translation>
 <translation id="3280243678470289153">Braveમાં રહો</translation>
 <translation id="3280431534455935878">તૈયારી કરી રહ્યાં છીએ</translation>
-<translation id="3282568296779691940">Brave માં સાઇન ઇન કરો</translation>
+<translation id="82609232232243542">Brave માં સાઇન ઇન કરો</translation>
 <translation id="3285322247471302225">નવું &amp;ટૅબ</translation>
 <translation id="3288047731229977326">વિકાસકર્તા મોડમાં ચાલી રહેલા એક્સટેન્શન્સ તમારા કમ્પ્યુટરને નુકસાન પહોંચાડી શકે છે. જો તમે વિકાસકર્તા નથી, તો તમે સુરક્ષિત રહેવા માટે વિકાસકર્તા મોડમાં ચાલી રહેલા આ એક્સ્ટેન્શન્સને અક્ષમ કરવા જોઈએ.</translation>
 <translation id="3289856944988573801">અપડેટ્સ તપાસવા માટે, કૃપા કરીને ઇથરનેટ અથવા Wi-Fi નો ઉપયોગ કરો.</translation>
@@ -2545,7 +2545,7 @@
 <translation id="4953689047182316270">ઍક્સેસિબિલિટી ઇવેન્ટનો જવાબ આપો</translation>
 <translation id="4953808748584563296">ડિફોલ્ટ નારંગી અવતાર</translation>
 <translation id="4955814292505481804">વાર્ષિક</translation>
-<translation id="495931528404527476">Brave માં</translation>
+<translation id="6078442581074612226">Brave માં</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> - <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">તમે પસંદ કરેલું ફોલ્ડર સંવેદનશીલ ફાઇલો ધરાવે છે. શું તમે ખરેખર "$1" ને આ ફોલ્ડરની કાયમી વાંચવાની ઍક્સેસ આપવા માંગો છો?</translation>
 <translation id="4964455510556214366">ગોઠવણી</translation>
@@ -4206,7 +4206,7 @@
 <translation id="7564847347806291057">પ્રક્રિયાનો અંત કરો</translation>
 <translation id="7566118625369982896">Play ઍપ લિંક મેનેજ કરો</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Brave ડેટા સાફ કર્યો</translation>
+<translation id="7814200940910057384">Brave ડેટા સાફ કર્યો</translation>
 <translation id="7568790562536448087">અપડેટ થઈ રહ્યું છે</translation>
 <translation id="7571643774869182231">અપડેટ માટે પર્યાપ્ત સ્ટોરેજ નથી</translation>
 <translation id="7573172247376861652">બેટરી ચાર્જ</translation>
@@ -5027,7 +5027,7 @@
 <translation id="8899851313684471736">નવી &amp;વિંડોમાં લિંક ખોલો</translation>
 <translation id="8902667442496790482">સાંભળવા માટે પસંદ કરોના સેટિંગ ખોલો</translation>
 <translation id="8903921497873541725">ઝૂમ વધારો</translation>
-<translation id="8904976895050290827">Brave Sync</translation>
+<translation id="3149880132460839085">Brave Sync</translation>
 <translation id="8908902564709148335">ચેતવણી: તમે આ કમ્પ્યુટર પર --scripts-require-action ફ્લેગ સક્ષમ કરેલ છે, જે આ એક્સ્ટેન્શનની ક્ષમતાઓને મર્યાદિત કરે છે. જો કે, અન્ય ઉપકરણો, આ ફ્લેગનું સમર્થન કરી શકશે નહીં અથવા તેમાં સક્ષમ કરેલ હોઈ શકે છે. આ ઉપકરણો પર, આ એક્સ્ટેન્શન આ પણ કરી શકે છે:</translation>
 <translation id="8909233240676134608">મશીનને ડોમેન સાથે જોડી શકતા નથી. સર્વર નિર્દિષ્ટ Kerberos એન્ક્રિપ્શન પ્રકારોને સહાય કરતું નથી. એન્ક્રિપ્શન સેટિંગ માટે "વધુ વિકલ્પો" તપાસો.</translation>
 <translation id="8910146161325739742">તમારી સ્ક્રીન શેર કરો</translation>
