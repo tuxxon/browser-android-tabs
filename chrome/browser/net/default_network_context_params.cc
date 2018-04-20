@@ -31,7 +31,7 @@ network::mojom::NetworkContextParamsPtr CreateDefaultNetworkContextParams() {
   network_context_params->enable_brotli =
       base::FeatureList::IsEnabled(features::kBrotliEncoding);
 
-  network_context_params->user_agent = GetUserAgent();
+  network_context_params->user_agent = GetUserAgent("");
 
   std::string quic_user_agent_id = chrome::GetChannelString();
   if (!quic_user_agent_id.empty())
