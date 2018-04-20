@@ -625,7 +625,7 @@ network::mojom::NetworkContextPtr ContentBrowserClient::CreateNetworkContext(
   network::mojom::NetworkContextPtr network_context;
   network::mojom::NetworkContextParamsPtr context_params =
       network::mojom::NetworkContextParams::New();
-  context_params->user_agent = GetContentClient()->GetUserAgent();
+  context_params->user_agent = GetContentClient()->GetUserAgent("");
   context_params->accept_language = "en-us,en";
   context_params->enable_data_url_support = true;
   context_params->enable_file_url_support = true;
