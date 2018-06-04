@@ -1265,7 +1265,10 @@ public class NewTabPageView
         if (!ChromeFeatureList.isEnabled(ChromeFeatureList.NTP_SHORTCUTS)) return;
 
         ViewGroup shortcuts =
-                (ViewGroup) mRecyclerView.getAboveTheFoldView().findViewById(R.id.shortcuts);
+                (ViewGroup) mNewTabPageLayout.findViewById(R.id.shortcuts);
+        if (shortcuts == null) {
+            return;
+        }
         shortcuts.setVisibility(View.VISIBLE);
 
         shortcuts.findViewById(R.id.bookmarks_button)
