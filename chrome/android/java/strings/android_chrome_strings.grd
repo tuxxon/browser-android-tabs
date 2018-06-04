@@ -592,7 +592,7 @@ CHAR-LIMIT guidelines:
       <message name="IDS_SEARCH_SITE_SUGGESTIONS_SUMMARY" desc="Summary for search and site suggestions.">
         Use prediction services to suggest search terms and websites
       </message>
-      <message name="IDS_SAFE_BROWSING_EXTENDED_REPORTING_TITLE" desc="Title for checkbox that controls whether details of possible security incidents will be sent to Google.">
+      <!--<message name="IDS_SAFE_BROWSING_EXTENDED_REPORTING_TITLE" desc="Title for checkbox that controls whether details of possible security incidents will be sent to Google.">
         Security incidents
       </message>
       <message name="IDS_SAFE_BROWSING_EXTENDED_REPORTING_SUMMARY" desc="Summary for report security incidents.">
@@ -609,7 +609,7 @@ CHAR-LIMIT guidelines:
       </message>
       <message name="IDS_SAFE_BROWSING_SUMMARY" desc="Summary for safe browsing.">
         Protect you and your device from dangerous sites
-      </message>
+      </message>-->
       <message name="IDS_NETWORK_PREDICTIONS_TITLE" desc="Title of a setting in Chrome settings. Followed by a body that describes the setting. If setting is turned on, Chrome will download certain pages to the user’s phone automatically for offline reading. 'predictions' convey the idea that Chrome is using predictive models to figure out pages likely of interest to the user.">
         Use page predictions
       </message>
