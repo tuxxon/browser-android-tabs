@@ -1299,7 +1299,7 @@ public class NewTabPageView
         }
 
         ViewStub shortcutsStub =
-                mRecyclerView.getAboveTheFoldView().findViewById(R.id.shortcuts_stub);
+                mNewTabPageLayout.findViewById(R.id.shortcuts_stub);
         mShortcutsView = (ViewGroup) shortcutsStub.inflate();
 
         mShortcutsView.findViewById(R.id.bookmarks_button)
