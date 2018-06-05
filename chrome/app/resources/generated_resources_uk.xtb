@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">Синхронізацію призупинено</translation>
 <translation id="1319979322914001937">Додаток, який показує відфільтрований список розширень із Веб-магазину Brave. Розширення в цьому списку може встановлювати прямо з додатка.</translation>
 <translation id="132090119144658135">Збіг суб’єкта:</translation>
-<translation id="1326317727527857210">Щоб мати доступ до вкладок з інших пристроїв, увійдіть в обліковий запис Brave.</translation>
+<translation id="7253276740368043692">Щоб мати доступ до вкладок з інших пристроїв, увійдіть в обліковий запис Brave.</translation>
 <translation id="1327074568633507428">Принтер у Google Cloud Print</translation>
 <translation id="1327977588028644528">Шлюз</translation>
 <translation id="1329584516321524826">Щойно оновлено</translation>
@@ -1433,7 +1433,7 @@
 <translation id="3143695347784622594">Надсилання системних даних. Автоматично надсилає в Google дані про діагностику та використання пристрою й додатків. Цей параметр можна будь-коли змінити в <ph name="BEGIN_LINK1" />налаштуваннях<ph name="END_LINK1" /> пристрою. Якщо Історію додатків і веб-пошуку ввімкнено, ця інформація зберігатиметься в обліковому записі. Ви зможете керувати нею в розділі "Моя активність". <ph name="BEGIN_LINK2" />Докладніше<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">ГОТОВО</translation>
 <translation id="3144647712221361880">Відкрити посилання як</translation>
-<translation id="3149510190863420837">Додатки Brave</translation>
+<translation id="300669147395456190">Додатки Brave</translation>
 <translation id="3150927491400159470">Жорстке перезавантаження</translation>
 <translation id="315116470104423982">Мобільне передавання даних</translation>
 <translation id="3151539355209957474">Час початку</translation>
@@ -1513,7 +1513,7 @@
 <translation id="3280237271814976245">Зберегти &amp;як...</translation>
 <translation id="3280243678470289153">Не виходити з Brave</translation>
 <translation id="3280431534455935878">Підготовка</translation>
-<translation id="3282568296779691940">Вхід у Brave</translation>
+<translation id="82609232232243542">Вхід у Brave</translation>
 <translation id="3285322247471302225">Нова &amp;вкладка</translation>
 <translation id="3288047731229977326">Розширення, які працюють у режимі розробника, можуть пошкодити ваш комп’ютер. Якщо ви не розробник, вимкніть їх заради безпеки.</translation>
 <translation id="3289856944988573801">Щоб перевірити наявність оновлень, скористайтеся мережею Ethernet чи Wi-Fi.</translation>
@@ -1649,7 +1649,7 @@
 <translation id="347670947055184738">На жаль, системі не вдалось отримати правило для вашого пристрою.</translation>
 <translation id="347785443197175480">Продовжити надавати хосту <ph name="HOST" /> доступ до ваших камери та мікрофона</translation>
 <translation id="3478685642445675458">Перш ніж видалити особу, розблокуйте свій профіль.</translation>
-<translation id="347919930506963698">Отримайте ще більше від Brave</translation>
+<translation id="2468890881455409104">Отримайте ще більше від Brave</translation>
 <translation id="3479552764303398839">Не зараз</translation>
 <translation id="3480892288821151001">Закріпити вікно ліворуч</translation>
 <translation id="3481915276125965083">На цій сторінці заблоковано такі спливаючі вікна:</translation>
@@ -1712,7 +1712,7 @@
 <translation id="3576324189521867626">Установлено</translation>
 <translation id="3578594933904494462">До вмісту цієї вкладки надано доступ.</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; хоче надати групі &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt;, якою ви керуєте, доступ до принтера &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt;. Якщо ви приймете це запрошення, усі учасники групи зможуть користуватися цим принтером.</translation>
-<translation id="3582972582564653026">Синхронізуйте та персоналізуйте роботу Brave на всіх своїх пристроях</translation>
+<translation id="5477319665405831211">Синхронізуйте та персоналізуйте роботу Brave на всіх своїх пристроях</translation>
 <translation id="3584169441612580296">Читати й змінювати фотографії, музику та інші медіафайли на комп’ютері</translation>
 <translation id="3587482841069643663">Все</translation>
 <translation id="358796204584394954">Введіть цей код на пристрої <ph name="DEVICE_NAME" />, щоб підключити:</translation>
@@ -2567,7 +2567,7 @@
 <translation id="4953689047182316270">реагувати на події спеціальних можливостей</translation>
 <translation id="4953808748584563296">Стандартний оранжевий аватар</translation>
 <translation id="4955814292505481804">Річна ліцензія</translation>
-<translation id="495931528404527476">У Brave</translation>
+<translation id="6078442581074612226">У Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> – <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">У вибраній папці містяться файли з приватною інформацією. Справді надати програмі "$1" постійний доступ для читання з цієї папки?</translation>
 <translation id="4964455510556214366">Упорядкування</translation>
@@ -4264,7 +4264,7 @@
 <translation id="7564847347806291057">Завершити процес</translation>
 <translation id="7566118625369982896">Керувати посиланнями на додатки в Google Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Дані Brave видалено</translation>
+<translation id="7814200940910057384">Дані Brave видалено</translation>
 <translation id="7568790562536448087">Оновлення</translation>
 <translation id="7571643774869182231">Замало пам’яті для оновлення</translation>
 <translation id="7573172247376861652">Заряджання акумулятора</translation>
@@ -5106,7 +5106,7 @@
 <translation id="8899851313684471736">Відкрити посилання у новому &amp;вікні</translation>
 <translation id="8902667442496790482">Відкрити налаштування служби Читання з екрана</translation>
 <translation id="8903921497873541725">Збільшити масштаб</translation>
-<translation id="8904976895050290827">Синхронізація Brave</translation>
+<translation id="3149880132460839085">Синхронізація Brave</translation>
 <translation id="8908902564709148335">Застереження. Ви ввімкнули на цьому комп’ютері параметр "Потрібні дії зі сценаріями", який обмежує можливості цього розширення. На інших пристроях цей параметр може не підтримуватись або бути вимкненим. На таких пристроях це розширення також має перелічені нижче дозволи.</translation>
 <translation id="8909233240676134608">Не вдається приєднати пристрій до домену. Сервер не підтримує вказані типи шифрування Kerberos. Перегляньте розділ "Додаткові параметри", щоб налаштувати шифрування.</translation>
 <translation id="8909833622202089127">Сайт відстежує місцезнаходження</translation>

@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">Penyegerakan dijeda</translation>
 <translation id="1319979322914001937">Apl yang menunjukkan senarai ditapis bagi sambungan daripada Gedung Web Brave. Sambungan dalam senarai boleh dipasang terus daripada apl.</translation>
 <translation id="132090119144658135">Padanan Subjek:</translation>
-<translation id="1326317727527857210">Log masuk ke Brave untuk mendapatkan tab daripada peranti anda yang lain.</translation>
+<translation id="7253276740368043692">Log masuk ke Brave untuk mendapatkan tab daripada peranti anda yang lain.</translation>
 <translation id="1327074568633507428">Pencetak di Cetakan Awan Google</translation>
 <translation id="1327977588028644528">Get Laluan</translation>
 <translation id="1329584516321524826">Dikemas kini sebentar tadi</translation>
@@ -1434,7 +1434,7 @@ Untuk mendapatkan maklumat lanjut, lawati <ph name="BEGIN_LINK" />Pusat Bantuan<
 <translation id="3143695347784622594">Hantar data sistem. Data diagnostik dan penggunaan peranti serta apl dihantar secara automatik kepada Google. Anda boleh menukar tetapan ini pada bila-bila masa dalam <ph name="BEGIN_LINK1" />tetapan<ph name="END_LINK1" /> peranti anda. Jika anda menghidupkan Aktiviti Web &amp; Apl tambahan, maklumat ini akan disimpan dengan akaun anda supaya anda dapat mengurus maklumat ini dalam Aktiviti Saya. <ph name="BEGIN_LINK2" />Ketahui Lebih Lanjut<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">SELESAI</translation>
 <translation id="3144647712221361880">Buka pautan sebagai</translation>
-<translation id="3149510190863420837">Brave Apps</translation>
+<translation id="300669147395456190">Brave Apps</translation>
 <translation id="3150927491400159470">Muat Semula Keras</translation>
 <translation id="315116470104423982">Data mudah alih</translation>
 <translation id="3151539355209957474">Masa Mula</translation>
@@ -1514,7 +1514,7 @@ Untuk mendapatkan maklumat lanjut, lawati <ph name="BEGIN_LINK" />Pusat Bantuan<
 <translation id="3280237271814976245">Simpan &amp;sebagai...</translation>
 <translation id="3280243678470289153">Kekal dalam Brave</translation>
 <translation id="3280431534455935878">Menyediakan</translation>
-<translation id="3282568296779691940">Log masuk ke Brave</translation>
+<translation id="82609232232243542">Log masuk ke Brave</translation>
 <translation id="3285322247471302225">&amp;Tab Baharu</translation>
 <translation id="3288047731229977326">Sambungan yang dijalankan dalam mod pembangun boleh membahayakan komputer anda. Jika anda bukan pembangun, anda harus melumpuhkan sambungan yang dijalankan dalam mod pembangun ini supaya kekal selamat.</translation>
 <translation id="3289856944988573801">Untuk menyemak kemas kini, sila gunakan Ethernet atau Wi-Fi.</translation>
@@ -1650,7 +1650,7 @@ Untuk mendapatkan maklumat lanjut, lawati <ph name="BEGIN_LINK" />Pusat Bantuan<
 <translation id="347670947055184738">Op!  Sistem gagal mengambil dasar untuk peranti anda.</translation>
 <translation id="347785443197175480">Teruskan membenarkan <ph name="HOST" /> untuk mengakses kamera dan mikrofon anda</translation>
 <translation id="3478685642445675458">Sila buka kunci profil anda sebelum mengalih keluar seseorang.</translation>
-<translation id="347919930506963698">Dapatkan lebih banyak lagi daripada Brave</translation>
+<translation id="2468890881455409104">Dapatkan lebih banyak lagi daripada Brave</translation>
 <translation id="3479552764303398839">Bukan sekarang</translation>
 <translation id="3480892288821151001">Letakkan tetingkap di kiri</translation>
 <translation id="3481915276125965083">Pop muncul berikut disekat pada halaman ini:</translation>
@@ -1713,7 +1713,7 @@ Untuk mendapatkan maklumat lanjut, lawati <ph name="BEGIN_LINK" />Pusat Bantuan<
 <translation id="3576324189521867626">Berjaya dipasang</translation>
 <translation id="3578594933904494462">Kandungan tab ini sedang dikongsi.</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; ingin berkongsi pencetak &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; dengan kumpulan yang anda miliki: &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt;. Jika anda terima, semua ahli kumpulan boleh menggunakan pencetak tersebut.</translation>
-<translation id="3582972582564653026">Segerakkan dan peribadikan Brave pada semua peranti anda</translation>
+<translation id="5477319665405831211">Segerakkan dan peribadikan Brave pada semua peranti anda</translation>
 <translation id="3584169441612580296">Baca dan ubah foto, muzik dan media lain daripada komputer anda</translation>
 <translation id="3587482841069643663">Semua</translation>
 <translation id="358796204584394954">Taip kod ini pada "<ph name="DEVICE_NAME" />" untuk digandingkan:</translation>
@@ -2568,7 +2568,7 @@ Untuk mendapatkan maklumat lanjut, lawati <ph name="BEGIN_LINK" />Pusat Bantuan<
 <translation id="4953689047182316270">Jawab Acara Kebolehaksesan</translation>
 <translation id="4953808748584563296">Avatar jingga lalai</translation>
 <translation id="4955814292505481804">Tahunan</translation>
-<translation id="495931528404527476">Dalam Brave</translation>
+<translation id="6078442581074612226">Dalam Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> - <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">Folder yang anda pilih mengandungi fail sensitif. Adakah anda pasti mahu memberikan "$1" akses membaca tetap kepada folder ini?</translation>
 <translation id="4964455510556214366">Susunan</translation>
@@ -4264,7 +4264,7 @@ Langkah memasang <ph name="APP_NAME" /> akan memuat turun <ph name="DOWNLOAD_SIZ
 <translation id="7564847347806291057">Tamatkan proses</translation>
 <translation id="7566118625369982896">Urus pautan apl Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Data Brave dikosongkan</translation>
+<translation id="7814200940910057384">Data Brave dikosongkan</translation>
 <translation id="7568790562536448087">Mengemas kini</translation>
 <translation id="7571643774869182231">Storan tidak mencukupi untuk kemas kini</translation>
 <translation id="7573172247376861652">Cas Bateri</translation>
@@ -5107,7 +5107,7 @@ perubahan ini berlaku, anda mungkin tidak mahukannya.</translation>
 <translation id="8899851313684471736">Buka pautan dalam tetingkap &amp;baharu</translation>
 <translation id="8902667442496790482">Buka tetapan pilih untuk bercakap</translation>
 <translation id="8903921497873541725">Zum masuk</translation>
-<translation id="8904976895050290827">Penyegerakan Brave</translation>
+<translation id="3149880132460839085">Penyegerakan Brave</translation>
 <translation id="8908902564709148335">Amaran: Anda telah mendayakan bendera --skrip memerlukan tindakan pada komputer ini yang mengehadkan keupayaan sambungan ini. Walau bagaimanapun, peranti lain mungkin tidak menyokong bendera ini atau mendayakannya. Pada peranti ini, sambungan ini turut boleh:</translation>
 <translation id="8909233240676134608">Tidak dapat menghubungkan mesin ke domain. Pelayan tidak menyokong jenis penyulitan Kerberos yang dinyatakan. Tandai "Lagi pilihan" untuk mengakses tetapan penyulitan.</translation>
 <translation id="8909833622202089127">Tapak sedang menjejak lokasi anda</translation>

@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">Synchronizacja została wstrzymana</translation>
 <translation id="1319979322914001937">Aplikacja, która pokazuje przefiltrowaną listę rozszerzeń z Brave Web Store. Rozszerzenia z takiej listy można instalować bezpośrednio z tej aplikacji.</translation>
 <translation id="132090119144658135">Dopasowanie do tematu:</translation>
-<translation id="1326317727527857210">Aby korzystać z kart ze swoich innych urządzeń, zaloguj się w Brave.</translation>
+<translation id="7253276740368043692">Aby korzystać z kart ze swoich innych urządzeń, zaloguj się w Brave.</translation>
 <translation id="1327074568633507428">Drukarka w Google Cloud Print</translation>
 <translation id="1327977588028644528">Brama</translation>
 <translation id="1329584516321524826">Właśnie zaktualizowano</translation>
@@ -1433,7 +1433,7 @@ Więcej informacji znajduje się w naszym <ph name="BEGIN_LINK" />Centrum pomocy
 <translation id="3143695347784622594">Wysyłanie danych systemowych. Automatycznie wysyłaj do Google dane diagnostyczne oraz dotyczące używania urządzenia i aplikacji. Możesz to zmienić w dowolnym momencie w <ph name="BEGIN_LINK1" />ustawieniach<ph name="END_LINK1" /> urządzenia. Jeśli masz włączoną dodatkowo Aktywność w internecie i aplikacjach, dane te będą zapisywane na Twoim koncie, co umożliwi Ci zarządzanie nimi na stronie Moja aktywność. <ph name="BEGIN_LINK2" />Więcej informacji<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">GOTOWE</translation>
 <translation id="3144647712221361880">Otwórz link jako</translation>
-<translation id="3149510190863420837">Aplikacje Brave</translation>
+<translation id="300669147395456190">Aplikacje Brave</translation>
 <translation id="3150927491400159470">Wymuś ponowne załadowanie</translation>
 <translation id="315116470104423982">Komórkowa transmisja danych</translation>
 <translation id="3151539355209957474">Czas rozpoczęcia</translation>
@@ -1513,7 +1513,7 @@ Więcej informacji znajduje się w naszym <ph name="BEGIN_LINK" />Centrum pomocy
 <translation id="3280237271814976245">Zapisz &amp;jako...</translation>
 <translation id="3280243678470289153">Zostań w Brave</translation>
 <translation id="3280431534455935878">Przygotowywanie</translation>
-<translation id="3282568296779691940">Zaloguj się w Brave</translation>
+<translation id="82609232232243542">Zaloguj się w Brave</translation>
 <translation id="3285322247471302225">Nowa &amp;karta</translation>
 <translation id="3288047731229977326">Rozszerzenia działające w trybie programisty mogą uszkodzić Twój komputer. Jeśli nie jesteś programistą, wyłącz je dla bezpieczeństwa.</translation>
 <translation id="3289856944988573801">Jeśli chcesz sprawdzić aktualizacje, użyj Ethernetu lub Wi-Fi.</translation>
@@ -1649,7 +1649,7 @@ Więcej informacji znajduje się w naszym <ph name="BEGIN_LINK" />Centrum pomocy
 <translation id="347670947055184738">Ups. System nie mógł pobrać zasad dotyczących Twojego urządzenia.</translation>
 <translation id="347785443197175480">Nadal zezwalaj witrynie <ph name="HOST" /> na dostęp do kamery i mikrofonu</translation>
 <translation id="3478685642445675458">Aby usunąć osobę, odblokuj swój profil.</translation>
-<translation id="347919930506963698">Jeszcze więcej możliwości dzięki Brave</translation>
+<translation id="2468890881455409104">Jeszcze więcej możliwości dzięki Brave</translation>
 <translation id="3479552764303398839">Nie teraz</translation>
 <translation id="3480892288821151001">Umieść okno po lewej</translation>
 <translation id="3481915276125965083">Następujące wyskakujące okienka na tej stronie zostały zablokowane:</translation>
@@ -1712,7 +1712,7 @@ Więcej informacji znajduje się w naszym <ph name="BEGIN_LINK" />Centrum pomocy
 <translation id="3576324189521867626">Zainstalowano</translation>
 <translation id="3578594933904494462">Treść tej karty jest udostępniana.</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; chce udostępnić drukarkę &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; należącej do Ciebie grupie: &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt;. Jeśli się na to zgodzisz, wszyscy członkowie grupy będą mogli na niej drukować.</translation>
-<translation id="3582972582564653026">Synchronizuj dane Brave i korzystaj z własnych ustawień przeglądarki na wielu urządzeniach</translation>
+<translation id="5477319665405831211">Synchronizuj dane Brave i korzystaj z własnych ustawień przeglądarki na wielu urządzeniach</translation>
 <translation id="3584169441612580296">Odczyt i zmiana zdjęć, muzyki oraz innych multimediów na komputerze</translation>
 <translation id="3587482841069643663">Wszystkie</translation>
 <translation id="358796204584394954">Aby sparować, wpisz ten kod na urządzeniu „<ph name="DEVICE_NAME" />”:</translation>
@@ -2567,7 +2567,7 @@ Więcej informacji znajduje się w naszym <ph name="BEGIN_LINK" />Centrum pomocy
 <translation id="4953689047182316270">Odpowiadanie na zdarzenia dotyczące ułatwień dostępu</translation>
 <translation id="4953808748584563296">Domyślny pomarańczowy awatar</translation>
 <translation id="4955814292505481804">Roczna</translation>
-<translation id="495931528404527476">W Brave</translation>
+<translation id="6078442581074612226">W Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> – <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">Wybrany folder zawiera poufne pliki. Czy na pewno chcesz, by aplikacja „$1” miała do niego stały dostęp z uprawnieniami do odczytu?</translation>
 <translation id="4964455510556214366">Układ</translation>
@@ -4256,7 +4256,7 @@ Zainstalowanie aplikacji <ph name="APP_NAME" /> wymaga pobrania <ph name="DOWNLO
 <translation id="7564847347806291057">Zakończ proces</translation>
 <translation id="7566118625369982896">Zarządzaj linkami aplikacji Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Wyczyszczono dane Brave</translation>
+<translation id="7814200940910057384">Wyczyszczono dane Brave</translation>
 <translation id="7568790562536448087">Aktualizowanie</translation>
 <translation id="7571643774869182231">Za mało miejsca na aktualizację</translation>
 <translation id="7573172247376861652">Poziom naładowania akumulatora</translation>
@@ -5099,7 +5099,7 @@ Osoby z wolnym połączeniem mogą nie zobaczyć treści, które przesyłasz.</
 <translation id="8899851313684471736">Otwórz link w nowym &amp;oknie</translation>
 <translation id="8902667442496790482">Otwórz ustawienia funkcji Przeczytaj na głos</translation>
 <translation id="8903921497873541725">Powiększ</translation>
-<translation id="8904976895050290827">Synchronizacja Brave</translation>
+<translation id="3149880132460839085">Synchronizacja Brave</translation>
 <translation id="8908902564709148335">Ostrzeżenie: na komputerze została włączona flaga --scripts-require-action, która ogranicza możliwości tego rozszerzenia. Na innych urządzeniach może ona jednak nie być obsługiwana lub włączona. Na tych urządzeniach rozszerzenie może też:</translation>
 <translation id="8909233240676134608">Nie można dołączyć komputera do domeny. Serwer nie obsługuje wybranych typów szyfrowania Kerberos. Kliknij „Więcej opcji”, by otworzyć ustawienia szyfrowania.</translation>
 <translation id="8909833622202089127">Strona śledzi Twoją lokalizację</translation>
