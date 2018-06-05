@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">Synkroniseringen er satt på pause</translation>
 <translation id="1319979322914001937">En app som viser en filtrert liste over utvidelser fra Brave Nettmarked. Utvidelser i listen kan installeres direkte fra appen.</translation>
 <translation id="132090119144658135">Emnetreff:</translation>
-<translation id="1326317727527857210">For å få fanene dine fra de andre enhetene du bruker, logg på Brave.</translation>
+<translation id="7253276740368043692">For å få fanene dine fra de andre enhetene du bruker, logg på Brave.</translation>
 <translation id="1327074568633507428">Skriver på Google Cloud Print</translation>
 <translation id="1327977588028644528">Gateway</translation>
 <translation id="1329584516321524826">Nettopp oppdatert</translation>
@@ -1429,7 +1429,7 @@ Du finner mer informasjon i <ph name="BEGIN_LINK" />brukerstøtten<ph name="END_
 <translation id="3143695347784622594">Send systemdata. Denne enheten sender diagnostikk og bruksdata til Google automatisk. Du kan endre dette når som helst i <ph name="BEGIN_LINK1" />innstillingene<ph name="END_LINK1" /> på enheten. Hvis du har slått på annen nett- og appaktivitet, lagres denne informasjonen på kontoen din, slik at du kan administrere den i Min aktivitet. <ph name="BEGIN_LINK2" />Finn ut mer<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">FERDIG</translation>
 <translation id="3144647712221361880">Åpne linken som</translation>
-<translation id="3149510190863420837">Brave-apper</translation>
+<translation id="300669147395456190">Brave-apper</translation>
 <translation id="3150927491400159470">Hard innlasting på nytt</translation>
 <translation id="315116470104423982">Mobildata</translation>
 <translation id="3151539355209957474">Starttid</translation>
@@ -1509,7 +1509,7 @@ Du finner mer informasjon i <ph name="BEGIN_LINK" />brukerstøtten<ph name="END_
 <translation id="3280237271814976245">L&amp;agre som...</translation>
 <translation id="3280243678470289153">Bli værende i Brave</translation>
 <translation id="3280431534455935878">Forbereder</translation>
-<translation id="3282568296779691940">Logg på Brave</translation>
+<translation id="82609232232243542">Logg på Brave</translation>
 <translation id="3285322247471302225">Ny &amp;fane</translation>
 <translation id="3288047731229977326">Utvidelser som kjører i utviklermodus kan skade datamaskinen din. Hvis du ikke er utvikler, bør du deaktivere disse utvidelsene som kjører i utviklermodus, for å være på den sikre siden.</translation>
 <translation id="3289856944988573801">For å sjekke etter oppdateringer, kan du bruke Ethernet eller Wi-Fi.</translation>
@@ -1644,7 +1644,7 @@ Du finner mer informasjon i <ph name="BEGIN_LINK" />brukerstøtten<ph name="END_
 <translation id="347670947055184738">Beklager. Systemet kunne ikke hente reglene for enheten din.</translation>
 <translation id="347785443197175480">Fortsett å gi <ph name="HOST" /> tillatelse til å bruke kameraet og mikrofonen</translation>
 <translation id="3478685642445675458">Du må låse opp profilen din før du kan fjerne en person.</translation>
-<translation id="347919930506963698">Få enda mer ut av Brave</translation>
+<translation id="2468890881455409104">Få enda mer ut av Brave</translation>
 <translation id="3479552764303398839">Ikke nå</translation>
 <translation id="3480892288821151001">Forankre vinduet til venstre</translation>
 <translation id="3481915276125965083">Følgende forgrunnsvinduer er blokkert på siden:</translation>
@@ -1707,7 +1707,7 @@ Du finner mer informasjon i <ph name="BEGIN_LINK" />brukerstøtten<ph name="END_
 <translation id="3576324189521867626">Installert</translation>
 <translation id="3578594933904494462">Innholdet i denne fanen blir delt.</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; vil dele skriveren &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; med en gruppe du eier: &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt;. Hvis du godtar, kan alle gruppemedlemmene skrive ut til skriveren.</translation>
-<translation id="3582972582564653026">Synkroniser og gi Brave et personlig preg på alle enhetene dine</translation>
+<translation id="5477319665405831211">Synkroniser og gi Brave et personlig preg på alle enhetene dine</translation>
 <translation id="3584169441612580296">lese og endre bilder, musikk og andre medier fra datamaskinen din</translation>
 <translation id="3587482841069643663">Alle</translation>
 <translation id="358796204584394954">Skriv inn denne koden på «<ph name="DEVICE_NAME" />» for å koble til:</translation>
@@ -2560,7 +2560,7 @@ Du finner mer informasjon i <ph name="BEGIN_LINK" />brukerstøtten<ph name="END_
 <translation id="4953689047182316270">Svar på tilgjengelighetshendelser</translation>
 <translation id="4953808748584563296">Oransje standardbrukerbilde</translation>
 <translation id="4955814292505481804">Årlig</translation>
-<translation id="495931528404527476">I Brave</translation>
+<translation id="6078442581074612226">I Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> – <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">Mappen du valgte inneholder sensitive filer. Er du sikker på at du vil gi «$1» permanent lesetilgang til denne mappen?</translation>
 <translation id="4964455510556214366">Oppsett</translation>
@@ -4247,7 +4247,7 @@ Når du installerer <ph name="APP_NAME" />, blir det lastet ned <ph name="DOWNLO
 <translation id="7564847347806291057">Avslutt prosessen</translation>
 <translation id="7566118625369982896">Administrer Play-applinker</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Brave-dataene er slettet</translation>
+<translation id="7814200940910057384">Brave-dataene er slettet</translation>
 <translation id="7568790562536448087">Oppdaterer</translation>
 <translation id="7571643774869182231">For lite lagringsplass til å oppdatere</translation>
 <translation id="7573172247376861652">Batterilading</translation>
@@ -5089,7 +5089,7 @@ Oppbevar nøkkelfilen på et trygt sted. Du får bruk for den når du skal oppre
 <translation id="8899851313684471736">Å&amp;pne linken i et nytt vindu</translation>
 <translation id="8902667442496790482">Åpne innstillingene for Tekstopplesing</translation>
 <translation id="8903921497873541725">Zoom inn</translation>
-<translation id="8904976895050290827">Brave-synkronisering</translation>
+<translation id="3149880132460839085">Brave-synkronisering</translation>
 <translation id="8908902564709148335">Advarsel: Du har aktivert --scripts-require-action-flagget på denne datamaskinen. Dette begrenser funksjonaliteten til denne utvidelsen. Andre enheter støtter kanskje ikke dette flagget, eventuelt er det ikke aktivert på dem. På disse enhetene kan denne utvidelsen også:</translation>
 <translation id="8909233240676134608">Kan ikke knytte maskinen til domenet. Tjeneren støtter ikke de angitte Kerberos-krypteringstypene. Du finner innstillinger for kryptering under «Flere alternativer».</translation>
 <translation id="8909833622202089127">Nettstedet sporer posisjonen din</translation>

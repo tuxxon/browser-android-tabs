@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">หยุดซิงค์ชั่วคราว</translation>
 <translation id="1319979322914001937">แอปที่แสดงรายการส่วนขยายที่ผ่านการกรองจากส่วนขยายของ Brave เว็บสโตร์ในรายการนี้สามารถติดตั้งได้โดยตรงจากแอปนี้</translation>
 <translation id="132090119144658135">หัวเรื่องที่ตรงกัน:</translation>
-<translation id="1326317727527857210">ลงชื่อเข้าใช้ Brave เพื่อรับแท็บจากอุปกรณ์เครื่องอื่นๆ ของคุณ</translation>
+<translation id="7253276740368043692">ลงชื่อเข้าใช้ Brave เพื่อรับแท็บจากอุปกรณ์เครื่องอื่นๆ ของคุณ</translation>
 <translation id="1327074568633507428">เครื่องพิมพ์บน Google Cloud Print</translation>
 <translation id="1327977588028644528">เกตเวย์</translation>
 <translation id="1329584516321524826">เพิ่งอัปเดตเมื่อครู่นี้</translation>
@@ -1434,7 +1434,7 @@
 <translation id="3143695347784622594">ส่งข้อมูลระบบ ส่งข้อมูลการวินิจฉัยและข้อมูลการใช้งานอุปกรณ์และแอปไปยัง Google โดยอัตโนมัติ คุณเปลี่ยนการตั้งค่านี้ได้ทุกเมื่อใน<ph name="BEGIN_LINK1" />การตั้งค่า<ph name="END_LINK1" />ของอุปกรณ์ หากคุณเปิดกิจกรรมบนเว็บและแอปเพิ่มเติม ระบบจะเก็บข้อมูลนี้ไว้กับบัญชีเพื่อให้คุณจัดการได้ในกิจกรรมของฉัน <ph name="BEGIN_LINK2" />ดูข้อมูลเพิ่มเติม<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">เสร็จสิ้น</translation>
 <translation id="3144647712221361880">เปิดลิงก์ในฐานะ</translation>
-<translation id="3149510190863420837">แอป Brave</translation>
+<translation id="300669147395456190">แอป Brave</translation>
 <translation id="3150927491400159470">โหลดซ้ำแบบดึงข้อมูลใหม่ทั้งหมด</translation>
 <translation id="315116470104423982">เน็ตมือถือ</translation>
 <translation id="3151539355209957474">เวลาเริ่มต้น</translation>
@@ -1514,7 +1514,7 @@
 <translation id="3280237271814976245">บันทึกใ&amp;ห้เป็น...</translation>
 <translation id="3280243678470289153">อยู่ภายใน Brave</translation>
 <translation id="3280431534455935878">กำลังเตรียม</translation>
-<translation id="3282568296779691940">ลงชื่อเข้าใช้ Brave</translation>
+<translation id="82609232232243542">ลงชื่อเข้าใช้ Brave</translation>
 <translation id="3285322247471302225">แ&amp;ท็บใหม่</translation>
 <translation id="3288047731229977326">ส่วนขยายที่ทำงานอยู่ในโหมดนักพัฒนาซอฟต์แวร์อาจเป็นอันตรายต่อคอมพิวเตอร์ของคุณ หากคุณไม่ใช่นักพัฒนาซอฟต์แวร์ คุณควรปิดส่วนขยายที่ทำงานอยู่ในโหมดนักพัฒนาซอฟต์แวร์เพื่อรักษาความปลอดภัย</translation>
 <translation id="3289856944988573801">ในการตรวจหาการอัปเดต โปรดใช้อีเทอร์เน็ตหรือ WiFi</translation>
@@ -1650,7 +1650,7 @@
 <translation id="347670947055184738">อ๊ะ! ระบบไม่สามารถดึงข้อมูลนโยบายจากอุปกรณ์</translation>
 <translation id="347785443197175480">อนุญาตให้ <ph name="HOST" /> เข้าถึงกล้องถ่ายรูปและไมโครโฟนของคุณต่อไป</translation>
 <translation id="3478685642445675458">โปรดปลดล็อกโปรไฟล์ของคุณก่อนนำบุคคลออก</translation>
-<translation id="347919930506963698">ใช้ประโยชน์จาก Brave ให้มากขึ้น</translation>
+<translation id="2468890881455409104">ใช้ประโยชน์จาก Brave ให้มากขึ้น</translation>
 <translation id="3479552764303398839">ไม่ใช่ตอนนี้</translation>
 <translation id="3480892288821151001">จัดวางหน้าต่างไว้ทางซ้าย</translation>
 <translation id="3481915276125965083">หน้าเว็บนี้บล็อกป๊อปอัปต่อไปนี้:</translation>
@@ -1713,7 +1713,7 @@
 <translation id="3576324189521867626">ติดตั้งเรียบร้อยแล้ว</translation>
 <translation id="3578594933904494462">เนื้อหาของแท็บนี้กำลังถูกแชร์</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; ต้องการแชร์เครื่องพิมพ์ &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; กับกลุ่มที่คุณเป็นเจ้าของ: &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt; หากคุณยอมรับ สมาชิกในกลุ่มทั้งหมดจะสามารถสั่งพิมพ์ไปยังเครื่องพิมพ์ดังกล่าวได้</translation>
-<translation id="3582972582564653026">ซิงค์และปรับเปลี่ยน Brave ในอุปกรณ์ต่างๆ</translation>
+<translation id="5477319665405831211">ซิงค์และปรับเปลี่ยน Brave ในอุปกรณ์ต่างๆ</translation>
 <translation id="3584169441612580296">อ่านและเปลี่ยนแปลงรูปภาพ เพลง และสื่ออื่นๆ จากคอมพิวเตอร์ของคุณ</translation>
 <translation id="3587482841069643663">ทั้งหมด</translation>
 <translation id="358796204584394954">พิมพ์รหัสนี้บน "<ph name="DEVICE_NAME" />" เพื่อจับคู่:</translation>
@@ -2568,7 +2568,7 @@
 <translation id="4953689047182316270">ตอบสนองต่อเหตุการณ์การเข้าถึงพิเศษ</translation>
 <translation id="4953808748584563296">รูปโปรไฟล์เริ่มต้นสีส้ม</translation>
 <translation id="4955814292505481804">รายปี</translation>
-<translation id="495931528404527476">ใน Brave</translation>
+<translation id="6078442581074612226">ใน Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> - <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">โฟลเดอร์ที่คุณเลือกมีไฟล์ที่ละเอียดอ่อน คุณต้องการให้สิทธิ์การเข้าถึงในการอ่านโฟลเดอร์นี้อย่างถาวรแก่ "$1" ไหม</translation>
 <translation id="4964455510556214366">การจัดเรียง</translation>
@@ -4265,7 +4265,7 @@
 <translation id="7564847347806291057">สิ้นสุดกระบวนการ</translation>
 <translation id="7566118625369982896">จัดการลิงก์ของแอป Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">ล้างข้อมูล Brave แล้ว</translation>
+<translation id="7814200940910057384">ล้างข้อมูล Brave แล้ว</translation>
 <translation id="7568790562536448087">การอัปเดต</translation>
 <translation id="7571643774869182231">มีพื้นที่เก็บข้อมูลไม่เพียงพอสำหรับอัปเดต</translation>
 <translation id="7573172247376861652">ชาร์จแบตเตอรี่</translation>
@@ -5107,7 +5107,7 @@
 <translation id="8899851313684471736">เปิดลิงก์ใน&amp;หน้าต่างใหม่</translation>
 <translation id="8902667442496790482">เปิดการตั้งค่าการเลือกเพื่อให้อ่าน</translation>
 <translation id="8903921497873541725">ขยาย</translation>
-<translation id="8904976895050290827">การทำข้อมูลให้ตรงกันของ Brave</translation>
+<translation id="3149880132460839085">การทำข้อมูลให้ตรงกันของ Brave</translation>
 <translation id="8908902564709148335">คำเตือน: คุณได้เปิดใช้ธงทำเครื่องหมาย --scripts-require-action ในคอมพิวเตอร์เครื่องนี้ ซึ่งจะจำกัดความสามารถของส่วนขยายนี้ อย่างไรก็ตาม อุปกรณ์อื่นๆ อาจไม่สนับสนุนธงทำเครื่องหมายนี้ หรือเปิดใช้งานธงทำเครื่องหมายดังกล่าว ส่วนขยายนี้ยังสามารถดำเนินการต่อไปนี้ในอุปกรณ์เหล่านี้ด้วย:</translation>
 <translation id="8909233240676134608">นำเครื่องเข้าร่วมโดเมนไม่สำเร็จ เซิร์ฟเวอร์ไม่รองรับประเภทการเข้ารหัส Kerberos ที่ระบุ โปรดดู "ตัวเลือกเพิ่มเติม" สำหรับการตั้งค่าการเข้ารหัส</translation>
 <translation id="8909833622202089127">เว็บไซต์กำลังติดตามตำแหน่งของคุณ</translation>

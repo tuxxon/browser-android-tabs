@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">A szinkronizálás szünetel</translation>
 <translation id="1319979322914001937">Olyan alkalmazás, amely a Brave Internetes áruházból származó bővítmények szűrt listáját jeleníti meg. A listában szereplő alkalmazások közvetlenül telepíthetők az alkalmazásban.</translation>
 <translation id="132090119144658135">Tárgyegyeztetés:</translation>
-<translation id="1326317727527857210">Ha hozzá szeretne férni lapjaihoz a többi eszközéről, jelentkezzen be a Brave-ba.</translation>
+<translation id="7253276740368043692">Ha hozzá szeretne férni lapjaihoz a többi eszközéről, jelentkezzen be a Brave-ba.</translation>
 <translation id="1327074568633507428">Nyomtató a Google Cloud Printben</translation>
 <translation id="1327977588028644528">Átjáró</translation>
 <translation id="1329584516321524826">Most frissítve</translation>
@@ -1435,7 +1435,7 @@ Ha további információt szeretne, látogasson el a <ph name="BEGIN_LINK" />Sú
 <translation id="3143695347784622594">Rendszeradatok küldése. Diagnosztikai, továbbá eszköz- és alkalmazáshasználati adatok automatikus küldése a Google-nak. Ezt bármikor módosíthatja az eszköz <ph name="BEGIN_LINK1" />beállításaiban<ph name="END_LINK1" />. Ha bekapcsolta a további Internetes és alkalmazástevékenységeket, akkor a rendszer tárolja ezeket az információkat a fiókjában, Ön pedig kezelheti őket a Saját tevékenységek között. <ph name="BEGIN_LINK2" />További információ<ph name="END_LINK2" />.</translation>
 <translation id="3144126448740580210">KÉSZ</translation>
 <translation id="3144647712221361880">Link megnyitása mint</translation>
-<translation id="3149510190863420837">Brave-alkalmazások</translation>
+<translation id="300669147395456190">Brave-alkalmazások</translation>
 <translation id="3150927491400159470">Teljes újratöltés</translation>
 <translation id="315116470104423982">Mobiladatok</translation>
 <translation id="3151539355209957474">Kezdés ideje</translation>
@@ -1515,7 +1515,7 @@ Ha további információt szeretne, látogasson el a <ph name="BEGIN_LINK" />Sú
 <translation id="3280237271814976245">Mentés &amp;másként...</translation>
 <translation id="3280243678470289153">A Brave használatának folytatása</translation>
 <translation id="3280431534455935878">Előkészítés</translation>
-<translation id="3282568296779691940">Bejelentkezés a Brave-ba</translation>
+<translation id="82609232232243542">Bejelentkezés a Brave-ba</translation>
 <translation id="3285322247471302225">Új lap</translation>
 <translation id="3288047731229977326">A fejlesztői módban futó bővítmények kárt okozhatnak számítógépén. Ha Ön nem fejlesztő, akkor a biztonság kedvéért kapcsolja ki a fejlesztői módban futó bővítményeket.</translation>
 <translation id="3289856944988573801">Kérjük, frissítések kereséséhez Ethernetet vagy Wi-Fit használjon.</translation>
@@ -1651,7 +1651,7 @@ Ha további információt szeretne, látogasson el a <ph name="BEGIN_LINK" />Sú
 <translation id="347670947055184738">Hoppá! A rendszer nem tudta lehívni az eszköz házirendjét.</translation>
 <translation id="347785443197175480">A(z) <ph name="HOST" /> továbbra is hozzáférhet az Ön kamerájához és mikrofonjához</translation>
 <translation id="3478685642445675458">Mielőtt eltávolítana valakit, oldja fel profilját.</translation>
-<translation id="347919930506963698">Még többet hozhat ki a Brave-ból</translation>
+<translation id="2468890881455409104">Még többet hozhat ki a Brave-ból</translation>
 <translation id="3479552764303398839">Ne most</translation>
 <translation id="3480892288821151001">Ablak rögzítése balra</translation>
 <translation id="3481915276125965083">A következő előugró ablakokat letiltottuk ezen az oldalon:</translation>
@@ -1714,7 +1714,7 @@ Ha további információt szeretne, látogasson el a <ph name="BEGIN_LINK" />Sú
 <translation id="3576324189521867626">Sikeresen telepítve</translation>
 <translation id="3578594933904494462">A lap tartalma meg lesz osztva.</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; szeretné megosztani a(z) &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; nyomtatót az Ön &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt; nevű csoportjával. Ha elfogadja, a csoport minden tagja tud majd nyomtatni a nyomtatóval.</translation>
-<translation id="3582972582564653026">Szinkronizálhatja és személyre szabhatja a Brave-ot minden eszközén</translation>
+<translation id="5477319665405831211">Szinkronizálhatja és személyre szabhatja a Brave-ot minden eszközén</translation>
 <translation id="3584169441612580296">Fotók, zeneszámok és egyéb médiatartalmak olvasása és módosítása a számítógépről</translation>
 <translation id="3587482841069643663">Mind</translation>
 <translation id="358796204584394954">Írja be ezt a kódot a(z) „<ph name="DEVICE_NAME" />” eszközön a párosításhoz:</translation>
@@ -2568,7 +2568,7 @@ Elindítja a következőt: <ph name="CONTROL_PANEL_APPLET_NAME" />?</translation
 <translation id="4953689047182316270">Válasz kisegítő lehetőségekkel kapcsolatos eseményekre</translation>
 <translation id="4953808748584563296">Alapértelmezett narancssárga avatar</translation>
 <translation id="4955814292505481804">Éves</translation>
-<translation id="495931528404527476">A Brave-ban</translation>
+<translation id="6078442581074612226">A Brave-ban</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> – <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">A kiválasztott mappa érzékeny fájlokat tartalmaz. Biztosan állandó olvasási hozzáférést szeretne adni a következőnek a mappához: „$1”?</translation>
 <translation id="4964455510556214366">Elrendezés</translation>
@@ -4267,7 +4267,7 @@ A(z) <ph name="APP_NAME" /> telepítésével <ph name="DOWNLOAD_SIZE" /> adatot 
 <translation id="7564847347806291057">Folyamat leállítása</translation>
 <translation id="7566118625369982896">Play-alkalmazáslinkek kezelése</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Brave-adatok törölve</translation>
+<translation id="7814200940910057384">Brave-adatok törölve</translation>
 <translation id="7568790562536448087"> frissítése</translation>
 <translation id="7571643774869182231">A frissítés telepítéséhez nincs elegendő tárhely</translation>
 <translation id="7573172247376861652">Akkumulátor töltése</translation>
@@ -5109,7 +5109,7 @@ A kulcsfájlt tartsa biztonságos helyen. Szüksége lesz rá ahhoz, hogy új ve
 <translation id="8899851313684471736">Link megnyitása új &amp;ablakban</translation>
 <translation id="8902667442496790482">Felolvasási beállítások megnyitása</translation>
 <translation id="8903921497873541725">Nagyítás</translation>
-<translation id="8904976895050290827">Brave - szinkronizálás</translation>
+<translation id="3149880132460839085">Brave - szinkronizálás</translation>
 <translation id="8908902564709148335">Figyelmeztetés: engedélyezte a --scripts-require-action jelzőt ezen a számítógépen, amely korlátozza a bővítmény lehetőségeit. Előfordulhat azonban, hogy más eszközök nem támogatják ezt a jelzőt, vagy nem engedélyezik azt. Ezeken az eszközökön a bővítmény a következőket is megteheti:</translation>
 <translation id="8909233240676134608">Nem sikerült csatlakoztatni a gépet a domainre. A szerver nem támogatja a megadott Kerberos-titkosítástípusokat. A titkosítási beállításokat a „További lehetőségek” részben találja.</translation>
 <translation id="8909833622202089127">A webhely nyomon követi a tartózkodási helyét</translation>

@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">Sync is paused</translation>
 <translation id="1319979322914001937">An app that shows a filtered list of extensions from Brave Web Store. Extensions in the list can be installed directly from the app.</translation>
 <translation id="132090119144658135">Subject Match:</translation>
-<translation id="1326317727527857210">To get your tabs from your other devices, sign in to Brave.</translation>
+<translation id="7253276740368043692">To get your tabs from your other devices, sign in to Brave.</translation>
 <translation id="1327074568633507428">Printer on Google Cloud Print</translation>
 <translation id="1327977588028644528">Gateway</translation>
 <translation id="1329584516321524826">Updated just now</translation>
@@ -1434,7 +1434,7 @@ For more information, visit our <ph name="BEGIN_LINK" />Help Centre<ph name="END
 <translation id="3143695347784622594">Send system data. Automatically send diagnostic and device and app usage data to Google. You can change this at any time in your device <ph name="BEGIN_LINK1" />settings<ph name="END_LINK1" />. If you turned on additional Web &amp; App Activity, this information will be stored with your account so that you can manage it in My Activity. <ph name="BEGIN_LINK2" />Learn More<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">DONE</translation>
 <translation id="3144647712221361880">Open link as</translation>
-<translation id="3149510190863420837">Brave Apps</translation>
+<translation id="300669147395456190">Brave Apps</translation>
 <translation id="3150927491400159470">Hard Reload</translation>
 <translation id="315116470104423982">Mobile data</translation>
 <translation id="3151539355209957474">Start Time</translation>
@@ -1514,7 +1514,7 @@ For more information, visit our <ph name="BEGIN_LINK" />Help Centre<ph name="END
 <translation id="3280237271814976245">Save &amp;as...</translation>
 <translation id="3280243678470289153">Stay in Brave</translation>
 <translation id="3280431534455935878">Preparing</translation>
-<translation id="3282568296779691940">Sign in to Brave</translation>
+<translation id="82609232232243542">Sign in to Brave</translation>
 <translation id="3285322247471302225">New &amp;Tab</translation>
 <translation id="3288047731229977326">Extensions running in developer mode can harm your computer. If you're not a developer, you should disable these extensions running in developer mode to stay safe.</translation>
 <translation id="3289856944988573801">To check for updates, please use Ethernet or Wi-Fi.</translation>
@@ -1650,7 +1650,7 @@ For more information, visit our <ph name="BEGIN_LINK" />Help Centre<ph name="END
 <translation id="347670947055184738">Oops!  The system failed to fetch policy for your device.</translation>
 <translation id="347785443197175480">Continue allowing <ph name="HOST" /> to access your camera and microphone</translation>
 <translation id="3478685642445675458">Please unlock your profile before removing a person.</translation>
-<translation id="347919930506963698">Get even more from Brave</translation>
+<translation id="2468890881455409104">Get even more from Brave</translation>
 <translation id="3479552764303398839">Not now</translation>
 <translation id="3480892288821151001">Dock window left</translation>
 <translation id="3481915276125965083">The following pop-ups were blocked on this page:</translation>
@@ -1713,7 +1713,7 @@ For more information, visit our <ph name="BEGIN_LINK" />Help Centre<ph name="END
 <translation id="3576324189521867626">Successfully installed</translation>
 <translation id="3578594933904494462">This tab's content is being shared.</translation>
 <translation id="357886715122934472">&lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; wants to share a printer &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; with a group that you own: &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt;. If you accept, all group members will be able to print to the printer.</translation>
-<translation id="3582972582564653026">Sync and personalise Brave across your devices</translation>
+<translation id="5477319665405831211">Sync and personalise Brave across your devices</translation>
 <translation id="3584169441612580296">Read and change photos, music and other media from your computer</translation>
 <translation id="3587482841069643663">All</translation>
 <translation id="358796204584394954">Type this code on "<ph name="DEVICE_NAME" />" to pair:</translation>
@@ -2568,7 +2568,7 @@ For more information, visit our <ph name="BEGIN_LINK" />Help Centre<ph name="END
 <translation id="4953689047182316270">Respond to Accessibility Events</translation>
 <translation id="4953808748584563296">Default orange avatar</translation>
 <translation id="4955814292505481804">Annual</translation>
-<translation id="495931528404527476">In Brave</translation>
+<translation id="6078442581074612226">In Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> – <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">The folder that you selected contains sensitive files. Are you sure that you want to grant "$1" permanent read access to this folder?</translation>
 <translation id="4964455510556214366">Arrangement</translation>
@@ -4265,7 +4265,7 @@ Installing the <ph name="APP_NAME" /> will download <ph name="DOWNLOAD_SIZE" /> 
 <translation id="7564847347806291057">End process</translation>
 <translation id="7566118625369982896">Manage Play app links</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Cleared Brave data</translation>
+<translation id="7814200940910057384">Cleared Brave data</translation>
 <translation id="7568790562536448087">Updating</translation>
 <translation id="7571643774869182231">Not enough storage for update</translation>
 <translation id="7573172247376861652">Battery Charge</translation>
@@ -5107,7 +5107,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="8899851313684471736">Open link in new &amp;window</translation>
 <translation id="8902667442496790482">Open Select to Speak settings</translation>
 <translation id="8903921497873541725">Zoom in</translation>
-<translation id="8904976895050290827">Brave Sync</translation>
+<translation id="3149880132460839085">Brave Sync</translation>
 <translation id="8908902564709148335">Warning: You've enabled the -scripts-require-action flag on this computer, which limits the capabilities of this extension. However, other devices may not support this flag or have it enabled. On these devices, this extension can also:</translation>
 <translation id="8909233240676134608">Can't join the machine to the domain. The server does not support specified Kerberos encryption types. Tick 'More options' for encryption settings.</translation>
 <translation id="8909833622202089127">Site is tracking your location</translation>

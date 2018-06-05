@@ -220,7 +220,7 @@
 <translation id="1316495628809031177">Synchronizácia je pozastavená</translation>
 <translation id="1319979322914001937">Aplikácia, ktorá zobrazuje filtrovaný zoznam rozšírení z Internetového obchodu Brave. Rozšírenia z tohto zoznamu sa dajú nainštalovať priamo z aplikácie.</translation>
 <translation id="132090119144658135">Zhoda predmetu:</translation>
-<translation id="1326317727527857210">Ak chcete získať karty z ďalších svojich zariadení, prihláste sa do Brave.</translation>
+<translation id="7253276740368043692">Ak chcete získať karty z ďalších svojich zariadení, prihláste sa do Brave.</translation>
 <translation id="1327074568633507428">Tlačiareň v službe Google Cloud Print</translation>
 <translation id="1327977588028644528">Brána</translation>
 <translation id="1329584516321524826">Práve aktualizované</translation>
@@ -1434,7 +1434,7 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="3143695347784622594">Odosielanie systémových údajov. Automaticky odosielajte Googlu diagnostiku a údaje o využívaní aplikácií. Môžete to kedykoľvek zmeniť v <ph name="BEGIN_LINK1" />nastaveniach<ph name="END_LINK1" /> zariadenia. Ak ste zapli ďalšiu aktivitu na internete a v aplikáciách, tieto informácie sa budú ukladať vo vašom účte a budete ich môcť spravovať na stránke Moja aktivita. <ph name="BEGIN_LINK2" />Ďalšie informácie<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">OK</translation>
 <translation id="3144647712221361880">Otvoriť odkaz ako</translation>
-<translation id="3149510190863420837">Aplikácie Brave</translation>
+<translation id="300669147395456190">Aplikácie Brave</translation>
 <translation id="3150927491400159470">Vynútiť opätovné načítanie</translation>
 <translation id="315116470104423982">Mobilné dátové prenosy</translation>
 <translation id="3151539355209957474">Čas začiatku</translation>
@@ -1514,7 +1514,7 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="3280237271814976245">Uložiť &amp;ako...</translation>
 <translation id="3280243678470289153">Zostať v Brave</translation>
 <translation id="3280431534455935878">Prebieha príprava</translation>
-<translation id="3282568296779691940">Prihlásenie do prehliadača Brave</translation>
+<translation id="82609232232243542">Prihlásenie do prehliadača Brave</translation>
 <translation id="3285322247471302225">Nová &amp;karta</translation>
 <translation id="3288047731229977326">Rozšírenia spustené v režime pre vývojárov môžu poškodiť váš počítač. Ak nie ste vývojár, mali by ste v záujme bezpečnosti rozšírenia spustené v režime vývojára zakázať.</translation>
 <translation id="3289856944988573801">Ak chcete skontrolovať aktualizácie, použite sieť ethernet alebo Wi‑Fi.</translation>
@@ -1650,7 +1650,7 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="347670947055184738">Ojoj! Systému sa nepodarilo načítať pravidlo pre vaše zariadenie.</translation>
 <translation id="347785443197175480">Aj naďalej povoliť stránkam <ph name="HOST" /> prístup ku kamere a mikrofónu</translation>
 <translation id="3478685642445675458">Skôr ako odstránite osobu, odomknite svoj profil.</translation>
-<translation id="347919930506963698">Vyťažte z Brave ešte viac</translation>
+<translation id="2468890881455409104">Vyťažte z Brave ešte viac</translation>
 <translation id="3479552764303398839">Teraz nie</translation>
 <translation id="3480892288821151001">Prichytiť okno vľavo</translation>
 <translation id="3481915276125965083">Na tejto stránke boli zablokované nasledujúce kontextové okná:</translation>
@@ -1713,7 +1713,7 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="3576324189521867626">Úspešne nainštalovaná</translation>
 <translation id="3578594933904494462">Obsah tejto karty sa zdieľa.</translation>
 <translation id="357886715122934472">Používateľ &lt;strong&gt;<ph name="SENDER" />&lt;/strong&gt; chce zdieľať tlačiareň &lt;strong&gt;<ph name="PRINTER_NAME" />&lt;/strong&gt; so skupinou, ktorú vlastníte: &lt;strong&gt;<ph name="GROUP_NAME" />&lt;/strong&gt;. Ak žiadosť prijmete, tlačiareň budú môcť využívať všetci členovia skupiny.</translation>
-<translation id="3582972582564653026">Synchronizujte a prispôsobte si Brave v rôznych zariadeniach</translation>
+<translation id="5477319665405831211">Synchronizujte a prispôsobte si Brave v rôznych zariadeniach</translation>
 <translation id="3584169441612580296">Čítať a meniť fotky, hudbu a ďalšie médiá z tohto počítača</translation>
 <translation id="3587482841069643663">Všetko</translation>
 <translation id="358796204584394954">Na zariadení „<ph name="DEVICE_NAME" />“ zadajte tento kód:</translation>
@@ -2568,7 +2568,7 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="4953689047182316270">Reagovať na udalosti dostupnosti</translation>
 <translation id="4953808748584563296">Predvolený oranžový avatar</translation>
 <translation id="4955814292505481804">Ročná</translation>
-<translation id="495931528404527476">V prehliadači Brave</translation>
+<translation id="6078442581074612226">V prehliadači Brave</translation>
 <translation id="4960294539892203357"><ph name="WINDOW_TITLE" /> – <ph name="PROFILE_NAME" /></translation>
 <translation id="496226124210045887">Vybratý priečinok obsahuje citlivé súbory. Naozaj chcete aplikácii $1 povoliť trvalý prístup na čítanie pre tento priečinok?</translation>
 <translation id="4964455510556214366">Usporiadanie</translation>
@@ -4263,7 +4263,7 @@ Inštaláciou aplikácie <ph name="APP_NAME" /> stiahnete <ph name="DOWNLOAD_SIZ
 <translation id="7564847347806291057">Ukončiť proces</translation>
 <translation id="7566118625369982896">Správa skratiek aplikácie Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Údaje Brave boli vymazané</translation>
+<translation id="7814200940910057384">Údaje Brave boli vymazané</translation>
 <translation id="7568790562536448087">Prebieha aktualizácia</translation>
 <translation id="7571643774869182231">V úložisku nie je dostatok miesta na aktualizáciu</translation>
 <translation id="7573172247376861652">Nabíjanie batérie</translation>
@@ -5105,7 +5105,7 @@ Súbor kľúča uložte na bezpečné miesto. Budete ho potrebovať na vytvoreni
 <translation id="8899851313684471736">Otvoriť odkaz v novom &amp;okne</translation>
 <translation id="8902667442496790482">Otvoriť nastavenia počúvania vybraného textu</translation>
 <translation id="8903921497873541725">Priblížiť</translation>
-<translation id="8904976895050290827">Synchronizácia Brave</translation>
+<translation id="3149880132460839085">Synchronizácia Brave</translation>
 <translation id="8908902564709148335">Upozornenie: Na tomto počítači ste povolili príznak --scripts-require-action, ktorý obmedzuje možnosti tohto rozšírenia. Iné zariadenia ho však nemusia podporovať alebo ho mať povolený. Na týchto zariadeniach môže toto rozšírenie tiež:</translation>
 <translation id="8909233240676134608">Zariadenie sa nepodarilo pripojiť k doméne. Server nepodporuje stanovené typy šifrovania Kerberos. Skontrolujte nastavenia šifrovania v časti Ďalšie možnosti.</translation>
 <translation id="8909833622202089127">Web sleduje vašu polohu</translation>
