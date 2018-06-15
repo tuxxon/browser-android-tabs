@@ -77,6 +77,9 @@ public class ChromePreferenceManager {
     private static final String VERIFIED_DIGITAL_ASSET_LINKS =
             "verified_digital_asset_links";
 
+    private static final String USE_CUSTOM_TABS =
+            "use_custom_tabs";
+
     private static class LazyHolder {
         static final ChromePreferenceManager INSTANCE = new ChromePreferenceManager();
     }
@@ -436,6 +439,14 @@ public class ChromePreferenceManager {
      */
     public boolean isHomePageButtonForceEnabled() {
         return mSharedPreferences.getBoolean(HOME_PAGE_BUTTON_FORCE_ENABLED_KEY, false);
+    }
+
+    /**
+     * Get whether or not use custom tabs.
+     * @return True if we can use custom tabs.
+     */
+    public boolean useCustomTabs() {
+        return mSharedPreferences.getBoolean(USE_CUSTOM_TABS, false);
     }
 
     /**
