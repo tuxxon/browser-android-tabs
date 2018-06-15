@@ -75,6 +75,9 @@ public class ChromePreferenceManager {
     private static final String COMMAND_LINE_ON_NON_ROOTED_ENABLED_KEY =
             "command_line_on_non_rooted_enabled";
 
+    private static final String USE_CUSTOM_TABS =
+            "use_custom_tabs";
+
     private static class LazyHolder {
         static final ChromePreferenceManager INSTANCE = new ChromePreferenceManager();
     }
@@ -438,6 +441,14 @@ public class ChromePreferenceManager {
      */
     public boolean isHomePageButtonForceEnabled() {
         return mSharedPreferences.getBoolean(HOME_PAGE_BUTTON_FORCE_ENABLED_KEY, false);
+    }
+
+    /**
+     * Get whether or not use custom tabs.
+     * @return True if we can use custom tabs.
+     */
+    public boolean useCustomTabs() {
+        return mSharedPreferences.getBoolean(USE_CUSTOM_TABS, false);
     }
 
     /**
