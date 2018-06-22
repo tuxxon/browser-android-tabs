@@ -32,6 +32,7 @@
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
 #include "build/build_config.h"
+#include "chrome/browser/browser_process.h"
 #include "components/download/public/common/download_stats.h"
 #include "components/rappor/public/rappor_utils.h"
 #include "components/url_formatter/url_formatter.h"
@@ -112,6 +113,7 @@
 #include "content/public/browser/storage_partition.h"
 #include "content/public/browser/web_contents_binding_set.h"
 #include "content/public/browser/web_contents_delegate.h"
+#include "content/public/browser/web_contents_ledger_observer.h"
 #include "content/public/common/bindings_policy.h"
 #include "content/public/common/browser_side_navigation_policy.h"
 #include "content/public/common/child_process_host.h"
@@ -265,7 +267,11 @@ class CloseDialogCallbackWrapper
 }  // namespace
 
 WebContents* WebContents::Create(const WebContents::CreateParams& params) {
-  return WebContentsImpl::CreateWithOpener(params, FindOpenerRFH(params));
+  WebContents* web_contents = WebContentsImpl::CreateWithOpener(params, FindOpenerRFH(params));
+  std::shared_ptr<WebContentsLedgerObserver> web_contents_ledger_observer(new WebContentsLedgerObserver(web_contents));
+  g_browser_process->ledger_manager_.AddObserver(web_contents_ledger_observer);
+
+  return web_contents;
 }
 
 WebContents* WebContents::CreateWithSessionStorage(
@@ -1488,6 +1494,10 @@ base::TimeTicks WebContentsImpl::GetLastActiveTime() const {
   return last_active_time_;
 }
 
+base::TimeTicks WebContentsImpl::GetLastHiddenTime() const {
+  return last_hidden_time_;
+}
+
 void WebContentsImpl::SetLastActiveTime(base::TimeTicks last_active_time) {
   last_active_time_ = last_active_time;
 }
@@ -1529,6 +1539,7 @@ void WebContentsImpl::WasHidden() {
 
     SendPageMessage(new PageMsg_WasHidden(MSG_ROUTING_NONE));
   }
+  last_hidden_time_ = base::TimeTicks::Now();
 
   SetVisibility(Visibility::HIDDEN);
 }

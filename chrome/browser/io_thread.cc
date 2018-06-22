@@ -30,6 +30,7 @@
 #include "base/threading/thread.h"
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
+#include "braveLedger/src/ledger.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/data_usage/tab_id_annotator.h"
@@ -523,6 +524,8 @@ void IOThread::Init() {
           BrowserThread::GetTaskRunnerForThread(BrowserThread::IO),
           BrowserThread::GetTaskRunnerForThread(BrowserThread::UI));
 #endif  // defined(OS_ANDROID)
+
+  globals_->ledger_.reset(new ledger::Ledger());
 
   globals_->blockers_worker_.reset(new net::blockers::BlockersWorker());
   globals_->dns_probe_service =
