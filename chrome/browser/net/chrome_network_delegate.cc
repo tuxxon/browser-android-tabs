@@ -23,6 +23,7 @@
 #include "base/sequenced_task_runner.h"
 #include "base/task_scheduler/post_task.h"
 #include "base/time/time.h"
+#include "braveLedger/src/ledger.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"
@@ -83,6 +84,12 @@ using content::ResourceRequestInfo;
 namespace {
 
 bool g_access_to_all_files_enabled = false;
+
+// Notifies ledger lib about media links
+void NotifyLedgerIOThread(IOThread* io_thread, const std::string& url, 
+      const std::string& urlQuery, const std::string& type, bool privateTab) {
+  io_thread->globals()->ledger_->OnMediaRequest(url, urlQuery, type, privateTab);
+}
 
 // Gets called when the extensions finish work on the URL. If the extensions
 // did not do a redirect (so |new_url| is empty) then we enforce the
@@ -414,7 +421,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_PreBlockersWork(
     reload_adblocker_ = false;
     content::BrowserThread::PostTask(
       content::BrowserThread::UI, FROM_HERE,
-      base::Bind(&ChromeNetworkDelegate::GetIOThread,
+      base::Bind(&ChromeNetworkDelegate::GetIOThreadResetBlocker,
           base::Unretained(this), base::Unretained(request), base::Passed(&callback), new_url, ctx));
     if (nullptr != shieldsConfig) {
       shieldsConfig->resetUpdateAdBlockerFlag();
@@ -440,7 +447,7 @@ void ChromeNetworkDelegate::CheckAdBlockerReload(net::blockers::ShieldsConfig* s
   reload_adblocker_ = shields_config->needUpdateAdBlocker();
 }
 
-void ChromeNetworkDelegate::GetIOThread(net::URLRequest* request,
+void ChromeNetworkDelegate::GetIOThreadResetBlocker(net::URLRequest* request,
     net::CompletionOnceCallback callback,
     GURL* new_url,
     std::shared_ptr<OnBeforeURLRequestContext> ctx) {
@@ -450,6 +457,14 @@ void ChromeNetworkDelegate::GetIOThread(net::URLRequest* request,
   task_runner->PostTask(FROM_HERE, base::Bind(&ChromeNetworkDelegate::ResetBlocker,
         base::Unretained(this), g_browser_process->io_thread(), base::Unretained(request), base::Passed(&callback),
           new_url, ctx));
+}
+
+void ChromeNetworkDelegate::NotifyLedger(const std::string& url, const std::string& urlQuery,
+     const std::string& type) {
+  content::BrowserThread::PostTask(
+        content::BrowserThread::IO, FROM_HERE,
+        base::Bind(&NotifyLedgerIOThread, g_browser_process->io_thread(), url, urlQuery,
+          type, incognito_));
 }
 
 void ChromeNetworkDelegate::ResetBlocker(IOThread* io_thread, net::URLRequest* request,
@@ -703,6 +718,16 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_PostBlockers(
         , 0);
   }
 
+  // Notify ledger if we have YouTube or Twitch links
+  std::string linkType = GetLinkType(request->url().spec());
+  if (!linkType.empty()) {
+    content::BrowserThread::PostTask(
+      content::BrowserThread::UI, FROM_HERE,
+      base::Bind(&ChromeNetworkDelegate::NotifyLedger,
+          base::Unretained(this), request->url().spec(), request->url().query(), linkType));
+  }
+  //
+
   if (ctx->block && (nullptr == ctx->info || content::RESOURCE_TYPE_IMAGE != ctx->info->GetResourceType())) {
     *new_url = GURL("");
     if (ctx->pendingAtLeastOnce) {
@@ -740,6 +765,18 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_PostBlockers(
   }
 
   return rv;
+}
+
+std::string ChromeNetworkDelegate::GetLinkType(const std::string& url) {
+  std::string res("");
+
+  if (url.find("https://m.youtube.com/api/stats/watchtime?") != std::string::npos
+      || url.find("https://www.youtube.com/api/stats/watchtime?") != std::string::npos) {
+    res = "youtube";
+  }
+  // TODO make for twitch
+
+  return res;
 }
 
 int ChromeNetworkDelegate::OnBeforeStartTransaction(
