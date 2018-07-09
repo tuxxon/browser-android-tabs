@@ -1610,21 +1610,20 @@ jumbo_split_static_library("browser") {
   ]
 
   include_dirs = [
-    "//anonize2/anon",
-    "//anonize2/relic/include",
-    "//anonize2/relic/include/low",
-    "//braveLedger/src",
-    "//bip39wally-core/include",
+  #  "//anonize2/anon",
+  #  "//anonize2/relic/include",
+  #  "//anonize2/relic/include/low",
+    "//bat-native-ledger/src",
+    "//bat-native-ledger/include",
+  #  "//bip39wally-core/include",
   ]
 
   deps = [
     ":active_use_util",
     ":resource_prefetch_predictor_proto",
-    "//anonize2",
-    "//braveLedger",
+    "//bat-native-ledger",
     "//base:i18n",
     "//base/allocator:buildflags",
-    "//bip39wally-core",
     "//cc",
     "//chrome:extra_resources",
     "//chrome:resources",
