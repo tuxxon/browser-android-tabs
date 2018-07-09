@@ -23,7 +23,7 @@
 #include "base/sequenced_task_runner.h"
 #include "base/task_scheduler/post_task.h"
 #include "base/time/time.h"
-#include "braveLedger/src/ledger.h"
+#include "bat-native-ledger/include/bat/ledger/ledger.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"
@@ -90,7 +90,7 @@ bool g_access_to_all_files_enabled = false;
 // Notifies ledger lib about media links
 void NotifyLedgerIOThread(IOThread* io_thread, const std::string& url, 
       const std::string& urlQuery, const std::string& type, bool privateTab) {
-  io_thread->globals()->ledger_->OnMediaRequest(url, urlQuery, type, privateTab);
+  io_thread->globals()->ledger_->OnMediaRequest(url, urlQuery, type/*, privateTab*/);
 }
 
 // Gets called when the extensions finish work on the URL. If the extensions
