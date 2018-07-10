@@ -49,7 +49,7 @@
             chrome:showAsAction="never"/>
         <item
             android:id="@+id/selection_open_in_incognito_tab_id"
-            android:title="@string/contextmenu_open_in_incognito_tab"
+            android:title="@string/brave_open_in_private_tab"
             chrome:showAsAction="never"/>
     </group>
 

@@ -172,7 +172,7 @@ public class ContextMenuManager implements OnCloseContextMenuListener {
             {
                 put(ID_OPEN_IN_NEW_WINDOW, R.string.contextmenu_open_in_other_window);
                 put(ID_OPEN_IN_NEW_TAB, R.string.contextmenu_open_in_new_tab);
-                put(ID_OPEN_IN_INCOGNITO_TAB, R.string.contextmenu_open_in_incognito_tab);
+                put(ID_OPEN_IN_INCOGNITO_TAB, R.string.brave_open_in_private_tab);
                 put(ID_SAVE_FOR_OFFLINE, R.string.contextmenu_save_link);
                 put(ID_REMOVE, R.string.remove);
                 put(ID_LEARN_MORE, R.string.learn_more);
