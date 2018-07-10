@@ -264,7 +264,7 @@ public class BrowserActionsContextMenuHelper implements OnCreateContextMenuListe
                 mPendingItemId = itemId;
                 waitNativeInitialized();
             }
-        } else if (itemId == R.id.browser_actions_open_in_incognito_tab) {
+        } else if (itemId == R.id.brave_open_in_private_tab) {
             mMenuItemDelegate.onOpenInIncognitoTab(mCurrentContextMenuParams.getLinkUrl());
             notifyBrowserActionSelected(BrowserActionsIntent.ITEM_OPEN_IN_INCOGNITO);
         } else if (itemId == R.id.browser_actions_save_link_as) {
@@ -296,7 +296,7 @@ public class BrowserActionsContextMenuHelper implements OnCreateContextMenuListe
         final int actionId;
         if (itemId == R.id.browser_actions_open_in_background) {
             actionId = ACTION_OPEN_IN_NEW_CHROME_TAB;
-        } else if (itemId == R.id.browser_actions_open_in_incognito_tab) {
+        } else if (itemId == R.id.brave_open_in_private_tab) {
             actionId = ACTION_OPEN_IN_INCOGNITO_TAB;
         } else if (itemId == R.id.browser_actions_save_link_as) {
             actionId = ACTION_DOWNLOAD_PAGE;

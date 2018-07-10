@@ -4,9 +4,12 @@
 
 package org.chromium.chrome.browser.search_engines;
 
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.support.annotation.IntDef;
 import android.text.TextUtils;
 
+import org.chromium.base.ContextUtils;
 import org.chromium.base.ObserverList;
 import org.chromium.base.ThreadUtils;
 import org.chromium.base.VisibleForTesting;
@@ -58,6 +61,13 @@ public class TemplateUrlService {
     public static final int TYPE_DEFAULT = 0;
     public static final int TYPE_PREPOPULATED = 1;
     public static final int TYPE_RECENT = 2;
+
+    public static final String PREF_STANDARD_SEARCH_ENGINE = "brave_standard_search_engine";
+    public static final String PREF_STANDARD_SEARCH_ENGINE_KEYWORD = "brave_standard_search_engine_keyword";
+    public static final String PREF_PRIVATE_SEARCH_ENGINE = "brave_private_search_engine";
+    public static final String PREF_PRIVATE_SEARCH_ENGINE_KEYWORD = "brave_private_search_engine_keyword";
+
+    private boolean mCurrentDSEPrivate;
 
     /**
      * Represents search engine with its index.
@@ -156,6 +166,7 @@ public class TemplateUrlService {
         // Note that this technically leaks the native object, however, TemlateUrlService
         // is a singleton that lives forever and there's no clean shutdown of Chrome on Android
         mNativeTemplateUrlServiceAndroid = nativeInit();
+        mCurrentDSEPrivate = false;
     }
 
     public boolean isLoaded() {
@@ -453,6 +464,47 @@ public class TemplateUrlService {
     @VisibleForTesting
     public String updateLastVisitedForTesting(String keyword) {
         return nativeUpdateLastVisitedForTesting(mNativeTemplateUrlServiceAndroid, keyword);
+    }
+
+    public void setSearchEngine(String name, String keyword, boolean is_private) {
+        updateDSEInfo(!is_private);
+        SharedPreferences.Editor sharedPreferencesEditor = ContextUtils.getAppSharedPreferences().edit();
+        sharedPreferencesEditor.putString(is_private ? PREF_PRIVATE_SEARCH_ENGINE : PREF_STANDARD_SEARCH_ENGINE, name);
+        sharedPreferencesEditor.putString(is_private ? PREF_PRIVATE_SEARCH_ENGINE_KEYWORD : PREF_STANDARD_SEARCH_ENGINE_KEYWORD, keyword);
+        sharedPreferencesEditor.apply();
+        mCurrentDSEPrivate = is_private;
+        setSearchEngine(keyword);
+    }
+
+    private void updateDSEInfo(boolean is_private) {
+        SharedPreferences preferences = ContextUtils.getAppSharedPreferences();
+        if (!preferences.contains(is_private ? PREF_PRIVATE_SEARCH_ENGINE : PREF_STANDARD_SEARCH_ENGINE) ||
+            !preferences.contains(is_private ? PREF_PRIVATE_SEARCH_ENGINE_KEYWORD : PREF_STANDARD_SEARCH_ENGINE_KEYWORD)) {
+            TemplateUrl dseTemplateUrl = getDefaultSearchEngineTemplateUrl();
+            if (dseTemplateUrl != null){
+                SharedPreferences.Editor sharedPreferencesEditor = preferences.edit();
+                sharedPreferencesEditor.putString(is_private ? PREF_PRIVATE_SEARCH_ENGINE : PREF_STANDARD_SEARCH_ENGINE, dseTemplateUrl.getShortName());
+                sharedPreferencesEditor.putString(is_private ? PREF_PRIVATE_SEARCH_ENGINE_KEYWORD : PREF_STANDARD_SEARCH_ENGINE_KEYWORD, dseTemplateUrl.getKeyword());
+                sharedPreferencesEditor.apply();
+            }
+        }
+    }
+
+    public String getDefaultSearchEngineName(boolean is_private) {
+        updateDSEInfo(is_private);
+        return ContextUtils.getAppSharedPreferences().getString(is_private ? PREF_PRIVATE_SEARCH_ENGINE : PREF_STANDARD_SEARCH_ENGINE, null);
+    }
+
+    public String getDefaultSearchEngineKeyword(boolean is_private) {
+        updateDSEInfo(is_private);
+        return ContextUtils.getAppSharedPreferences().getString(is_private ? PREF_PRIVATE_SEARCH_ENGINE_KEYWORD : PREF_STANDARD_SEARCH_ENGINE_KEYWORD, null);
+    }
+
+    public void updateCurrentDSE(boolean is_private) {
+        if (mCurrentDSEPrivate != is_private) {
+            mCurrentDSEPrivate = is_private;
+            setSearchEngine(getDefaultSearchEngineKeyword(is_private));
+        }
     }
 
     private native long nativeInit();

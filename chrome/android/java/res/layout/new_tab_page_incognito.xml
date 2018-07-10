@@ -20,7 +20,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:requiresFadingEdge="vertical"
-        android:contentDescription="@string/accessibility_new_incognito_tab_page" >
+        android:contentDescription="@string/brave_new_private_tab" >
 
         <LinearLayout
             android:id="@+id/new_tab_incognito_container"
@@ -46,12 +46,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
-                android:text="@string/new_tab_incognito_header"
+                android:text="@string/brave_new_tab_private_header"
                 android:textColor="@color/incognito_ntp_header"
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/new_tab_incognito_message"
+                android:id="@+id/brave_new_tab_private_message"
                 style="@style/IncognitoNewTabMessage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,6 +68,20 @@
                 android:text="@string/learn_more"
                 android:textColor="@color/incognito_ntp_learn_more_link"
                 android:visibility = "gone" />
+
+            <TextView
+                android:id="@+id/ddg_offer_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/ddg_offer_link"
+                android:textColor="@color/google_grey_400"
+                android:drawableStart="@drawable/duckduckgo"
+                android:drawablePadding="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="28sp"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
 
         </LinearLayout>
 
