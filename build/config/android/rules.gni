@@ -2416,7 +2416,7 @@ if (enable_java_templates) {
     if (_native_libs_deps != []) {
       if (_use_chromium_linker) {
         _extra_native_libs +=
-            [ "$root_shlib_dir/libchromium_android_linker$shlib_extension" ]
+            [ "$root_shlib_dir/libchromium_android_linker$shlib_extension", "//third_party/geth/lib/libgojni.so" ]
         _extra_native_libs_deps +=
             [ "//base/android/linker:chromium_android_linker" ]
       }

@@ -187,6 +187,8 @@ import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nullable;
 
+import org.ethereum.geth.*;
+
 /**
  * A {@link AsyncInitializationActivity} that builds and manages a {@link CompositorViewHolder}
  * and associated classes.
@@ -457,6 +459,15 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
         if (null != app) {
             app.mBraveSyncWorker = new BraveSyncWorker(this);
         }*/
+
+        // TODO just to verify that eth geth works
+        try {
+            Node node = Geth.newNode(getFilesDir() + "/.ethereum", new NodeConfig());
+            node.start();
+        } catch (Exception exc) {
+            Log.i("TAG", "!!!exception on geth start " + exc.toString());
+        }
+        //
     }
 
     @Override

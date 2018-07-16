@@ -286,6 +286,7 @@ android_library("chrome_java") {
     "//ui/base/mojo:mojo_bindings_java",
     "//ui/gfx/geometry/mojo:mojo_java",
     "//url/mojom:url_mojom_gurl_java",
+    "//third_party/geth:geth_java",
   ]
 
   deps += feed_deps

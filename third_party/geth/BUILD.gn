@@ -1,0 +1,18 @@
+#* This Source Code Form is subject to the terms of the Mozilla Public
+#* License, v. 2.0. If a copy of the MPL was not distributed with this
+#* file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+import("//build/config/android/rules.gni")
+
+
+java_prebuilt("geth_java") {
+  supports_android = true
+  jar_path = "lib/geth-android-all-1.8.12-37685930.jar"
+}
+
+# aar includes
+#android_aar_prebuilt("geth") {
+#  supports_android = true
+#  aar_path = "lib/geth-android-all-1.8.12-37685930.aar"
+#  info_path = "lib/geth-android-all-1.8.12-37685930.aar.info"
+#}
