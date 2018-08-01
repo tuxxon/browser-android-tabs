@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">Приставката е блокирана</translation>
 <translation id="1145532888383813076">Търсете в устройството си, приложенията и мрежата.</translation>
 <translation id="1146204723345436916">Импортиране на отметки от HTML файл...</translation>
-<translation id="114721135501989771">Brave с интелекта на Google</translation>
+<translation id="4755587405228414306">Brave с интелекта на Google</translation>
 <translation id="1148097584170732637">Намерихме <ph name="FILE_COUNT" />.
 <ph name="LINE_BREAK1" />
 Мястото в локалното хранилище не е достатъчно. Има нужда от още <ph name="FILE_SIZE" />.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">Синхронизирането е на пауза</translation>
 <translation id="1319979322914001937">Приложение, което показва филтриран списък с разширения от уеб магазина на Brave. Те могат да бъдат инсталирани направо от приложението.</translation>
 <translation id="132090119144658135">Съвпадение на субекта:</translation>
-<translation id="1326317727527857210">Влезте в Brave, за да получите разделите си от другите си устройства.</translation>
+<translation id="7253276740368043692">Влезте в Brave, за да получите разделите си от другите си устройства.</translation>
 <translation id="1327074568633507428">Принтер в Google Отпечатване в облак</translation>
 <translation id="1327977588028644528">Шлюз</translation>
 <translation id="1329584516321524826">Актуализирано току-що</translation>
@@ -1417,7 +1417,7 @@
 <translation id="3143695347784622594">Изпращане на системни данни. Автоматично изпращане до Google на диагностична информация и данни за употребата на устройството и приложенията. Можете да промените това по всяко време от <ph name="BEGIN_LINK1" />настройките<ph name="END_LINK1" /> на устройството си. Ако сте включили Допълнителна активност в мрежата и приложенията, съответната информация ще се съхранява в профила ви, така че можете да я управлявате от „Моята активност“. <ph name="BEGIN_LINK2" />Научете повече<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">ГОТОВО</translation>
 <translation id="3144647712221361880">Отваряне на връзката като</translation>
-<translation id="3149510190863420837">Приложения в Brave</translation>
+<translation id="300669147395456190">Приложения в Brave</translation>
 <translation id="3150927491400159470">Твърдо презареждане</translation>
 <translation id="315116470104423982">Мобилни данни</translation>
 <translation id="3151539355209957474">Начален час</translation>
@@ -1494,7 +1494,7 @@
 <translation id="3280237271814976245">&amp;Запазване като...</translation>
 <translation id="3280243678470289153">Оставане в Brave</translation>
 <translation id="3280431534455935878">Подготвя се</translation>
-<translation id="3282568296779691940">Вход в Brave</translation>
+<translation id="82609232232243542">Вход в Brave</translation>
 <translation id="3285322247471302225">Нов &amp;раздел</translation>
 <translation id="3288047731229977326">Разширенията, които се изпълняват в режим за програмисти, могат да навредят на компютъра ви. Ако не сте програмист, за по-голяма безопасност трябва да деактивирате изпълнението им в този режим.</translation>
 <translation id="3289856944988573801">За да проверите за актуализации, моля, използвайте Ethernet или Wi-Fi.</translation>
@@ -4270,7 +4270,7 @@
 <translation id="7564847347806291057">Прекратяване на процеса</translation>
 <translation id="7566118625369982896">Управление на връзките към приложения в Google Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Данните в Brave са изчистени</translation>
+<translation id="7814200940910057384">Данните в Brave са изчистени</translation>
 <translation id="7568790562536448087">Актуализира се</translation>
 <translation id="7571643774869182231">Мястото в хранилището не е достатъчно за актуализацията</translation>
 <translation id="7573172247376861652">Заряд на батерията</translation>
@@ -5143,7 +5143,7 @@
 <translation id="8899851313684471736">Отваряне на връзк&amp;ата в нов прозорец</translation>
 <translation id="8902667442496790482">Отваряне на настройките на Прочитане на глас</translation>
 <translation id="8903921497873541725">Увеличаване на мащаба</translation>
-<translation id="8904976895050290827">Синхронизиране в Brave</translation>
+<translation id="3149880132460839085">Синхронизиране в Brave</translation>
 <translation id="8909233240676134608">Машината не може да се присъедини към домейна. Сървърът не поддържа посочените типове шифроване в Kerberos. Вижте „Още опции“ за настройки на шифроването.</translation>
 <translation id="8909833622202089127">Сайтът следи местоположението ви</translation>
 <translation id="8910146161325739742">Споделяне на екрана ви</translation>

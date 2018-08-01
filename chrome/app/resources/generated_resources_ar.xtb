@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">تم حظر المكوّن الإضافي</translation>
 <translation id="1145532888383813076">البحث في جهازك والتطبيقات والويب.</translation>
 <translation id="1146204723345436916">‏استيراد الإشارات المرجعية من ملف HTML...</translation>
-<translation id="114721135501989771">‏الحصول على ميزات Google الذكية في Brave</translation>
+<translation id="4755587405228414306">‏الحصول على ميزات Google الذكية في Brave</translation>
 <translation id="1148097584170732637">تم العثور على <ph name="FILE_COUNT" />.
     <ph name="LINE_BREAK1" />
     لا توجد مساحة كافية في سعة التخزين المحلية. ويتطلب وجود <ph name="FILE_SIZE" /> إضافي.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">تم إيقاف المزامنة مؤقتًا</translation>
 <translation id="1319979322914001937">‏أحد التطبيقات التي تعرض قائمة مُفلترة بالإضافات من سوق Brave الإلكتروني. يمكن تثبيت الإضافات الموجودة في القائمة من التطبيق مباشرةً.</translation>
 <translation id="132090119144658135">مطابقة الموضوع:</translation>
-<translation id="1326317727527857210">‏للحصول على علامات التبويب من أجهزتك الأخرى، سجّل الدخول إلى Brave.</translation>
+<translation id="7253276740368043692">‏للحصول على علامات التبويب من أجهزتك الأخرى، سجّل الدخول إلى Brave.</translation>
 <translation id="1327074568633507428">‏طابعة مسجلة في الطباعة السحابية من Google</translation>
 <translation id="1327977588028644528">المدخل</translation>
 <translation id="1329584516321524826">تم التحديث الآن</translation>
@@ -1420,7 +1420,7 @@
 <translation id="3143695347784622594">‏إرسال بيانات النظام. يمكنك إرسال بيانات التشخيص وبيانات استخدام التطبيق والجهاز تلقائيًا إلى Google. ويمكنك تغيير ذلك في أي وقت في <ph name="BEGIN_LINK1" />إعدادات<ph name="END_LINK1" /> جهازك. في حال تفعيل "نشاط ويب وتطبيقات" إضافي، سيتم حفظ هذه المعلومات مع حسابك حتى تتمكَّن من إدارتها في "نشاطي". <ph name="BEGIN_LINK2" />مزيد من المعلومات<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">تم</translation>
 <translation id="3144647712221361880">فتح الرابط كـ</translation>
-<translation id="3149510190863420837">‏تطبيقات Brave</translation>
+<translation id="300669147395456190">‏تطبيقات Brave</translation>
 <translation id="3150927491400159470">إعادة تحميل بشكل كامل</translation>
 <translation id="315116470104423982">بيانات الجوال</translation>
 <translation id="3151539355209957474">وقت البدء</translation>
@@ -1497,7 +1497,7 @@
 <translation id="3280237271814976245">الحفظ &amp;باسم...</translation>
 <translation id="3280243678470289153">‏الاستمرار في استخدام Brave</translation>
 <translation id="3280431534455935878">جارٍ التحضير</translation>
-<translation id="3282568296779691940">‏تسجيل الدخول إلى Brave</translation>
+<translation id="82609232232243542">‏تسجيل الدخول إلى Brave</translation>
 <translation id="3285322247471302225">&amp;علامة تبويب جديدة</translation>
 <translation id="3288047731229977326">يمكن أن تؤدي الإضافات التي تعمل في وضع مطور البرامج إلى إلحاق الضرر بجهاز الكمبيوتر. إذا لم تكن مطور برامج، فيجب إيقاف هذه الإضافات التي تعمل في وضع مطور البرامج للبقاء في أمان.</translation>
 <translation id="3289856944988573801">‏للتحقق من وجود تحديثات، يُرجى استخدام شبكة Ethernet أو Wi-Fi.</translation>
@@ -4268,7 +4268,7 @@
 <translation id="7564847347806291057">إنهاء العملية</translation>
 <translation id="7566118625369982896">‏إدارة روابط تطبيق Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">‏بيانات Brave التي تم محوها</translation>
+<translation id="7814200940910057384">‏بيانات Brave التي تم محوها</translation>
 <translation id="7568790562536448087">تحديث</translation>
 <translation id="7571643774869182231">لا تتوفر سعة تخزين كافية لإجراء التحديث</translation>
 <translation id="7573172247376861652">شحن البطارية</translation>
@@ -5141,7 +5141,7 @@
 <translation id="8899851313684471736">&amp;فتح الرّابط في نافذة جديدة</translation>
 <translation id="8902667442496790482">فتح إعدادات سماع الاختيار</translation>
 <translation id="8903921497873541725">تكبير</translation>
-<translation id="8904976895050290827">‏مزامنة Brave</translation>
+<translation id="3149880132460839085">‏مزامنة Brave</translation>
 <translation id="8909233240676134608">‏يتعذَّر ضم الجهاز إلى النطاق، لأن الخادم لا يدعم أنواع تشفير Kerberos المحددة. يُرجى الانتقال إلى "خيارات إضافية" للاطّلاع على إعدادات التشفير.</translation>
 <translation id="8909833622202089127">تتبّع موقع الويب موقعك الجغرافي.</translation>
 <translation id="8910146161325739742">مشاركة الشاشة</translation>

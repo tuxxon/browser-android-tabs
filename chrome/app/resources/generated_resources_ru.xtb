@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">Плагин заблокирован</translation>
 <translation id="1145532888383813076">Введите запрос для поиска на устройстве, в приложениях и Интернете.</translation>
 <translation id="1146204723345436916">Импортировать закладки из файла HTML...</translation>
-<translation id="114721135501989771">Интеллектуальные функции Google в Brave</translation>
+<translation id="4755587405228414306">Интеллектуальные функции Google в Brave</translation>
 <translation id="1148097584170732637">Обнаружены файлы (<ph name="FILE_COUNT" />).
     <ph name="LINE_BREAK1" />
     На устройстве недостаточно места. Требуется ещё <ph name="FILE_SIZE" />.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">Синхронизация приостановлена.</translation>
 <translation id="1319979322914001937">В "Галерее" показан список избранных расширений из Интернет-магазина Brave, которые можно установить прямо из приложения.</translation>
 <translation id="132090119144658135">Совпадение тем:</translation>
-<translation id="1326317727527857210">Чтобы получить доступ к вкладкам на всех ваших устройствах, войдите в Brave.</translation>
+<translation id="7253276740368043692">Чтобы получить доступ к вкладкам на всех ваших устройствах, войдите в Brave.</translation>
 <translation id="1327074568633507428">Принтер, подключенный к Виртуальному принтеру Google</translation>
 <translation id="1327977588028644528">Шлюз</translation>
 <translation id="1329584516321524826">Обновлено только что</translation>
@@ -1421,7 +1421,7 @@
 <translation id="3143695347784622594">Отправка системных данных. Автоматическая передача в Google данных диагностики, а также сведений об использовании устройства и приложений. Вы можете в любой момент отключить эту функцию в <ph name="BEGIN_LINK1" />настройках устройства<ph name="END_LINK1" />. Если включена История приложений и веб-поиска, эта информация будет сохраняться в вашем аккаунте, и вы сможете управлять ей на странице "Мои действия". <ph name="BEGIN_LINK2" />Подробнее…<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">ГОТОВО</translation>
 <translation id="3144647712221361880">Открыть ссылку как</translation>
-<translation id="3149510190863420837">Приложения Brave</translation>
+<translation id="300669147395456190">Приложения Brave</translation>
 <translation id="3150927491400159470">Жесткая перезагрузка</translation>
 <translation id="315116470104423982">Мобильное подключение</translation>
 <translation id="3151539355209957474">Время начала</translation>
@@ -1498,7 +1498,7 @@
 <translation id="3280237271814976245">Сохранить &amp;как...</translation>
 <translation id="3280243678470289153">Продолжить в Brave</translation>
 <translation id="3280431534455935878">Подготовка файла</translation>
-<translation id="3282568296779691940">Войдите в Brave</translation>
+<translation id="82609232232243542">Войдите в Brave</translation>
 <translation id="3285322247471302225">Новая вкладка</translation>
 <translation id="3288047731229977326">Расширения, запущенные в режиме разработчика, могут причинить вред вашему компьютеру. Если вы не являетесь разработчиком, их следует отключить, чтобы обеспечить безопасность данных.</translation>
 <translation id="3289856944988573801">Чтобы проверить наличие обновлений, подключитесь через сеть Ethernet или Wi-Fi.</translation>
@@ -4272,7 +4272,7 @@
 <translation id="7564847347806291057">Завершить процесс</translation>
 <translation id="7566118625369982896">Управление ссылками на приложение в Google Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Данные Brave удалены</translation>
+<translation id="7814200940910057384">Данные Brave удалены</translation>
 <translation id="7568790562536448087">Обновление</translation>
 <translation id="7571643774869182231">Недостаточно места для обновления.</translation>
 <translation id="7573172247376861652">Заряд батареи</translation>
@@ -5145,7 +5145,7 @@
 <translation id="8899851313684471736">Открыть ссылку в новом &amp;окне</translation>
 <translation id="8902667442496790482">Открыть настройки озвучивания при нажатии</translation>
 <translation id="8903921497873541725">Увеличить</translation>
-<translation id="8904976895050290827">Синхронизация Brave</translation>
+<translation id="3149880132460839085">Синхронизация Brave</translation>
 <translation id="8909233240676134608">Не удалось подключить компьютер к домену. Сервер не поддерживает выбранные типы шифрования Kerberos. В настройках шифрования установите флажок "Другие параметры".</translation>
 <translation id="8909833622202089127">Сайт отслеживает ваше местоположение</translation>
 <translation id="8910146161325739742">Откройте доступ к экрану</translation>
