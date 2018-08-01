@@ -157,8 +157,8 @@ If you update this file, be sure also to update google_chrome_strings.grd. -->
       <message name="IDS_SHORT_PRODUCT_LOGO_ALT_TEXT" desc="Alt text for the Brave logo image.">
         Brave logo
       </message>
-      <!-- Chrome enterprise logo won't be used in Chromium -->
-      <message name="IDS_PRODUCT_LOGO_ENTERPRISE_ALT_TEXT" desc="Alt text for the Chromium Enterprise logo image."/>
+      <!-- Brave enterprise logo won't be used in Brave -->
+      <message name="IDS_PRODUCT_LOGO_ENTERPRISE_ALT_TEXT" desc="Alt text for the Brave Enterprise logo image."/>
       <if expr="is_win">
         <message name="IDS_SHORTCUT_NEW_WINDOW" desc="The text label of the New window shortcut context menu entry as of Windows 8">
           New window
@@ -1169,7 +1169,7 @@ Please check your email at <ph name="ACCOUNT_EMAIL">$2<ex>jane.doe@example.com</
           Not now
         </message>
         <message name="IDS_DICE_WELCOME_DESCRIPTION" desc="A message on the welcome page explaining the purpose of signing in.">
-          Sign in to sync and personalize Chromium across your devices
+          Sign in to sync and personalize Brave across your devices
         </message>
       </if>
 
@@ -1239,16 +1239,16 @@ Please check your email at <ph name="ACCOUNT_EMAIL">$2<ex>jane.doe@example.com</
       </if>
       <!-- Chroium launch blocking dialog. -->
       <if expr="not is_android and not chromeos">
-         <message name="IDS_ENTERPRISE_STARTUP_CLOUD_POLICY_ENROLLMENT_TOOLTIP" desc="The information message of Chromium launch blocking dialog for machine level user cloud policy enrollment.">
-          Launching Chromium
+         <message name="IDS_ENTERPRISE_STARTUP_CLOUD_POLICY_ENROLLMENT_TOOLTIP" desc="The information message of Brave launch blocking dialog for machine level user cloud policy enrollment.">
+          Launching Brave
         </message>
-        <message name="IDS_ENTERPRISE_STARTUP_CLOUD_POLICY_ENROLLMENT_ERROR" desc="The error message of Chromium launch blocking dialog when machine level user cloud policy enrollment failed.">
-          Couldn't launch Chromium. Try again.
+        <message name="IDS_ENTERPRISE_STARTUP_CLOUD_POLICY_ENROLLMENT_ERROR" desc="The error message of Brave launch blocking dialog when machine level user cloud policy enrollment failed.">
+          Couldn't launch Brave. Try again.
         </message>
-        <message name="IDS_ENTERPRISE_STARTUP_RELAUNCH_BUTTON" desc="The text of relaunch button of Chromium launch blocking dialog.">
-          Relaunch Chromium
+        <message name="IDS_ENTERPRISE_STARTUP_RELAUNCH_BUTTON" desc="The text of relaunch button of Brave launch blocking dialog.">
+          Relaunch Brave
         </message>
-        <message name="IDS_ENTERPRISE_STARTUP_CANCEL_BUTTON" desc="The text of cancel button of Chromium launch blocking dialog.">
+        <message name="IDS_ENTERPRISE_STARTUP_CANCEL_BUTTON" desc="The text of cancel button of Brave launch blocking dialog.">
           Close
         </message>
       </if>
