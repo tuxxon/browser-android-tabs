@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">Pistikprogramm on blokeeritud</translation>
 <translation id="1145532888383813076">Otsige oma seadmest, rakendustest ja veebist.</translation>
 <translation id="1146204723345436916">Järjehoidjate importimine HTML-failist ...</translation>
-<translation id="114721135501989771">Google'i nutikus Brave'is</translation>
+<translation id="4755587405228414306">Google'i nutikus Brave'is</translation>
 <translation id="1148097584170732637">Leiti <ph name="FILE_COUNT" />.
     <ph name="LINE_BREAK1" />
     Kohalikus salvestusruumis pole piisavalt ruumi. Vaja on veel <ph name="FILE_SIZE" />.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">Sünkroonimine on peatatud</translation>
 <translation id="1319979322914001937">Rakendus, mis näitab laienduste filtreeritud loendit Brave'i veebipoest. Selles loendis olevad laiendused saab installida otse rakendusest.</translation>
 <translation id="132090119144658135">Teema vaste:</translation>
-<translation id="1326317727527857210">Vahelehtede hankimiseks oma teistest seadmetest logige Brave'i sisse.</translation>
+<translation id="7253276740368043692">Vahelehtede hankimiseks oma teistest seadmetest logige Brave'i sisse.</translation>
 <translation id="1327074568633507428">Printer Google'i pilvprintimises</translation>
 <translation id="1327977588028644528">Lüüs</translation>
 <translation id="1329584516321524826">Just värskendatud</translation>
@@ -1420,7 +1420,7 @@ Ma arvan, et see sait ei tohiks olla blokeeritud.</translation>
 <translation id="3143695347784622594">Saatke süsteemi andmeid. Saatke Google'ile automaatselt diagnostikateavet ning seadme ja rakenduste kasutusandmeid. Seda saate seadme <ph name="BEGIN_LINK1" />seadetes<ph name="END_LINK1" /> igal ajal vaadata ja muuta. Kui lülitasite sisse rohkem veebi- ja rakendustegevusi, salvestatakse see teave teie kontole, et saaksite seda hallata jaotises Minu tegevused. <ph name="BEGIN_LINK2" />Lisateave<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">VALMIS</translation>
 <translation id="3144647712221361880">Ava link kasutajana</translation>
-<translation id="3149510190863420837">Brave'i rakendused</translation>
+<translation id="300669147395456190">Brave'i rakendused</translation>
 <translation id="3150927491400159470">Põhjalik uuestilaadimine</translation>
 <translation id="315116470104423982">Mobiilne andmeside</translation>
 <translation id="3151539355209957474">Algusaeg</translation>
@@ -1497,7 +1497,7 @@ Ma arvan, et see sait ei tohiks olla blokeeritud.</translation>
 <translation id="3280237271814976245">Salvesta &amp;nimega...</translation>
 <translation id="3280243678470289153">Jää Brave'i</translation>
 <translation id="3280431534455935878">Ettevalmistamine</translation>
-<translation id="3282568296779691940">Brave'i sisselogimine</translation>
+<translation id="82609232232243542">Brave'i sisselogimine</translation>
 <translation id="3285322247471302225">Uus &amp;vaheleht</translation>
 <translation id="3288047731229977326">Arendaja režiimis töötavad laiendused võivad teie arvutit kahjustada. Kui te pole arendaja, peaksite turvalisuse säilitamiseks nende laienduste käitamise arendaja režiimis keelama.</translation>
 <translation id="3289856944988573801">Kasutage värskenduste otsimiseks Etherneti või WiFi-ühendust.</translation>
@@ -4271,7 +4271,7 @@ Rakenduse <ph name="APP_NAME" /> installimisel laaditakse alla <ph name="DOWNLOA
 <translation id="7564847347806291057">Lõpeta toiming</translation>
 <translation id="7566118625369982896">Play rakenduse linkide haldamine</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Brave'i andmed kustutati</translation>
+<translation id="7814200940910057384">Brave'i andmed kustutati</translation>
 <translation id="7568790562536448087">Värskendamine</translation>
 <translation id="7571643774869182231">Värskendamiseks pole piisavalt salvestusruumi</translation>
 <translation id="7573172247376861652">Aku laadimine</translation>
@@ -5145,7 +5145,7 @@ Inimesed, kelle ühendus on aeglane, ei pruugi teie sisu näha.</translation>
 <translation id="8899851313684471736">Ava link uues &amp;aknas</translation>
 <translation id="8902667442496790482">Ava funktsiooni Vali ja kuula seaded</translation>
 <translation id="8903921497873541725">Suurendab</translation>
-<translation id="8904976895050290827">Brave'i sünkroonimine</translation>
+<translation id="3149880132460839085">Brave'i sünkroonimine</translation>
 <translation id="8909233240676134608">Seadet ei saa domeeniga ühendada. Server ei toeta määratud Kerberose krüpteerimistüüpe. Krüpteerimisseaded leiate jaotisest „Rohkem valikuid”.</translation>
 <translation id="8909833622202089127">Sait jälgib teie asukohta</translation>
 <translation id="8910146161325739742">Oma ekraani jagamine</translation>

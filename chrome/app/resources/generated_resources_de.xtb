@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">Plug-in blockiert</translation>
 <translation id="1145532888383813076">Durchsuchen Sie Ihr Gerät, Ihre Apps und das Web.</translation>
 <translation id="1146204723345436916">Lesezeichen aus HTML-Datei importieren...</translation>
-<translation id="114721135501989771">Brave intelligent nutzen mit Google</translation>
+<translation id="4755587405228414306">Brave intelligent nutzen mit Google</translation>
 <translation id="1148097584170732637"><ph name="FILE_COUNT" /> gefunden.
     <ph name="LINE_BREAK1" />
     Nicht genügend Platz im lokalen Speicher. Zusätzlich <ph name="FILE_SIZE" /> erforderlich.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">Synchronisierung pausiert</translation>
 <translation id="1319979322914001937">Eine App, in der eine gefilterte Liste mit Erweiterungen für den Brave Web Store angezeigt wird. Die angezeigten Erweiterungen können direkt aus der App installiert werden.</translation>
 <translation id="132090119144658135">subject-match:</translation>
-<translation id="1326317727527857210">Melden Sie sich in Brave an, um Tabs von Ihren anderen Geräten abzurufen.</translation>
+<translation id="7253276740368043692">Melden Sie sich in Brave an, um Tabs von Ihren anderen Geräten abzurufen.</translation>
 <translation id="1327074568633507428">Google Cloud Print-Drucker</translation>
 <translation id="1327977588028644528">Gateway</translation>
 <translation id="1329584516321524826">Gerade aktualisiert</translation>
@@ -1416,7 +1416,7 @@ Servernachricht: <ph name="SERVER_MSG" /></translation>
 <translation id="3143695347784622594">Systemdaten senden. Diagnosedaten sowie Geräte- und App-Nutzungsdaten werden automatisch an Google gesendet. Diese Berechtigung können Sie jederzeit in den <ph name="BEGIN_LINK1" />Geräteeinstellungen<ph name="END_LINK1" /> ändern. Wenn Sie zusätzliche Web- &amp; App-Aktivitäten aktiviert haben, werden diese Informationen in Ihrem Konto gespeichert, damit Sie sie unter "Meine Aktivitäten" verwalten können. <ph name="BEGIN_LINK2" />Weitere Informationen<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">Fertig</translation>
 <translation id="3144647712221361880">Link öffnen als</translation>
-<translation id="3149510190863420837">Brave-Apps</translation>
+<translation id="300669147395456190">Brave-Apps</translation>
 <translation id="3150927491400159470">Vollständiges Aktualisieren (Hard Reload)</translation>
 <translation id="315116470104423982">Mobilfunk</translation>
 <translation id="3151539355209957474">Startzeit</translation>
@@ -1493,7 +1493,7 @@ Servernachricht: <ph name="SERVER_MSG" /></translation>
 <translation id="3280237271814976245">Speichern &amp;unter...</translation>
 <translation id="3280243678470289153">In Brave bleiben</translation>
 <translation id="3280431534455935878">In Vorbereitung</translation>
-<translation id="3282568296779691940">In Brave anmelden</translation>
+<translation id="82609232232243542">In Brave anmelden</translation>
 <translation id="3285322247471302225">Neuer &amp;Tab</translation>
 <translation id="3288047731229977326">Erweiterungen im Entwicklermodus können auf Ihrem Computer Schaden anrichten. Wenn Sie kein Entwickler sind, sollten Sie diese Erweiterungen im Entwicklermodus deaktivieren, um sicher zu sein.</translation>
 <translation id="3289856944988573801">Verwenden Sie Ethernet oder WLAN zur Suche nach Updates.</translation>
@@ -4270,7 +4270,7 @@ Bei der Installation von "<ph name="APP_NAME" />" werden <ph name="DOWNLOAD_SIZE
 <translation id="7564847347806291057">Prozess beenden</translation>
 <translation id="7566118625369982896">Play-App-Links verwalten</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Gelöschte Brave-Daten</translation>
+<translation id="7814200940910057384">Gelöschte Brave-Daten</translation>
 <translation id="7568790562536448087">Aktualisierung läuft</translation>
 <translation id="7571643774869182231">Nicht genug Speicherplatz, um Update auszuführen</translation>
 <translation id="7573172247376861652">Akkustand</translation>
@@ -5144,7 +5144,7 @@ Andere Personen mit langsamen Verbindungen sehen Ihre Inhalte möglicherweise ni
 <translation id="8899851313684471736">Link in neuem &amp;Fenster öffnen</translation>
 <translation id="8902667442496790482">Einstellungen für "Vorlesen" öffnen</translation>
 <translation id="8903921497873541725">Vergrößern</translation>
-<translation id="8904976895050290827">Brave Sync</translation>
+<translation id="3149880132460839085">Brave Sync</translation>
 <translation id="8909233240676134608">Der Computer konnte der Domain nicht beitreten. Der Server bietet keine Unterstützung für die angegebenen Kerberos-Verschlüsselungstypen. Unter "Weitere Optionen" finden Sie die Verschlüsselungseinstellungen.</translation>
 <translation id="8909833622202089127">Die Website verfolgt Ihren Standort</translation>
 <translation id="8910146161325739742">Bildschirm freigeben</translation>

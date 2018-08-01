@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">Doplnok je blokovaný</translation>
 <translation id="1145532888383813076">Vyhľadávajte v zariadení, aplikáciách a na webe.</translation>
 <translation id="1146204723345436916">Importovať záložky zo súboru HTML ...</translation>
-<translation id="114721135501989771">Získajte inteligentné doplnky Googlu v Brave</translation>
+<translation id="4755587405228414306">Získajte inteligentné doplnky Googlu v Brave</translation>
 <translation id="1148097584170732637">Počet nájdených: <ph name="FILE_COUNT" />.
     <ph name="LINE_BREAK1" />
     V miestnom úložisku nie je dostatok miesta. Potrebujete ďalšie miesto – <ph name="FILE_SIZE" />.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">Synchronizácia je pozastavená</translation>
 <translation id="1319979322914001937">Aplikácia, ktorá zobrazuje filtrovaný zoznam rozšírení z Internetového obchodu Brave. Rozšírenia z tohto zoznamu sa dajú nainštalovať priamo z aplikácie.</translation>
 <translation id="132090119144658135">Zhoda predmetu:</translation>
-<translation id="1326317727527857210">Ak chcete získať karty z ďalších svojich zariadení, prihláste sa do Brave.</translation>
+<translation id="7253276740368043692">Ak chcete získať karty z ďalších svojich zariadení, prihláste sa do Brave.</translation>
 <translation id="1327074568633507428">Tlačiareň v službe Google Cloud Print</translation>
 <translation id="1327977588028644528">Brána</translation>
 <translation id="1329584516321524826">Práve aktualizované</translation>
@@ -1420,7 +1420,7 @@ Tieto webové stránky by podľa mňa nemali byť blokované.</translation>
 <translation id="3143695347784622594">Odosielanie systémových údajov. Automaticky odosielajte Googlu diagnostiku a údaje o využívaní aplikácií. Môžete to kedykoľvek zmeniť v <ph name="BEGIN_LINK1" />nastaveniach<ph name="END_LINK1" /> zariadenia. Ak ste zapli ďalšiu aktivitu na internete a v aplikáciách, tieto informácie sa budú ukladať vo vašom účte a budete ich môcť spravovať na stránke Moja aktivita. <ph name="BEGIN_LINK2" />Ďalšie informácie<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">OK</translation>
 <translation id="3144647712221361880">Otvoriť odkaz ako</translation>
-<translation id="3149510190863420837">Aplikácie Brave</translation>
+<translation id="300669147395456190">Aplikácie Brave</translation>
 <translation id="3150927491400159470">Vynútiť opätovné načítanie</translation>
 <translation id="315116470104423982">Mobilné dátové prenosy</translation>
 <translation id="3151539355209957474">Čas začiatku</translation>
@@ -1497,7 +1497,7 @@ Tieto webové stránky by podľa mňa nemali byť blokované.</translation>
 <translation id="3280237271814976245">Uložiť &amp;ako...</translation>
 <translation id="3280243678470289153">Zostať v Brave</translation>
 <translation id="3280431534455935878">Prebieha príprava</translation>
-<translation id="3282568296779691940">Prihlásenie do prehliadača Brave</translation>
+<translation id="82609232232243542">Prihlásenie do prehliadača Brave</translation>
 <translation id="3285322247471302225">Nová &amp;karta</translation>
 <translation id="3288047731229977326">Rozšírenia spustené v režime pre vývojárov môžu poškodiť váš počítač. Ak nie ste vývojár, mali by ste v záujme bezpečnosti rozšírenia spustené v režime vývojára zakázať.</translation>
 <translation id="3289856944988573801">Ak chcete skontrolovať aktualizácie, použite sieť ethernet alebo Wi‑Fi.</translation>
@@ -4269,7 +4269,7 @@ Inštaláciou aplikácie <ph name="APP_NAME" /> stiahnete <ph name="DOWNLOAD_SIZ
 <translation id="7564847347806291057">Ukončiť proces</translation>
 <translation id="7566118625369982896">Správa skratiek aplikácie Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">Údaje Brave boli vymazané</translation>
+<translation id="7814200940910057384">Údaje Brave boli vymazané</translation>
 <translation id="7568790562536448087">Prebieha aktualizácia</translation>
 <translation id="7571643774869182231">V úložisku nie je dostatok miesta na aktualizáciu</translation>
 <translation id="7573172247376861652">Nabíjanie batérie</translation>
@@ -5142,7 +5142,7 @@ Súbor kľúča uložte na bezpečné miesto. Budete ho potrebovať na vytvoreni
 <translation id="8899851313684471736">Otvoriť odkaz v novom &amp;okne</translation>
 <translation id="8902667442496790482">Otvoriť nastavenia počúvania vybraného textu</translation>
 <translation id="8903921497873541725">Priblížiť</translation>
-<translation id="8904976895050290827">Synchronizácia Brave</translation>
+<translation id="3149880132460839085">Synchronizácia Brave</translation>
 <translation id="8909233240676134608">Zariadenie sa nepodarilo pripojiť k doméne. Server nepodporuje stanovené typy šifrovania Kerberos. Skontrolujte nastavenia šifrovania v časti Ďalšie možnosti.</translation>
 <translation id="8909833622202089127">Web sleduje vašu polohu</translation>
 <translation id="8910146161325739742">Zdieľanie obrazovky</translation>
