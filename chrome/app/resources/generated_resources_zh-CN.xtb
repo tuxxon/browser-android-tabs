@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">插件已被拦截</translation>
 <translation id="1145532888383813076">搜索您的设备、应用和网站。</translation>
 <translation id="1146204723345436916">从 HTML 文件导入书签...</translation>
-<translation id="114721135501989771">在 Brave 中畅享 Google 的智能技术</translation>
+<translation id="4755587405228414306">在 Brave 中畅享 Google 的智能技术</translation>
 <translation id="1148097584170732637">找到了 <ph name="FILE_COUNT" />。
     <ph name="LINE_BREAK1" />
     可用的本地存储空间不足。还需要 <ph name="FILE_SIZE" />。
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">同步已暂停</translation>
 <translation id="1319979322914001937">此应用可以显示一个列表，其中会列出从 Brave 网上应用店中筛选出来的扩展程序。您可以直接通过此应用安装列出的扩展程序。</translation>
 <translation id="132090119144658135">主题匹配：</translation>
-<translation id="1326317727527857210">要在您的其他设备上访问您的标签页，请登录 Brave。</translation>
+<translation id="7253276740368043692">要在您的其他设备上访问您的标签页，请登录 Brave。</translation>
 <translation id="1327074568633507428">Google 云打印中的打印机</translation>
 <translation id="1327977588028644528">网关</translation>
 <translation id="1329584516321524826">上次更新时间：刚才</translation>
@@ -1416,7 +1416,7 @@
 <translation id="3143695347784622594">发送系统数据。自动向 Google 发送诊断数据以及设备和应用使用情况数据。您随时可在设备的<ph name="BEGIN_LINK1" />设置<ph name="END_LINK1" />部分中更改这项设置。如果您开启了“其他网络与应用活动记录”设置，这些信息将会存储在您的帐号中，以便您在“我的活动记录”页面中进行管理。<ph name="BEGIN_LINK2" />了解详情<ph name="END_LINK2" /></translation>
 <translation id="3144126448740580210">完成</translation>
 <translation id="3144647712221361880">以其他身份打开链接</translation>
-<translation id="3149510190863420837">Brave 应用</translation>
+<translation id="300669147395456190">Brave 应用</translation>
 <translation id="3150927491400159470">硬性重新加载</translation>
 <translation id="315116470104423982">移动数据</translation>
 <translation id="3151539355209957474">开始时间</translation>
@@ -1493,7 +1493,7 @@
 <translation id="3280237271814976245">另存为(&amp;A)...</translation>
 <translation id="3280243678470289153">继续使用 Brave</translation>
 <translation id="3280431534455935878">正在准备</translation>
-<translation id="3282568296779691940">登录 Brave</translation>
+<translation id="82609232232243542">登录 Brave</translation>
 <translation id="3285322247471302225">打开新的标签页(&amp;T)</translation>
 <translation id="3288047731229977326">以开发者模式运行的扩展程序可能会损害您的计算机。如果您不是开发者，那么，为安全起见，应停用以开发者模式运行的扩展程序。</translation>
 <translation id="3289856944988573801">要检查是否有更新，请使用以太网或 WLAN。</translation>
@@ -4248,7 +4248,7 @@
 <translation id="7564847347806291057">结束进程</translation>
 <translation id="7566118625369982896">管理 Play 应用链接</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">已清除 Brave 数据</translation>
+<translation id="7814200940910057384">已清除 Brave 数据</translation>
 <translation id="7568790562536448087">更新</translation>
 <translation id="7571643774869182231">存储空间不足，无法更新</translation>
 <translation id="7573172247376861652">电池充电</translation>
@@ -5121,7 +5121,7 @@
 <translation id="8899851313684471736">在新窗口中打开链接(&amp;W)</translation>
 <translation id="8902667442496790482">打开“随选朗读”设置</translation>
 <translation id="8903921497873541725">放大</translation>
-<translation id="8904976895050290827">Brave 浏览器同步</translation>
+<translation id="3149880132460839085">Brave 浏览器同步</translation>
 <translation id="8909233240676134608">无法将此设备加入到该网域中。相应的服务器不支持指定的 Kerberos 加密类型。请前往“更多选项”以检查加密设置。</translation>
 <translation id="8909833622202089127">该网站正在跟踪您的位置</translation>
 <translation id="8910146161325739742">共享屏幕</translation>

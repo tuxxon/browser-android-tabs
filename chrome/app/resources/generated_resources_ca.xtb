@@ -101,7 +101,7 @@
 <translation id="1145292499998999162">Connector bloquejat</translation>
 <translation id="1145532888383813076">Cerca al dispositiu, en aplicacions i al web.</translation>
 <translation id="1146204723345436916">Importa les adreces d'interès des d'un fitxer HTML...</translation>
-<translation id="114721135501989771">Eines intel·ligents a Brave</translation>
+<translation id="4755587405228414306">Eines intel·ligents a Brave</translation>
 <translation id="1148097584170732637">S'han trobat <ph name="FILE_COUNT" />.
     <ph name="LINE_BREAK1" />
     No hi ha prou espai disponible a l'emmagatzematge local. Cal tenir <ph name="FILE_SIZE" /> més.
@@ -226,7 +226,7 @@
 <translation id="1316495628809031177">La sincronització està en pausa</translation>
 <translation id="1319979322914001937">Una aplicació que mostra un llista filtrada de les extensions de Brave Web Store. Les extensions de la llista es poden instal·lar directament des de l'aplicació.</translation>
 <translation id="132090119144658135">Coincidència d'assumpte:</translation>
-<translation id="1326317727527857210">Inicieu la sessió a Brave per accedir a les vostres pestanyes des dels altres dispositius que tingueu.</translation>
+<translation id="7253276740368043692">Inicieu la sessió a Brave per accedir a les vostres pestanyes des dels altres dispositius que tingueu.</translation>
 <translation id="1327074568633507428">Impressora a Google Cloud Print</translation>
 <translation id="1327977588028644528">Passarel·la</translation>
 <translation id="1329584516321524826">S'acaba d'actualitzar</translation>
@@ -1419,7 +1419,7 @@ No crec que calgui bloquejar aquest lloc.</translation>
 <translation id="3143695347784622594">Envia dades del sistema. Envia automàticament a Google dades de diagnòstic i d'ús del dispositiu i de les aplicacions. Pots canviar-ho en qualsevol moment des de la <ph name="BEGIN_LINK1" />configuració<ph name="END_LINK1" /> del dispositiu. Si també has activat l'opció Activitat al web i en aplicacions, aquesta informació es desarà al teu compte perquè la puguis gestionar des de La meva activitat. <ph name="BEGIN_LINK2" />Obtén més informació<ph name="END_LINK2" />.</translation>
 <translation id="3144126448740580210">FET</translation>
 <translation id="3144647712221361880">Obre l'enllaç com a</translation>
-<translation id="3149510190863420837">Aplicacions de Brave</translation>
+<translation id="300669147395456190">Aplicacions de Brave</translation>
 <translation id="3150927491400159470">Torna a carregar de manera forçada</translation>
 <translation id="315116470104423982">Dades mòbils</translation>
 <translation id="3151539355209957474">Hora d'inici</translation>
@@ -1496,7 +1496,7 @@ No crec que calgui bloquejar aquest lloc.</translation>
 <translation id="3280237271814976245">Desa &amp;com a...</translation>
 <translation id="3280243678470289153">Continua a Brave</translation>
 <translation id="3280431534455935878">S'està preparant</translation>
-<translation id="3282568296779691940">Inicia la sessió a Brave</translation>
+<translation id="82609232232243542">Inicia la sessió a Brave</translation>
 <translation id="3285322247471302225">Pes&amp;tanya nova</translation>
 <translation id="3288047731229977326">Les extensions que funcionen amb el mode de desenvolupador poden malmetre el vostre ordinador. Si no sou desenvolupador, hauríeu de desactivar aquestes extensions per continuar protegit.</translation>
 <translation id="3289856944988573801">Per comprovar si hi ha actualitzacions, feu servir Ethernet o Wi-Fi.</translation>
@@ -4262,7 +4262,7 @@ En instal·lar <ph name="APP_NAME" />, s'utilitzaran <ph name="DOWNLOAD_SIZE" />
 <translation id="7564847347806291057">Finalitza el procés</translation>
 <translation id="7566118625369982896">Gestiona els enllaços d'aplicacions de Play</translation>
 <translation id="7566723889363720618">F12</translation>
-<translation id="756809126120519699">S'han esborrat les dades de Brave</translation>
+<translation id="7814200940910057384">S'han esborrat les dades de Brave</translation>
 <translation id="7568790562536448087">Actualització</translation>
 <translation id="7571643774869182231">No hi ha prou espai d'emmagatzematge per fer l'actualització</translation>
 <translation id="7573172247376861652">Càrrega de la bateria</translation>
@@ -5135,7 +5135,7 @@ Deseu el fitxer de clau en una ubicació segura. El necessitareu per crear versi
 <translation id="8899851313684471736">Obre l'enllaç en una &amp;finestra nova</translation>
 <translation id="8902667442496790482">Obre la configuració d'Escolta la selecció</translation>
 <translation id="8903921497873541725">Amplia</translation>
-<translation id="8904976895050290827">Sincronització de Brave</translation>
+<translation id="3149880132460839085">Sincronització de Brave</translation>
 <translation id="8909233240676134608">No es pot connectar l'ordinador al domini. El servidor no admet els tipus d'encriptació de Kerberos especificats. Pots accedir a la configuració d'encriptació des de "Més opcions".</translation>
 <translation id="8909833622202089127">El lloc web està fent un seguiment de la teva ubicació</translation>
 <translation id="8910146161325739742">Compartiu la pantalla</translation>
