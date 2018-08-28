@@ -323,6 +323,8 @@ class CONTENT_EXPORT NavigationRequest : public NavigationURLLoaderDelegate {
   // renderer process.
   void UpdateRequestNavigationParamsHistory();
 
+  void ShouldBlockReferrer();
+
   FrameTreeNode* frame_tree_node_;
 
   // Initialized on creation of the NavigationRequest. Sent to the renderer when
