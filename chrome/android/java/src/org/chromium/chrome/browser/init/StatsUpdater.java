@@ -176,6 +176,11 @@ public class StatsUpdater {
         if (null != info) {
             versionNumber = info.versionName;
         }
+        SSLContext sslContext = CreateSSLContext(context);
+        if (null == sslContext) {
+            // Unable to setup trusted connection
+            return false;
+        }
         if (versionNumber.equals("Developer Build")) {
             return false;
         }
@@ -194,7 +199,8 @@ public class StatsUpdater {
 
         try {
             URL url = new URL(strQuery);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+            connection.setSSLSocketFactory(sslContext.getSocketFactory());
             try {
                 connection.setRequestMethod("GET");
                 connection.connect();
