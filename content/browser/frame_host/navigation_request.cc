@@ -1911,7 +1911,7 @@ void NavigationRequest::IgnorePipeDisconnection() {
 }
 
 void NavigationRequest::ShouldBlockReferrer() {
-  if (!frame_tree_node_) {
+  /*if (!frame_tree_node_) {
     return;
   }
   auto* navigation_entry =
@@ -1960,7 +1960,7 @@ void NavigationRequest::ShouldBlockReferrer() {
           common_params_.url.GetOrigin(),
           original_referrer.policy, &new_referrer)) {
     common_params_.referrer = new_referrer;
-  }
+  }*/
 }
 
 }  // namespace content
