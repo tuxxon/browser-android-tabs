@@ -190,14 +190,10 @@ public class StatsUpdater {
         if (null != info) {
             versionNumber = info.versionName;
         }
-        SSLContext sslContext = CreateSSLContext(context);
-        if (null == sslContext) {
-            // Unable to setup trusted connection
-            return false;
-        }
         if (versionNumber.equals("Developer Build")) {
             return false;
         }
+        SSLContext sslContext = CreateSSLContext(context);
         versionNumber = versionNumber.replace(" ", "%20");
 
         String woi = GetWeekOfInstallation(context);
@@ -212,22 +208,38 @@ public class StatsUpdater {
             versionNumber, firstRun, woi, ref);
 
         try {
-            URL url = new URL(strQuery);
-            HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
-            connection.setSSLSocketFactory(sslContext.getSocketFactory());
-            try {
-                connection.setRequestMethod("GET");
-                connection.connect();
-                if (HttpURLConnection.HTTP_OK != connection.getResponseCode()) {
-                    Log.e(TAG, "stat update error == " + connection.getResponseCode());
-
-                    return false;
+            boolean useHttp = (sslContext == null);
+            if (!useHttp) {
+                URL url = new URL(strQuery);
+                HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
+                connection.setSSLSocketFactory(sslContext.getSocketFactory());
+                try {
+                    connection.setRequestMethod("GET");
+                    connection.connect();
+                    if (HttpURLConnection.HTTP_OK != connection.getResponseCode()) {
+                        Log.e(TAG, "stat update error == " + connection.getResponseCode());
+                        useHttp = true;
+                    }
+                } finally {
+                    connection.disconnect();
                 }
-
-                return true;
-            } finally {
-                connection.disconnect();
             }
+            // If we failed to send via https we try to send via http
+            if (useHttp) {
+                URL url = new URL(strQuery);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                try {
+                    connection.setRequestMethod("GET");
+                    connection.connect();
+                    if (HttpURLConnection.HTTP_OK != connection.getResponseCode()) {
+                        Log.e(TAG, "stat update error == " + connection.getResponseCode());
+                        return false;
+                    }
+                } finally {
+                    connection.disconnect();
+                }
+            }
+            return true;
         }
         catch (MalformedURLException e) {
         }
