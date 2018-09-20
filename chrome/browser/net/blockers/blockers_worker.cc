@@ -3,9 +3,14 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 #include "blockers_worker.h"
+
 #include <fstream>
 #include <sstream>
-#include "base/threading/thread_restrictions.h"
+
+#include <ad-block/ad_block_client.h>
+#include <ad-block/data_file_version.h>
+#include <tracking-protection/TPParser.h>
+
 #include "../../../../base/android/apk_assets.h"
 #include "../../../../content/public/common/resource_type.h"
 #include "../../../../base/files/file_util.h"
@@ -15,10 +20,9 @@
 #include "../../../../third_party/leveldatabase/src/include/leveldb/db.h"
 #include "../../../../third_party/re2/src/re2/re2.h"
 #include "../../../../url/gurl.h"
-#include <tracking-protection/TPParser.h>
-#include <ad-block/ad_block_client.h>
-#include <ad-block/data_file_version.h>
 #include "base/strings/pattern.h"
+#include "base/task_scheduler/post_task.h"
+#include "base/threading/thread_restrictions.h"
 #include "net/base/registry_controlled_domains/registry_controlled_domain.h"
 
 #define TP_DATA_FILE                        "TrackingProtectionDownloaded.dat"
@@ -162,7 +166,9 @@ namespace blockers {
         adblock_parser_(nullptr),
         tp_initialized_(false),
         adblock_initialized_(false),
-        adblock_regional_initialized_(false) {
+        adblock_regional_initialized_(false),
+        task_runner_(
+          base::CreateSequencedTaskRunnerWithTraits({base::MayBlock()})) {
     }
 
     BlockersWorker::~BlockersWorker() {
@@ -490,7 +496,7 @@ namespace blockers {
         if (nullptr == url) {
             return "";
         }
-        if (url->scheme() == "https") {
+        if (url->scheme() == url::kHttpsScheme) {
             return url->spec();
         }
         if (!shouldHTTPSERedirect(request_identifier)) {
@@ -511,7 +517,7 @@ namespace blockers {
         if (nullptr == url) {
             return "";
         }
-        if (url->scheme() == "https"
+        if (url->scheme() == url::kHttpsScheme
           || !InitHTTPSE()) {
             return url->spec();
         }

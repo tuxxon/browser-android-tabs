@@ -5,13 +5,15 @@
 #ifndef BLOCKERS_WORKER_H_
 #define BLOCKERS_WORKER_H_
 
-#include <string>
-#include <vector>
 #include <map>
 #include <mutex>
+#include <string>
+#include <vector>
+
+#include "base/sequenced_task_runner.h"
+#include "content/public/common/referrer.h"
 #include "RecentlyUsedCache.h"
 #include "url/gurl.h"
-#include "content/public/common/referrer.h"
 
 class CTPParser;
 class AdBlockClient;
@@ -53,6 +55,10 @@ public:
     bool InitAdBlock();
     bool InitAdBlockRegional();
     bool InitHTTPSE();
+
+    scoped_refptr<base::SequencedTaskRunner> GetTaskRunner() {
+      return task_runner_;
+    }
 
     static bool ShouldSetReferrer(bool allow_referrers, bool shields_up,
         const GURL& original_referrer, const GURL& tab_origin,
@@ -110,6 +116,8 @@ private:
     std::mutex tp_initialized_mutex_;
     std::mutex adblock_initialized_mutex_;
     std::mutex adblock_regional_initialized_mutex_;
+
+    scoped_refptr<base::SequencedTaskRunner> task_runner_;
 };
 
 }  // namespace blockers

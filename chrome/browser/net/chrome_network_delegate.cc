@@ -640,9 +640,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_HttpsePreFileWork(
     ctx->newURL = blockers_worker_->getHTTPSURLFromCacheOnly(&request->url(), request->identifier());
     if (ctx->newURL == request->url().spec()) {
       ctx->UrlCopy = request->url();
-      scoped_refptr<base::SequencedTaskRunner> task_runner =
-        base::CreateSequencedTaskRunnerWithTraits({base::MayBlock(), base::TaskShutdownBehavior::SKIP_ON_SHUTDOWN});
-      task_runner->PostTaskAndReply(FROM_HERE,
+      blockers_worker_->GetTaskRunner()->PostTaskAndReply(FROM_HERE,
         base::Bind(&ChromeNetworkDelegate::OnBeforeURLRequest_HttpseFileWork,
             base::Unretained(this), base::Unretained(request), ctx),
         base::Bind(base::IgnoreResult(&ChromeNetworkDelegate::OnBeforeURLRequest_HttpsePostFileWork),
