@@ -348,8 +348,6 @@ class CONTENT_EXPORT NavigationRequest : public NavigationURLLoaderDelegate {
   // enabled.
   void IgnorePipeDisconnection();
 
-  void ShouldBlockReferrer();
-
   FrameTreeNode* frame_tree_node_;
 
   // Initialized on creation of the NavigationRequest. Sent to the renderer when
