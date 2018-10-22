@@ -10,6 +10,7 @@
 
 #include "base/bind.h"
 #include "base/bind_helpers.h"
+#include "base/logging.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/utf_string_conversions.h"
 #include "chrome/browser/browser_process.h"
@@ -319,6 +320,7 @@ void PushMessagingNotificationManager::DidWriteNotificationData(
     bool success,
     const std::string& notification_id) {
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
+  LOG(ERROR) << "!!!PushMessagingNotificationManager::DidWriteNotificationData";
   if (!success) {
     DLOG(ERROR) << "Writing forced notification to database should not fail";
     message_handled_closure.Run();

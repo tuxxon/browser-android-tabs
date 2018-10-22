@@ -33,6 +33,17 @@
 #include "url/gurl.h"
 #include "url/url_canon_stdstring.h"
 
+// TODO debug
+#include "chrome/browser/notifications/notification_display_service.h"
+#include "chrome/browser/notifications/notification_display_service_factory.h"
+#include "content/public/common/notification_resources.h"
+#include "content/public/common/content_client.h"
+#include "ui/message_center/public/cpp/notifier_id.h"
+#include "ui/message_center/public/cpp/notification.h"
+
+using content::NotificationResources;
+//
+
  // TODO, just for test purpose
 static bool created_wallet = false;
 //
@@ -237,6 +248,46 @@ void BraveRewardsServiceImpl::Init() {
   ledger_->Initialize();
 }
 
+// TODO debug
+const char kNotificationId[] = "my-brave-notification-id";
+
+bool RunScript(const std::string& script, std::string* result) {
+  return content::ExecuteScriptAndExtractString(
+      browser()->tab_strip_model()->GetActiveWebContents()->GetMainFrame(),
+      script, result);
+}
+//
+
+void TriggerNotification(Profile* profile) {
+  if (g_browser_process->IsShuttingDown())
+    return;
+
+  /*gfx::Image notification_icon(icon);
+  if (notification_icon.IsEmpty()) {
+    ui::ResourceBundle& rb = ui::ResourceBundle::GetSharedInstance();
+    notification_icon = rb.GetImageNamed(IDR_EXTENSION_DEFAULT_ICON);
+  }*/
+
+  /*void PlatformNotificationServiceImpl::DisplayNotification(
+    BrowserContext* browser_context,
+    const std::string& notification_id,
+    const GURL& origin,
+    const content::PlatformNotificationData& notification_data,
+    const content::NotificationResources& notification_resources) {*/
+
+  message_center::Notification notification(
+      message_center::NOTIFICATION_TYPE_SIMPLE, kNotificationId, base::ASCIIToUTF16("my title"), 
+      base::ASCIIToUTF16("my message"),
+      gfx::Image::CreateFrom1xBitmap(NotificationResources().notification_icon), base::string16(), GURL("https://brave.com"),
+      message_center::NotifierId(GURL("https://brave.com")), {}, nullptr);
+
+  auto metadata = std::make_unique<PersistentNotificationMetadata>();
+  metadata->service_worker_scope = GURL("https://brave.com");
+  NotificationDisplayService::GetForProfile(profile)->Display(
+      NotificationHandler::Type::WEB_PERSISTENT, notification, std::move(metadata));
+}
+//
+
 void BraveRewardsServiceImpl::CreateWallet() {
 
   if (created_wallet) {
@@ -244,6 +295,9 @@ void BraveRewardsServiceImpl::CreateWallet() {
   }
   ledger_->CreateWallet();
   created_wallet = true;
+
+  // TODO debug
+  TriggerNotification(profile_);
 
   /* TODO:
   if (ready().is_signaled()) {

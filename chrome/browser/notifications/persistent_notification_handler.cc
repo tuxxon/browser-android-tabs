@@ -39,6 +39,7 @@ void PersistentNotificationHandler::OnClick(
     base::OnceClosure completed_closure) {
   DCHECK(origin.is_valid());
 
+  LOG(ERROR) << "!!!PersistentNotificationHandler::OnClick ";
   PlatformNotificationServiceImpl::GetInstance()->OnPersistentNotificationClick(
       profile, notification_id, origin, action_index, reply,
       std::move(completed_closure));

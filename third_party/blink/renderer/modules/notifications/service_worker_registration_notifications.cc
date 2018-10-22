@@ -144,6 +144,7 @@ void ServiceWorkerRegistrationNotifications::DidLoadResources(
     NotificationResourcesLoader* loader) {
   DCHECK(loaders_.Contains(loader));
 
+  LOG(ERROR) << "!!!ServiceWorkerRegistrationNotifications::DidLoadResources";
   NotificationManager::From(GetExecutionContext())
       ->DisplayPersistentNotification(registration_->WebRegistration(), data,
                                       loader->GetResources(),

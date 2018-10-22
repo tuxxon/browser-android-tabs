@@ -159,6 +159,7 @@ void NotificationManager::DisplayPersistentNotification(
     return;
   }
 
+  LOG(ERROR) << "!!!NotificationManager::DisplayPersistentNotification";
   GetNotificationService()->DisplayPersistentNotification(
       service_worker_registration->RegistrationId(), notification_data,
       *notification_resources,

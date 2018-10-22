@@ -186,6 +186,7 @@ public class NotificationPlatformBridge {
                     NotificationConstants.EXTRA_NOTIFICATION_INFO_ACTION_INDEX, -1);
             sInstance.onNotificationClicked(notificationId, origin, scopeUrl, profileId, incognito,
                     webApkPackage, actionIndex, getNotificationReply(intent));
+            Log.i("TAG", "!!!clicked == " + notificationId);
             return true;
         } else if (NotificationConstants.ACTION_CLOSE_NOTIFICATION.equals(intent.getAction())) {
             // Notification deleteIntent is executed only "when the notification is explicitly
@@ -193,6 +194,7 @@ public class NotificationPlatformBridge {
             // individually" (though a third-party NotificationListenerService may also trigger it).
             sInstance.onNotificationClosed(
                     notificationId, origin, profileId, incognito, true /* byUser */);
+            Log.i("TAG", "!!!closed == " + notificationId);
             return true;
         }
 

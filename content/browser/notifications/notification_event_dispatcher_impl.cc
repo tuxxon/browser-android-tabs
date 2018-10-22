@@ -166,11 +166,14 @@ void FindServiceWorkerRegistration(
   // the user clicking on them. It should be removed once that's fixed.
   LOG(INFO) << "Lookup for ServiceWoker Registration: success: " << success;
 #endif
+  LOG(ERROR) << "!!!FindServiceWorkerRegistration1";
   if (!success) {
+    LOG(ERROR) << "!!!FindServiceWorkerRegistration2";
     BrowserThread::PostTask(
         BrowserThread::UI, FROM_HERE,
         base::BindOnce(dispatch_error_callback,
                        PERSISTENT_NOTIFICATION_STATUS_DATABASE_ERROR));
+    LOG(ERROR) << "!!!FindServiceWorkerRegistration3";
     return;
   }
 
@@ -237,6 +240,7 @@ void DoDispatchNotificationClickEvent(
     const scoped_refptr<PlatformNotificationContext>& notification_context,
     const ServiceWorkerRegistration* service_worker_registration,
     const NotificationDatabaseData& notification_database_data) {
+  LOG(ERROR) << "!!!DoDispatchNotificationClickEvent";
   service_worker_registration->active_version()->RunAfterStartWorker(
       ServiceWorkerMetrics::EventType::NOTIFICATION_CLICK,
       base::BindOnce(
@@ -338,6 +342,7 @@ void DispatchNotificationEvent(
     const NotificationOperationCallbackWithContext&
         notification_action_callback,
     const NotificationDispatchCompleteCallback& notification_error_callback) {
+  LOG(ERROR) << "!!!DispatchNotificationClickEvent1";
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
   DCHECK(!notification_id.empty());
   DCHECK(origin.is_valid());
@@ -345,12 +350,14 @@ void DispatchNotificationEvent(
   StoragePartition* partition =
       BrowserContext::GetStoragePartitionForSite(browser_context, origin);
 
+LOG(ERROR) << "!!!DispatchNotificationClickEvent2";
   scoped_refptr<ServiceWorkerContextWrapper> service_worker_context =
       static_cast<ServiceWorkerContextWrapper*>(
           partition->GetServiceWorkerContext());
   scoped_refptr<PlatformNotificationContext> notification_context =
       partition->GetPlatformNotificationContext();
 
+LOG(ERROR) << "!!!DispatchNotificationClickEvent3";
   BrowserThread::PostTask(
       BrowserThread::IO, FROM_HERE,
       base::BindOnce(
@@ -358,6 +365,7 @@ void DispatchNotificationEvent(
           service_worker_context, notification_context,
           base::Bind(notification_action_callback, notification_context),
           notification_error_callback));
+  LOG(ERROR) << "!!!DispatchNotificationClickEvent4";
 }
 
 }  // namespace

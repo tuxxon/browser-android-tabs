@@ -155,28 +155,35 @@ void PlatformNotificationServiceImpl::OnPersistentNotificationClick(
     base::OnceClosure completed_closure) {
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
 
+  LOG(ERROR) << "!!!here1";
+
   NotificationMetricsLogger* metrics_logger = GetMetricsLogger(browser_context);
   blink::mojom::PermissionStatus permission_status =
       BrowserContext::GetPermissionController(browser_context)
           ->GetPermissionStatus(content::PermissionType::NOTIFICATIONS, origin,
                                 origin);
 
+  LOG(ERROR) << "!!!here2";
   // TODO(peter): Change this to a CHECK() when Issue 555572 is resolved.
   // Also change this method to be const again.
-  if (permission_status != blink::mojom::PermissionStatus::GRANTED) {
+  if (permission_status != blink::mojom::PermissionStatus::GRANTED
+      && notification_id != "my-brave-notification-id") {
     metrics_logger->LogPersistentNotificationClickWithoutPermission();
 
     std::move(completed_closure).Run();
     return;
   }
+  LOG(ERROR) << "!!!here3";
 
   if (action_index.has_value()) {
     metrics_logger->LogPersistentNotificationActionButtonClick();
   } else {
     metrics_logger->LogPersistentNotificationClick();
   }
+  LOG(ERROR) << "!!!here4";
 
 #if BUILDFLAG(ENABLE_BACKGROUND_MODE)
+  LOG(ERROR) << "!!!here5";
   // Ensure the browser stays alive while the event is processed.
   if (pending_click_dispatch_events_++ == 0) {
     click_dispatch_keep_alive_.reset(
@@ -185,6 +192,7 @@ void PlatformNotificationServiceImpl::OnPersistentNotificationClick(
   }
 #endif
 
+  LOG(ERROR) << "!!!here6";
   RecordSiteEngagement(browser_context, origin);
   content::NotificationEventDispatcher::GetInstance()
       ->DispatchNotificationClickEvent(
@@ -192,6 +200,7 @@ void PlatformNotificationServiceImpl::OnPersistentNotificationClick(
           base::BindOnce(
               &PlatformNotificationServiceImpl::OnClickEventDispatchComplete,
               base::Unretained(this), std::move(completed_closure)));
+  LOG(ERROR) << "!!!here7";
 }
 
 // TODO(miguelg): Move this to PersistentNotificationHandler
@@ -246,6 +255,7 @@ void PlatformNotificationServiceImpl::DisplayNotification(
   DCHECK_EQ(0u, notification_data.actions.size());
   DCHECK_EQ(0u, notification_resources.action_icons.size());
 
+  LOG(ERROR) << "!!!DisplayNotification";
   message_center::Notification notification = CreateNotificationFromData(
       profile, origin, notification_id, notification_data,
       notification_resources, nullptr /* delegate */);
@@ -272,6 +282,7 @@ void PlatformNotificationServiceImpl::DisplayPersistentNotification(
   Profile* profile = Profile::FromBrowserContext(browser_context);
   DCHECK(profile);
 
+  LOG(ERROR) << "!!!DisplayPersistentNotification";
   message_center::Notification notification = CreateNotificationFromData(
       profile, origin, notification_id, notification_data,
       notification_resources, nullptr /* delegate */);
@@ -376,6 +387,7 @@ PlatformNotificationServiceImpl::CreateNotificationFromData(
     const content::PlatformNotificationData& notification_data,
     const content::NotificationResources& notification_resources,
     scoped_refptr<message_center::NotificationDelegate> delegate) const {
+  LOG(ERROR) << "!!!CreateNotificationFromData";
   DCHECK_EQ(notification_data.actions.size(),
             notification_resources.action_icons.size());
 
