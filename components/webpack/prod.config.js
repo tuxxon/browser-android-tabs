@@ -5,7 +5,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   mode: 'production',
   entry: {
-    brave_rewards: path.join(__dirname, '../brave_rewards_ui/resources/brave_rewards'),
+    brave_rewards: path.join(__dirname, '../../brave/components/brave_rewards/ui/brave_rewards'),
   },
   output: {
     path: process.env.TARGET_GEN_DIR,
