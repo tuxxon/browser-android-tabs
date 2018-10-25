@@ -48,6 +48,7 @@ export class RewardsPanel extends React.Component<Props, State> {
           !walletCreated
           ? <PanelWelcome
             variant={'two'}
+            optInErrorAction={actions.onWalletCreateFailed}
             optInAction={actions.createWallet}
           />
           : <Panel windowId={this.state.windowId} />
