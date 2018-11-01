@@ -546,7 +546,7 @@ Google-kontoen din kan ha andre former for nettlesingslogg, for eksempel søk og
 <translation id="5345040418939504969">Slettet <ph name="BOOKMARK_TITLE" /></translation>
 <translation id="5372829067651257087">Nettadressen er kopiert.</translation>
 <translation id="5391532827096253100">Tilkoblingen din til dette nettstedet er ikke sikker. Informasjon om nettstedet</translation>
-<translation id="5400569084694353794">Ved å bruke dette programmet samtykker du i Chromes <ph name="BEGIN_LINK1" />vilkår for bruk<ph name="END_LINK1" /> og <ph name="BEGIN_LINK2" />merknad om personvern<ph name="END_LINK2" />.</translation>
+<translation id="2700285883409956633">Ved å bruke dette programmet samtykker du i Chromes <ph name="BEGIN_LINK1" />vilkår for bruk<ph name="END_LINK1" /> og <ph name="BEGIN_LINK2" />merknad om personvern<ph name="END_LINK2" />.</translation>
 <translation id="5403644198645076998">Tillat bare visse nettsteder</translation>
 <translation id="5414836363063783498">Bekrefter …</translation>
 <translation id="5423934151118863508">Sidene du besøker mest, vises her</translation>
@@ -980,7 +980,7 @@ For å få nye lisenser må du koble deg til Internett og spille av innholdet du
 <translation id="869891660844655955">Utløpsdato</translation>
 <translation id="8719023831149562936">Kan ikke beame gjeldende fane</translation>
 <translation id="8725066075913043281">Prøv igjen</translation>
-<translation id="8728487861892616501">Når du bruker denne appen, godtar du <ph name="BEGIN_LINK1" />vilkårene for bruk<ph name="END_LINK1" /> av Brave, <ph name="BEGIN_LINK2" />merknaden om personvern<ph name="END_LINK2" /> og <ph name="BEGIN_LINK3" />merknaden om personvern for Google-kontoer som administreres med Family Link<ph name="END_LINK3" />.</translation>
+<translation id="7247433043977983806">Når du bruker denne appen, godtar du <ph name="BEGIN_LINK1" />vilkårene for bruk<ph name="END_LINK1" /> av Brave, <ph name="BEGIN_LINK2" />merknaden om personvern<ph name="END_LINK2" /> og <ph name="BEGIN_LINK3" />merknaden om personvern for Google-kontoer som administreres med Family Link<ph name="END_LINK3" />.</translation>
 <translation id="8730621377337864115">Ferdig</translation>
 <translation id="8748850008226585750">Innholdet er skjult</translation>
 <translation id="8751914237388039244">Velg et bilde</translation>

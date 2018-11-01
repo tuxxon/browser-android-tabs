@@ -546,7 +546,7 @@ Jūsu Google kontam vietnē <ph name="BEGIN_LINK" />myactivity.google.com<ph nam
 <translation id="5345040418939504969">Grāmatzīme <ph name="BOOKMARK_TITLE" /> tika dzēsta</translation>
 <translation id="5372829067651257087">Vietrādis URL nokopēts</translation>
 <translation id="5391532827096253100">Savienojums ar šo vietni nav drošs. Vietnes informācija</translation>
-<translation id="5400569084694353794">Izmantojot šo lietojumprogrammu, jūs piekrītat Brave <ph name="BEGIN_LINK1" />pakalpojumu sniegšanas noteikumiem<ph name="END_LINK1" /> un <ph name="BEGIN_LINK2" />konfidencialitātes paziņojumam<ph name="END_LINK2" />.</translation>
+<translation id="2700285883409956633">Izmantojot šo lietojumprogrammu, jūs piekrītat Brave <ph name="BEGIN_LINK1" />pakalpojumu sniegšanas noteikumiem<ph name="END_LINK1" /> un <ph name="BEGIN_LINK2" />konfidencialitātes paziņojumam<ph name="END_LINK2" />.</translation>
 <translation id="5403644198645076998">Atļaut apmeklēt tikai konkrētas vietnes</translation>
 <translation id="5414836363063783498">Notiek verifikācija...</translation>
 <translation id="5423934151118863508">Šeit tiks parādītas jūsu visvairāk apmeklētās lapas.</translation>
@@ -980,7 +980,7 @@ Lai iegūtu jaunas licences, izveidojiet savienojumu ar internetu un atskaņojie
 <translation id="869891660844655955">Derīguma termiņš</translation>
 <translation id="8719023831149562936">Nevar kopīgot šo cilni, izmantojot Beam.</translation>
 <translation id="8725066075913043281">Mēģināt vēlreiz</translation>
-<translation id="8728487861892616501">Izmantojot šo lietojumprogrammu, jūs piekrītat Brave <ph name="BEGIN_LINK1" />pakalpojumu sniegšanas noteikumiem<ph name="END_LINK1" />, <ph name="BEGIN_LINK2" />paziņojumam par konfidencialitāti<ph name="END_LINK2" /> un <ph name="BEGIN_LINK3" />paziņojumam par konfidencialitāti Google kontiem, kas tiek pārvaldīti lietotnē Family Link<ph name="END_LINK3" />.</translation>
+<translation id="7247433043977983806">Izmantojot šo lietojumprogrammu, jūs piekrītat Brave <ph name="BEGIN_LINK1" />pakalpojumu sniegšanas noteikumiem<ph name="END_LINK1" />, <ph name="BEGIN_LINK2" />paziņojumam par konfidencialitāti<ph name="END_LINK2" /> un <ph name="BEGIN_LINK3" />paziņojumam par konfidencialitāti Google kontiem, kas tiek pārvaldīti lietotnē Family Link<ph name="END_LINK3" />.</translation>
 <translation id="8730621377337864115">Gatavs</translation>
 <translation id="8748850008226585750">Saturs paslēpts</translation>
 <translation id="8751914237388039244">Attēla atlase</translation>

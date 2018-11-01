@@ -546,7 +546,7 @@
 <translation id="5345040418939504969">Закладку "<ph name="BOOKMARK_TITLE" />" видалено</translation>
 <translation id="5372829067651257087">URL-адресу скопійовано.</translation>
 <translation id="5391532827096253100">Ваше з’єднання з цим сайтом незахищене. Інформація про сайт</translation>
-<translation id="5400569084694353794">Користуючись цим додатком, ви приймаєте <ph name="BEGIN_LINK1" />Умови використання<ph name="END_LINK1" /> та <ph name="BEGIN_LINK2" />Примітку про конфіденційність<ph name="END_LINK2" /> Brave.</translation>
+<translation id="2700285883409956633">Користуючись цим додатком, ви приймаєте <ph name="BEGIN_LINK1" />Умови використання<ph name="END_LINK1" /> та <ph name="BEGIN_LINK2" />Примітку про конфіденційність<ph name="END_LINK2" /> Brave.</translation>
 <translation id="5403644198645076998">Дозволити лише певні сайти</translation>
 <translation id="5414836363063783498">Підтвердження…</translation>
 <translation id="5423934151118863508">Тут відображатимуться найчастіше відвідувані сторінки</translation>
@@ -980,7 +980,7 @@
 <translation id="869891660844655955">Діє до</translation>
 <translation id="8719023831149562936">Неможливо передати дані поточної вкладки</translation>
 <translation id="8725066075913043281">Повторити спробу</translation>
-<translation id="8728487861892616501">Користуючись цим додатком, ви приймаєте <ph name="BEGIN_LINK1" />Умови використання<ph name="END_LINK1" /> та <ph name="BEGIN_LINK2" />Примітку про конфіденційність<ph name="END_LINK2" /> Brave, а також <ph name="BEGIN_LINK3" />Примітку про конфіденційність для облікових записів Google, якими можна керувати у Family Link<ph name="END_LINK3" />.</translation>
+<translation id="7247433043977983806">Користуючись цим додатком, ви приймаєте <ph name="BEGIN_LINK1" />Умови використання<ph name="END_LINK1" /> та <ph name="BEGIN_LINK2" />Примітку про конфіденційність<ph name="END_LINK2" /> Brave, а також <ph name="BEGIN_LINK3" />Примітку про конфіденційність для облікових записів Google, якими можна керувати у Family Link<ph name="END_LINK3" />.</translation>
 <translation id="8730621377337864115">Готово</translation>
 <translation id="8748850008226585750">Вміст сховано</translation>
 <translation id="8751914237388039244">Виберіть зображення</translation>

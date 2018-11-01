@@ -546,7 +546,7 @@
 <translation id="5345040418939504969">已删除“<ph name="BOOKMARK_TITLE" />”</translation>
 <translation id="5372829067651257087">已复制网址。</translation>
 <translation id="5391532827096253100">您与此网站之间建立的连接不安全。网站信息</translation>
-<translation id="5400569084694353794">使用此应用即表示您同意遵守 Brave 的<ph name="BEGIN_LINK1" />服务条款<ph name="END_LINK1" />和<ph name="BEGIN_LINK2" />隐私权声明<ph name="END_LINK2" />。</translation>
+<translation id="2700285883409956633">使用此应用即表示您同意遵守 Brave 的<ph name="BEGIN_LINK1" />服务条款<ph name="END_LINK1" />和<ph name="BEGIN_LINK2" />隐私权声明<ph name="END_LINK2" />。</translation>
 <translation id="5403644198645076998">只允许访问某些网站</translation>
 <translation id="5414836363063783498">正在验证…</translation>
 <translation id="5423934151118863508">您最常访问的网页将列在此处</translation>
@@ -980,7 +980,7 @@
 <translation id="869891660844655955">截止日期</translation>
 <translation id="8719023831149562936">无法传输当前的标签页</translation>
 <translation id="8725066075913043281">重试</translation>
-<translation id="8728487861892616501">使用此应用即表示您同意 Brave 的<ph name="BEGIN_LINK1" />服务条款<ph name="END_LINK1" />和<ph name="BEGIN_LINK2" />隐私权声明<ph name="END_LINK2" />，以及<ph name="BEGIN_LINK3" />针对通过 Family Link 管理的 Google 帐号的隐私权声明<ph name="END_LINK3" />。</translation>
+<translation id="7247433043977983806">使用此应用即表示您同意 Brave 的<ph name="BEGIN_LINK1" />服务条款<ph name="END_LINK1" />和<ph name="BEGIN_LINK2" />隐私权声明<ph name="END_LINK2" />，以及<ph name="BEGIN_LINK3" />针对通过 Family Link 管理的 Google 帐号的隐私权声明<ph name="END_LINK3" />。</translation>
 <translation id="8730621377337864115">完成</translation>
 <translation id="8748850008226585750">内容已隐藏</translation>
 <translation id="8751914237388039244">选择图片</translation>

@@ -546,7 +546,7 @@ Váš účet Google môže mať na adrese <ph name="BEGIN_LINK" />myactivity.goo
 <translation id="5345040418939504969">Záložka <ph name="BOOKMARK_TITLE" /> bola odstránená</translation>
 <translation id="5372829067651257087">Webová adresa bola skopírovaná.</translation>
 <translation id="5391532827096253100">Vaše pripojenie k tomuto webu nie je zabezpečené. Informácie o webe</translation>
-<translation id="5400569084694353794">Používaním tejto aplikácie vyjadrujete súhlas so <ph name="BEGIN_LINK1" />zmluvnými podmienkami<ph name="END_LINK1" /> a <ph name="BEGIN_LINK2" />upozornením o ochrane osobných údajov<ph name="END_LINK2" /> prehliadača Brave.</translation>
+<translation id="2700285883409956633">Používaním tejto aplikácie vyjadrujete súhlas so <ph name="BEGIN_LINK1" />zmluvnými podmienkami<ph name="END_LINK1" /> a <ph name="BEGIN_LINK2" />upozornením o ochrane osobných údajov<ph name="END_LINK2" /> prehliadača Brave.</translation>
 <translation id="5403644198645076998">Povoliť len určité weby</translation>
 <translation id="5414836363063783498">Overuje sa...</translation>
 <translation id="5423934151118863508">Tu sa zobrazia vaše najnavštevovanejšie stránky.</translation>
@@ -978,7 +978,7 @@ Niektoré weby môžu napríklad na túto žiadosť reagovať tak, že vám zobr
 <translation id="869891660844655955">Koniec platnosti</translation>
 <translation id="8719023831149562936">Aktuálna karta sa nedá preniesť</translation>
 <translation id="8725066075913043281">Skúsiť znova</translation>
-<translation id="8728487861892616501">Používaním tejto aplikácie vyjadrujete súhlas so <ph name="BEGIN_LINK1" />zmluvnými podmienkami<ph name="END_LINK1" /> prehliadača Brave a <ph name="BEGIN_LINK2" />oznámením o ochrane súkromia<ph name="END_LINK2" />, ako aj <ph name="BEGIN_LINK3" />oznámením o ochrane súkromia pre účty Google spravované pomocou aplikácie Family Link<ph name="END_LINK3" />.</translation>
+<translation id="7247433043977983806">Používaním tejto aplikácie vyjadrujete súhlas so <ph name="BEGIN_LINK1" />zmluvnými podmienkami<ph name="END_LINK1" /> prehliadača Brave a <ph name="BEGIN_LINK2" />oznámením o ochrane súkromia<ph name="END_LINK2" />, ako aj <ph name="BEGIN_LINK3" />oznámením o ochrane súkromia pre účty Google spravované pomocou aplikácie Family Link<ph name="END_LINK3" />.</translation>
 <translation id="8730621377337864115">Hotovo</translation>
 <translation id="8748850008226585750">Obsah je skrytý</translation>
 <translation id="8751914237388039244">Vyberte obrázok</translation>

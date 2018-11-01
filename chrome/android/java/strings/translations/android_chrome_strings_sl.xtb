@@ -545,7 +545,7 @@ V Google Računu so morda druge vrste zgodovine brskanja, kot so iskanja in deja
 <translation id="5345040418939504969">Izbrisano: <ph name="BOOKMARK_TITLE" /></translation>
 <translation id="5372829067651257087">URL je kopiran.</translation>
 <translation id="5391532827096253100">Povezava s tem spletnim mestom ni varna. Podatki o spletnem mestu.</translation>
-<translation id="5400569084694353794">Če uporabljate to aplikacijo, se strinjate s <ph name="BEGIN_LINK1" />pogoji storitve<ph name="END_LINK1" /> in <ph name="BEGIN_LINK2" />pravilnikom o zasebnosti<ph name="END_LINK2" /> za Brave.</translation>
+<translation id="2700285883409956633">Če uporabljate to aplikacijo, se strinjate s <ph name="BEGIN_LINK1" />pogoji storitve<ph name="END_LINK1" /> in <ph name="BEGIN_LINK2" />pravilnikom o zasebnosti<ph name="END_LINK2" /> za Brave.</translation>
 <translation id="5403644198645076998">Dovoli samo nekatera spletna mesta</translation>
 <translation id="5414836363063783498">Preverjanje …</translation>
 <translation id="5423934151118863508">Tu bodo prikazane strani, ki jih obiskujete najpogosteje</translation>
@@ -979,7 +979,7 @@ Nove licence dobite tako, da se povežete v internet in predvajate preneseno vse
 <translation id="869891660844655955">Datum izteka</translation>
 <translation id="8719023831149562936">Trenutnega zavihka ni mogoče prenesti</translation>
 <translation id="8725066075913043281">Poskusite znova</translation>
-<translation id="8728487861892616501">Če uporabljate to aplikacijo, se strinjate s Brave <ph name="BEGIN_LINK1" />pogoji storitve<ph name="END_LINK1" /> in <ph name="BEGIN_LINK2" />obvestilom o zasebnosti<ph name="END_LINK2" /> ter <ph name="BEGIN_LINK3" />obvestilom o zasebnosti za Google Račune, upravljane s Family Linkom<ph name="END_LINK3" />.</translation>
+<translation id="7247433043977983806">Če uporabljate to aplikacijo, se strinjate s Brave <ph name="BEGIN_LINK1" />pogoji storitve<ph name="END_LINK1" /> in <ph name="BEGIN_LINK2" />obvestilom o zasebnosti<ph name="END_LINK2" /> ter <ph name="BEGIN_LINK3" />obvestilom o zasebnosti za Google Račune, upravljane s Family Linkom<ph name="END_LINK3" />.</translation>
 <translation id="8730621377337864115">Končano</translation>
 <translation id="8748850008226585750">Vsebina je skrita</translation>
 <translation id="8751914237388039244">Izberite sliko</translation>

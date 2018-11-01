@@ -118,7 +118,7 @@ However, you aren’t invisible. Going private doesn’t hide your browsing from
 <translation id="6935376668939745224">Popular pages from Brave</translation>
 <translation id="1883903952484604915">My files</translation>
 <translation id="1887786770086287077">Location access is off for this device. Turn it on in <ph name="BEGIN_LINK" />Android Settings<ph name="END_LINK" />.</translation>
-<translation id="7918904806701244950"><ph name="APP_NAME" /> will open in Brave. By continuing, you agree to Chrome’s <ph name="BEGIN_LINK1" />Terms of Service<ph name="END_LINK1" /> and <ph name="BEGIN_LINK2" />Privacy Notice<ph name="END_LINK2" />.</translation>
+<translation id="7918904806701244950"><ph name="APP_NAME" /> will open in Brave. By continuing, you agree to Brave’s <ph name="BEGIN_LINK1" />Terms of Service<ph name="END_LINK1" /> and <ph name="BEGIN_LINK2" />Privacy Notice<ph name="END_LINK2" />.</translation>
 <translation id="189172778771606813">Close navigation drawer</translation>
 <translation id="1919345977826869612">Ads</translation>
 <translation id="1919950603503897840">Select contacts</translation>
@@ -546,7 +546,7 @@ Your Google Account may have other forms of browsing history such as searches an
 <translation id="5345040418939504969">Deleted <ph name="BOOKMARK_TITLE" /></translation>
 <translation id="5372829067651257087">URL copied.</translation>
 <translation id="5391532827096253100">Your connection to this site is not secure. Site information</translation>
-<translation id="5400569084694353794">By using this application, you agree to Chrome’s <ph name="BEGIN_LINK1" />Terms of Service<ph name="END_LINK1" /> and <ph name="BEGIN_LINK2" />Privacy Notice<ph name="END_LINK2" />.</translation>
+<translation id="2700285883409956633">By using this application, you agree to Brave’s <ph name="BEGIN_LINK1" />Terms of Service<ph name="END_LINK1" /> and <ph name="BEGIN_LINK2" />Privacy Notice<ph name="END_LINK2" />.</translation>
 <translation id="5403644198645076998">Only allow certain sites</translation>
 <translation id="5414836363063783498">Verifying…</translation>
 <translation id="5423934151118863508">Your most visited pages will appear here</translation>
@@ -978,7 +978,7 @@ For example, some websites may respond to this request by showing you ads that a
 <translation id="869891660844655955">Expiry date</translation>
 <translation id="8719023831149562936">Can’t beam current tab</translation>
 <translation id="8725066075913043281">Try again</translation>
-<translation id="8728487861892616501">By using this application, you agree to Chrome’s <ph name="BEGIN_LINK1" />Terms of Service<ph name="END_LINK1" /> and <ph name="BEGIN_LINK2" />Privacy Notice<ph name="END_LINK2" />, and the <ph name="BEGIN_LINK3" />Privacy Notice for Google Accounts Managed with Family Link<ph name="END_LINK3" />.</translation>
+<translation id="7247433043977983806">By using this application, you agree to Brave’s <ph name="BEGIN_LINK1" />Terms of Service<ph name="END_LINK1" /> and <ph name="BEGIN_LINK2" />Privacy Notice<ph name="END_LINK2" />, and the <ph name="BEGIN_LINK3" />Privacy Notice for Google Accounts Managed with Family Link<ph name="END_LINK3" />.</translation>
 <translation id="8730621377337864115">Done</translation>
 <translation id="8748850008226585750">Contents hidden</translation>
 <translation id="8751914237388039244">Select an image</translation>
