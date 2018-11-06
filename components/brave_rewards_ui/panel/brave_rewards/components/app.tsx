@@ -2,16 +2,15 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-import * as React from 'react'
+// @ts-ignore until react type includes Suspense
+import React, { Suspense } from 'react'
 import { bindActionCreators, Dispatch } from 'redux'
 import { connect } from 'react-redux'
+
+import * as rewardsPanelActions from '../actions/rewards_panel_actions'
 import { PanelWelcome } from 'brave-ui/features/rewards'
 
-// Components
-import Panel from './panel'
-
-// Utils
-import * as rewardsPanelActions from '../actions/rewards_panel_actions'
+const Panel = React.lazy<any>(() => import('./panel'))
 
 interface Props extends RewardsExtension.ComponentProps {
 }
@@ -80,7 +79,7 @@ export class RewardsPanel extends React.Component<Props, State> {
       ? this.state.windowId
       : rewardsPanelData.currentWindowId
     return (
-      <>
+      <React.Fragment>
         {
           !walletCreated
           ? <PanelWelcome
@@ -90,9 +89,9 @@ export class RewardsPanel extends React.Component<Props, State> {
             optInErrorAction={actions.onWalletCreateFailed}
             optInAction={this.onCreate}
           />
-          : <Panel windowId={windowId || -1} />
+          : <Suspense fallback={<div />} ><Panel windowId={windowId || -1} /></Suspense>
         }
-      </>
+      </React.Fragment>
     )
   }
 }
