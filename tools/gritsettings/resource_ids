@@ -199,7 +199,7 @@
   "components/web_contents_delegate_android/web_contents_delegate_android_strings.grd": {
     "messages": [17800],
   },
-  
+
   # END components/ section.
 
   # START content/ section.
@@ -410,7 +410,7 @@
   },
   "ui/webui/resources/webui_resources.grd": {
     "includes": [27750],
-    "structures": [27950],
+    "structures": [27980],
   },
 
   # This file is generated during the build.
