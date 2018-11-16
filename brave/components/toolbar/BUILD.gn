@@ -1,0 +1,14 @@
+source_set("toolbar") {
+
+  sources = [
+    "brave_toolbar_model_impl.cc",
+    "brave_toolbar_model_impl.h",
+    "constants.cc",
+    "constants.h",
+  ]
+
+  deps = [
+    "//base",
+    "//components/toolbar"
+  ]
+}
