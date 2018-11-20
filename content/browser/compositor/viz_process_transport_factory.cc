@@ -225,10 +225,11 @@ VizProcessTransportFactory::SharedMainThreadContextProvider() {
       context_result = TryCreateContextsForGpuCompositing(
           gpu_channel_establish_factory_->EstablishGpuChannelSync());
 
-      if (context_result == gpu::ContextResult::kFatalFailure)
+      if (gpu::IsFatalOrSurfaceFailure(context_result))
         DisableGpuCompositing(nullptr);
     }
-    // On kFatalFailure |main_context_provider_| will be null.
+    // On kFatalFailure or kSurfaceFailure, |main_context_provider_| will be
+    // null.
   }
 
   return main_context_provider_;
@@ -367,7 +368,7 @@ void VizProcessTransportFactory::OnEstablishedGpuChannel(
           base::BindOnce(&VizProcessTransportFactory::OnEstablishedGpuChannel,
                          weak_ptr_factory_.GetWeakPtr(), compositor_weak_ptr));
       return;
-    } else if (context_result == gpu::ContextResult::kFatalFailure) {
+    } else if (gpu::IsFatalOrSurfaceFailure(context_result)) {
       DisableGpuCompositing(compositor);
       gpu_compositing = false;
     }

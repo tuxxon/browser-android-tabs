@@ -144,7 +144,7 @@ std::unique_ptr<Display> GpuDisplayProvider::CreateDisplay(
           gpu::SharedMemoryLimits(), renderer_settings.requires_alpha_channel);
       context_result = context_provider->BindToCurrentThread();
 
-      if (context_result == gpu::ContextResult::kFatalFailure) {
+      if (IsFatalOrSurfaceFailure(context_result)) {
         gpu_service_impl_->DisableGpuCompositing();
         return nullptr;
       }
