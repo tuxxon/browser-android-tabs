@@ -10,6 +10,7 @@
 
 #include "base/no_destructor.h"
 #include "base/strings/string_util.h"
+#include "brave/common/url_constants.h"
 #include "content/public/common/content_client.h"
 #include "content/public/common/url_constants.h"
 #include "url/url_util.h"
@@ -58,6 +59,8 @@ void RegisterContentSchemes(bool lock_schemes) {
   url::AddStandardScheme(kChromeUIScheme, url::SCHEME_WITH_HOST);
   url::AddStandardScheme(kGuestScheme, url::SCHEME_WITH_HOST);
   url::AddStandardScheme(kChromeErrorScheme, url::SCHEME_WITH_HOST);
+
+  url::AddStandardScheme(kBraveUIScheme, url::SCHEME_WITH_HOST);
 
   for (auto& scheme : schemes.standard_schemes)
     url::AddStandardScheme(scheme.c_str(), url::SCHEME_WITH_HOST);
