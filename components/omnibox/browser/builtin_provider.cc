@@ -11,6 +11,7 @@
 
 #include "base/strings/string_util.h"
 #include "base/strings/utf_string_conversions.h"
+#include "brave/common/url_constants.h"
 #include "components/omnibox/browser/autocomplete_input.h"
 #include "components/omnibox/browser/autocomplete_provider_client.h"
 #include "components/omnibox/browser/history_provider.h"
@@ -38,7 +39,7 @@ void BuiltinProvider::Start(const AutocompleteInput& input,
       base::ASCIIToUTF16(url::kAboutScheme) +
       base::ASCIIToUTF16(url::kStandardSchemeSeparator);
   const base::string16 embedderAbout =
-      base::UTF8ToUTF16(client_->GetEmbedderRepresentationOfAboutScheme()) +
+      base::UTF8ToUTF16(kBraveUIScheme) +
       base::ASCIIToUTF16(url::kStandardSchemeSeparator);
 
   const int kUrl = ACMatchClassification::URL;
@@ -69,7 +70,8 @@ void BuiltinProvider::Start(const AutocompleteInput& input,
                        base::CompareCase::SENSITIVE);
     // BuiltinProvider doesn't know how to suggest valid ?query or #fragment
     // extensions to builtin URLs.
-    if (url.SchemeIs(client_->GetEmbedderRepresentationOfAboutScheme()) &&
+    if ((url.SchemeIs(kBraveUIScheme) ||
+        url.SchemeIs(client_->GetEmbedderRepresentationOfAboutScheme())) &&
         url.has_host() && !url.has_query() && !url.has_ref()) {
       // Suggest about:blank for substrings, taking URL fixup into account.
       // Chrome does not support trailing slashes or paths for about:blank.
