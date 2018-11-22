@@ -264,7 +264,7 @@ source_set("common") {
     "unique_name_helper.h",
     "url_loader_factory_bundle.cc",
     "url_loader_factory_bundle.h",
-    "url_schemes.cc",
+    "//brave/chromium_src/content/common/url_schemes.cc",
     "url_schemes.h",
     "user_agent.cc",
     "view_message_enums.h",

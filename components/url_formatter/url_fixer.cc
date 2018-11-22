@@ -34,7 +34,6 @@ namespace {
 
 // Hardcode these constants to avoid dependences on //chrome and //content.
 const char kChromeUIScheme[] = "chrome";
-const char kBraveUIScheme[] = "brave";
 const char kChromeUIDefaultHost[] = "version";
 const char kViewSourceScheme[] = "view-source";
 
@@ -684,11 +683,7 @@ bool IsEquivalentScheme(const std::string& scheme1,
                         const std::string& scheme2) {
   return scheme1 == scheme2 ||
          (scheme1 == url::kAboutScheme && scheme2 == kChromeUIScheme) ||
-         (scheme1 == kChromeUIScheme && scheme2 == url::kAboutScheme) ||
-         (scheme1 == kBraveUIScheme && scheme2 == kChromeUIScheme) ||
-         (scheme1 == kChromeUIScheme && scheme2 == kBraveUIScheme) ||
-         (scheme1 == url::kAboutScheme && scheme2 == kBraveUIScheme) ||
-         (scheme1 == kBraveUIScheme && scheme2 == url::kAboutScheme);
+         (scheme1 == kChromeUIScheme && scheme2 == url::kAboutScheme);
 }
 
 }  // namespace url_formatter
