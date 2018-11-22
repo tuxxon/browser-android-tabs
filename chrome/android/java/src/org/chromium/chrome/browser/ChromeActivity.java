@@ -185,6 +185,17 @@ import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nullable;
 
+// TODO debug
+import android.app.PendingIntent;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
+import android.support.v4.app.NotificationCompat;
+//
+
 /**
  * A {@link AsyncInitializationActivity} that builds and manages a {@link CompositorViewHolder}
  * and associated classes.
@@ -1072,7 +1083,47 @@ public abstract class ChromeActivity extends AsyncInitializationActivity
         VrModuleProvider.getDelegate().maybeRegisterVrEntryHook(this);
 
         getManualFillingController().onResume();
+        FireNotification();
     }
+
+    // TODO for tests
+    public void FireNotification() {
+        String NOTIFICATION_CHANNEL_ID = "notification_update_channel";
+        String URL = "https://brave.com/new-brave-22-percent-faster/";
+
+        NotificationManager mNotificationManager =
+            (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Log.i("TAG", "!!!before set channel");
+            NotificationChannel channel = new NotificationChannel(NOTIFICATION_CHANNEL_ID,
+                    "Channel for notifications",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            mNotificationManager.createNotificationChannel(channel);
+            Log.i("TAG", "!!!after set channel");
+        }
+
+        NotificationCompat.Builder mBuilder =
+            new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID);
+
+        //Create the intent that’ll fire when the user taps the notification//
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL));
+        intent.setPackage(getPackageName());
+        Log.i("TAG", "!!!sendNotification packageName == " + getPackageName());
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+        mBuilder.setContentIntent(pendingIntent);
+        mBuilder.setAutoCancel(true);
+
+        String notification_text = String.format(getString(R.string.update_notification_text),
+                                     "22%");
+        mBuilder.setSmallIcon(R.drawable.ic_chrome);
+        mBuilder.setContentTitle(getString(R.string.update_notification_title));
+        mBuilder.setContentText(notification_text);
+
+        mNotificationManager.notify(001, mBuilder.build());
+    }
+    //
 
     @Override
     protected void onUserLeaveHint() {
