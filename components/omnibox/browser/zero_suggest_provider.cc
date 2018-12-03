@@ -20,6 +20,7 @@
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
 #include "base/trace_event/trace_event.h"
+#include "brave/common/url_constants.h"
 #include "components/data_use_measurement/core/data_use_user_data.h"
 #include "components/history/core/browser/history_types.h"
 #include "components/history/core/browser/top_sites.h"
@@ -525,7 +526,8 @@ bool ZeroSuggestProvider::AllowZeroSuggestSuggestions(
        (current_page_url.scheme() != url::kHttpsScheme) &&
        (current_page_url.scheme() != url::kAboutScheme) &&
        (current_page_url.scheme() !=
-        client()->GetEmbedderRepresentationOfAboutScheme())))
+       client()->GetEmbedderRepresentationOfAboutScheme()) &&
+       (current_page_url.scheme() != kBraveUIScheme)))
     return false;
 
   return true;

@@ -14,7 +14,7 @@ jumbo_static_library("url_formatter") {
     "elide_url.h",
     "idn_spoof_checker.cc",
     "idn_spoof_checker.h",
-    "url_fixer.cc",
+    "//brave/android/chromium_src/components/url_formatter/url_fixer.cc",
     "url_fixer.h",
     "url_formatter.cc",
     "url_formatter.h",

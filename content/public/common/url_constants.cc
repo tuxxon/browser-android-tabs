@@ -12,6 +12,7 @@ namespace content {
 const char kChromeDevToolsScheme[] = "chrome-devtools";
 const char kChromeErrorScheme[] = "chrome-error";
 const char kChromeUIScheme[] = "chrome";
+const char kBraveUIScheme[] = "brave";
 const char kGuestScheme[] = "chrome-guest";
 const char kViewSourceScheme[] = "view-source";
 #if defined(OS_CHROMEOS)
