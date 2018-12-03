@@ -1024,6 +1024,9 @@ jumbo_split_static_library("ui") {
     "//ui/webui",
     "//v8:v8_version",
   ]
+  deps += [
+    "//brave/components/toolbar",
+  ]
   allow_circular_includes_from +=
       [ "//chrome/browser/ui/webui/bluetooth_internals" ]
 
@@ -1169,7 +1172,7 @@ jumbo_split_static_library("ui") {
       "android/tab_model/tab_model_observer.h",
       "android/tab_model/tab_model_observer_jni_bridge.cc",
       "android/tab_model/tab_model_observer_jni_bridge.h",
-      "android/toolbar/toolbar_model_android.cc",
+      "//brave/chromium_src/chrome/browser/ui/android/toolbar/toolbar_model_android.cc",
       "android/toolbar/toolbar_model_android.h",
       "android/usb_chooser_dialog_android.cc",
       "android/usb_chooser_dialog_android.h",
