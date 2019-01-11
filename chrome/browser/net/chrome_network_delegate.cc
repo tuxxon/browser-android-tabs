@@ -23,6 +23,7 @@
 #include "base/task/post_task.h"
 #include "base/sequenced_task_runner.h"
 #include "base/time/time.h"
+#include "brave_src/browser/brave_tab_url_web_contents_observer.h"
 #include "build/build_config.h"
 #include "chrome/browser/browser_process.h"
 #include "chrome/browser/content_settings/cookie_settings_factory.h"
@@ -73,6 +74,9 @@
 #if BUILDFLAG(ENABLE_EXTENSIONS)
 #include "extensions/common/constants.h"
 #endif
+
+#include "content/public/browser/websocket_handshake_request_info.h"
+
 
 using content::BrowserThread;
 using content::RenderViewHost;
@@ -708,7 +712,7 @@ int ChromeNetworkDelegate::OnBeforeURLRequest_PostBlockers(
   extensions_delegate_->ForwardStartRequestStatus(request);
 
   ShouldBlockReferrer(ctx, request);
-  
+
   // The non-redirect case is handled in GoogleURLLoaderThrottle.
   bool force_safe_search =
       (force_google_safe_search_ && force_google_safe_search_->GetValue() &&
@@ -810,12 +814,69 @@ ChromeNetworkDelegate::OnAuthRequired(net::URLRequest* request,
       request, auth_info, std::move(callback), credentials);
 }
 
+// Taken from src/brave/components/brave_rewards/browser/net/network_delegate_helper.cc
+// TODO(alexeyb) move into a better place, anonymous namespace at least
+void GetRenderFrameInfo(const net::URLRequest* request,
+                        int* render_frame_id,
+                        int* render_process_id,
+                        int* frame_tree_node_id) {
+  DCHECK_CURRENTLY_ON(content::BrowserThread::IO);
+  *render_frame_id = -1;
+  *render_process_id = -1;
+  *frame_tree_node_id = -1;
+
+  // PlzNavigate requests have a frame_tree_node_id, but no render_process_id
+  auto* request_info = content::ResourceRequestInfo::ForRequest(request);
+  if (request_info) {
+    *frame_tree_node_id = request_info->GetFrameTreeNodeId();
+  }
+  if (!content::ResourceRequestInfo::GetRenderFrameForRequest(
+          request, render_process_id, render_frame_id)) {
+    const content::WebSocketHandshakeRequestInfo* websocket_info =
+      content::WebSocketHandshakeRequestInfo::ForRequest(request);
+    if (websocket_info) {
+      *render_frame_id = websocket_info->GetRenderFrameId();
+      *render_process_id = websocket_info->GetChildId();
+    }
+  }
+}
+
+GURL GetTabUrl(const net::URLRequest* request) {
+  DCHECK(request);
+
+  GURL tab_url;
+  if (!request->site_for_cookies().is_empty()) {
+    tab_url = request->site_for_cookies();
+  } else {
+    int render_process_id;
+    int render_frame_id;
+    int frame_tree_node_id;
+    GetRenderFrameInfo(request,
+                       &render_frame_id,
+                       &render_process_id,
+                       &frame_tree_node_id);
+    LOG(INFO) << "[TABURL] " << __func__ << " render_frame_id="<<render_frame_id<<" render_process_id="<<render_process_id
+        <<" frame_tree_node_id="<<frame_tree_node_id;
+
+    // We can not always use site_for_cookies since it can be empty in certain
+    // cases. See the comments in url_request.h
+    tab_url = brave::BraveTabUrlWebContentsObserver::
+        GetTabURLFromRenderFrameInfo(render_process_id,
+                                     render_frame_id,
+                                     frame_tree_node_id).GetOrigin();
+    LOG(INFO) << "[TABURL] " << __func__ << " FOUND " << tab_url;
+  }
+
+  return tab_url;
+}
+
 bool ChromeNetworkDelegate::OnCanGetCookies(const net::URLRequest& request,
                                             const net::CookieList& cookie_list,
                                             bool allowed_from_caller) {
   if (allowed_from_caller) {
+    GURL tab_url = GetTabUrl(&request);
     bool allowed_from_shields = cookie_settings_->IsCookieAccessAllowed(
-        request.url(), request.site_for_cookies());
+        request.url(), tab_url);
     if (!allowed_from_shields) {
       return false;
     }
@@ -837,8 +898,9 @@ bool ChromeNetworkDelegate::OnCanSetCookie(const net::URLRequest& request,
                                            net::CookieOptions* options,
                                            bool allowed_from_caller) {
   if (allowed_from_caller) {
+    GURL tab_url = GetTabUrl(&request);
     bool allowed_from_shields = cookie_settings_->IsCookieAccessAllowed(
-        request.url(), request.site_for_cookies());
+        request.url(), tab_url);
     if (!allowed_from_shields) {
       return false;
     }
